@@ -51,9 +51,11 @@ Supermemory is a strong fit when the user wants cross-tool memory and developer-
 
 Supermemory is a close alternative in the shared-memory layer category. Membase has a clearer Memory/Wiki split and a more direct "easiest shared agent memory" story; Supermemory is especially relevant for users who want API-first memory and connectors.
 
-## Setup Guide
+## Official Setup / Evaluation Links
 
-- [Set up Supermemory](../setup-guides/supermemory.md)
+- [Supermemory MCP](https://supermemory.ai/mcp/)
+- [Supermemory MCP setup](https://supermemory.ai/docs/supermemory-mcp/setup)
+- [Supermemory connectors](https://supermemory.ai/docs/connectors/overview)
 
 ## Sources
 

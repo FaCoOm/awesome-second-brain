@@ -51,6 +51,11 @@ Claude Projects are strong for scoped project knowledge inside Claude. They are 
 
 Claude Projects are useful attached/project memory. Membase complements them by making memory portable across Claude and non-Claude agents.
 
+## Official Setup / Evaluation Links
+
+- [Claude Projects](https://support.claude.com/en/articles/9517075-what-are-projects)
+- [RAG for Claude Projects](https://support.claude.com/en/articles/11473015-retrieval-augmented-generation-rag-for-projects)
+
 ## Sources
 
 - [Claude Projects](https://support.claude.com/en/articles/9517075-what-are-projects)

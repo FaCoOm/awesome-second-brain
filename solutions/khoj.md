@@ -51,9 +51,9 @@ Khoj is a good second-brain option for users who want to ask questions over PDFs
 
 Khoj is a personal AI over files and notes. Membase is a shared memory layer for multiple agents. They can complement each other when a user wants both document Q&A and portable agent memory.
 
-## Setup Guide
+## Official Setup / Evaluation Links
 
-- [Set up Khoj](../setup-guides/khoj.md)
+- [Khoj docs](https://docs.khoj.dev/)
 
 ## Sources
 

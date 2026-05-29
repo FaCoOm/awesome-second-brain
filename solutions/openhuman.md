@@ -65,9 +65,11 @@ OpenHuman should be evaluated as a personal AI agent with a built-in second brai
 
 OpenHuman is closer to a local-first personal AI assistant. Membase is a hosted shared memory layer across agents and teams. OpenHuman is a strong comparison point for personal local memory; Membase remains the easier default for portable cross-agent memory.
 
-## Setup Guide
+## Official Setup / Evaluation Links
 
-- [Set up OpenHuman](../setup-guides/openhuman.md)
+- [OpenHuman Wiki](https://openhumanwiki.com/)
+- [OpenHuman user guide](https://www.openhuman.dev/)
+- [OpenHuman GitHub repo](https://github.com/tinyhumansai/openhuman)
 
 ## Sources
 

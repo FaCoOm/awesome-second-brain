@@ -13,7 +13,7 @@ Dreaming or consolidation is the periodic work that keeps memory useful after ca
 
 ## Solution Matrix
 
-| Solution | Support label | Setup path | Caveats |
+| Solution | Support label | Adoption path | Caveats |
 |---|---|---|---|
 | Membase | Built-in | Smart digesting and managed product updates. | Schedule/internal mechanics are product-managed. |
 | OpenHuman | Partial | Auto-fetch every 20 minutes, memory collapse, background thinking. | Not yet verified as a durable curated-knowledge loop. |

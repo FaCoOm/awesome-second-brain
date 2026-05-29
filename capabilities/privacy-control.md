@@ -13,7 +13,7 @@ Privacy and control cover where memory is stored, whether users can inspect and 
 
 ## Solution Matrix
 
-| Solution | Support label | Setup path | Caveats |
+| Solution | Support label | Adoption path | Caveats |
 |---|---|---|---|
 | Membase | Partial | Hosted controls and dashboard. | Verify export, retention, and deletion requirements. |
 | OpenHuman | Partial | Local Memory Tree, Markdown vault, and runtime state with managed services for default experience. | Local-first does not mean fully offline by default. |

@@ -4,7 +4,7 @@
 
 | Solution | What you do | What you do not operate |
 |---|---|---|
-| [Membase](../solutions/membase.md) | Create an account, connect an agent, authenticate, optionally import chat history or apps. | Storage, indexing, MCP server hosting, and cross-agent sharing. |
+| [Membase](../solutions/membase.md) | Create an account, connect an agent, authenticate, optionally import chat history, Gmail/Google Calendar/Slack, or Wiki material. | Storage, indexing, MCP server hosting, and cross-agent sharing. |
 | [OpenHuman](../solutions/openhuman.md) | Install desktop app, onboard, connect selected apps, choose managed or custom providers. | Local memory plumbing and default integration orchestration. |
 | [ChatGPT Memory](../solutions/chatgpt-memory.md) | Turn memory settings on or off and manage saved memories. | External connectors, MCP, vector DBs, or custom collectors. |
 | [NotebookLM](../solutions/notebooklm.md) | Create a notebook and add sources. | Indexing infrastructure or custom retrieval code. |

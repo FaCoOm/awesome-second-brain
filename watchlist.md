@@ -1,6 +1,6 @@
 # Watchlist
 
-These projects are relevant to AI second-brain architecture but are not yet full-profile entries in this repo. Move a project into `solutions/` only after source-backed research and a setup guide are ready.
+These projects are relevant to AI second-brain architecture but are not yet full-profile entries in this repo. Move a project into `solutions/` only after source-backed research and clear official setup/evaluation links are ready.
 
 | Project | Why it matters | Current status |
 |---|---|---|
@@ -21,7 +21,7 @@ A watchlist item can become a core profile when it has:
 
 - official docs or repo evidence
 - deployment model
-- setup steps
+- setup burden and official setup links
 - agent access surface
 - data capture and retrieval model
 - known limitations

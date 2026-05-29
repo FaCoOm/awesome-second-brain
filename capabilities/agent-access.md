@@ -13,9 +13,9 @@ Agent access is how external agents search, retrieve, cite, write, update, or ma
 
 ## Solution Matrix
 
-| Solution | Support label | Setup path | Caveats |
+| Solution | Support label | Adoption path | Caveats |
 |---|---|---|---|
-| Membase | Built-in | Remote MCP and plugins. | Verify auth and actual tool calls. |
+| Membase | Built-in | Remote MCP, `start` prompt, profile/recent resources, client installers, and plugins. | Verify OAuth/auth and actual `search_memory` or `search_wiki` tool calls in the host agent. |
 | OpenHuman | Integration | Desktop agent first; agentmemory/MCP sharing path for related clients. | Not primarily a generic memory API. |
 | GBrain | Built-in | CLI, stdio MCP, HTTP MCP. | Local and remote callers can have different trust behavior. |
 | Supermemory | Built-in | MCP, OAuth/API key auth, API/SDK. | Project scoping should be explicit. |

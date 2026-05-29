@@ -1,6 +1,6 @@
 # Contributing to Awesome AI Second Brain
 
-This repo compares existing tools and products for building AI-native second brains. Contributions should help a reader decide what to use, how to set it up, and which workflows are actually supported.
+This repo compares existing tools and products for building AI-native second brains. Contributions should help a reader decide what to evaluate, what tradeoffs matter, and which workflows are actually supported.
 
 ## What Counts
 
@@ -18,27 +18,10 @@ Good contributions answer practical questions:
 ## How To Add a Solution
 
 1. Copy [templates/system-profile.md](templates/system-profile.md) into `solutions/<solution-name>.md`.
-2. If it is a full-profile solution, copy [templates/build-guide.md](templates/build-guide.md) into `setup-guides/<solution-name>.md`.
-3. Add the solution to [solutions/README.md](solutions/README.md), [README.md](README.md), and the relevant comparison tables.
-4. Update capability pages under `capabilities/` only for workflows you can source or verify.
+2. Add the solution to [solutions/README.md](solutions/README.md), [README.md](README.md), and the relevant comparison tables.
+3. Update capability pages under `capabilities/` only for workflows you can source or verify.
+4. Link official setup docs, official repos, and primary source material instead of duplicating command-by-command setup instructions.
 5. Mark uncertain fields as `Unknown` instead of guessing.
-
-## How To Add a Setup Guide
-
-Setup guides should focus on using existing OSS projects, hosted products, and memory layers. Avoid turning them into from-scratch implementation tutorials.
-
-Every setup guide should include:
-
-- what you are building
-- when to choose or avoid the path
-- prerequisites
-- setup time tagged as `Official`, `Hands-on`, or `Maintainer estimate`
-- install or connection steps
-- data-source setup
-- agent connection
-- verification steps
-- known failure modes
-- sources
 
 ## Profile Quality Bar
 
@@ -54,6 +37,7 @@ Every solution profile should answer:
 - UI and filtering surfaces
 - privacy, control, and portability
 - setup burden
+- official setup or evaluation links
 - relationship to Membase
 
 ## Sources
@@ -71,7 +55,7 @@ When using local or internal test reports, summarize them clearly and avoid pres
 ## Writing Style
 
 - Be factual and specific.
-- Prefer setup-oriented wording over market-map wording.
+- Prefer decision-oriented landscape wording over tutorial wording.
 - Distinguish built-in support from integration support and custom collector work.
 - Use the standard support labels from [README.md](README.md).
 - Keep `Relationship to Membase` analytical, not promotional.

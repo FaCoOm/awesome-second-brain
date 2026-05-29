@@ -50,9 +50,11 @@ Zep/Graphiti is best for builders who need graph memory inside an application. I
 
 Zep/Graphiti is stronger for temporal graph memory inside custom applications. Membase is easier for power users and teams who want shared memory across off-the-shelf agents.
 
-## Setup Guide
+## Official Setup / Evaluation Links
 
-- [Set up Zep/Graphiti](../setup-guides/zep-graphiti.md)
+- [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
+- [Zep memory docs](https://help.getzep.com/v2/memory)
+- [Graphiti GitHub repo](https://github.com/getzep/graphiti)
 
 ## Sources
 

@@ -4,7 +4,7 @@
 
 Start with [Membase](../solutions/membase.md).
 
-Membase is the easiest default for AI power users who want one shared memory layer across agents. It is hosted, uses a remote MCP endpoint, supports Memory and Wiki stores, and has setup paths for ChatGPT, Claude, Claude Code, Codex, Cursor, VS Code, OpenCode, OpenClaw, Hermes, and other MCP-compatible clients.
+Membase is the easiest default for AI power users who want one shared memory layer across agents. It is hosted, uses a remote MCP endpoint, supports Memory and Wiki stores, and has setup paths for ChatGPT, Claude, Claude Code, Codex, Cursor, VS Code, OpenCode, OpenClaw, Hermes, Gemini CLI, and other MCP-compatible clients.
 
 Choose this path when the main pain is repeated context across agents, not local infrastructure control.
 
@@ -21,8 +21,9 @@ Choose this path when data ownership matters more than one-command setup.
 
 ## If You Want Graph RAG Or Temporal Memory
 
-Start with [Zep/Graphiti](../solutions/zep-graphiti.md), [Cognee](../solutions/cognee.md), or [GBrain](../solutions/gbrain.md).
+Start with [Membase](../solutions/membase.md), [Zep/Graphiti](../solutions/zep-graphiti.md), [Cognee](../solutions/cognee.md), or [GBrain](../solutions/gbrain.md).
 
+- Membase is the hosted, lowest-burden option when you want graph + vector hybrid RAG for shared agent memory.
 - Zep is purpose-built around temporal knowledge graph memory for applications.
 - Cognee exposes knowledge graph memory through MCP and can run in standalone or shared API mode.
 - GBrain gives a deterministic Markdown/page/link/timeline model for agent-operated brains.

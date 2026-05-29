@@ -10,7 +10,7 @@ Unknown.
 
 ## Solution Matrix
 
-| Solution | Support label | Setup path | Caveats |
+| Solution | Support label | Adoption path | Caveats |
 |---|---|---|---|
 | Unknown | Unknown | Unknown | Unknown |
 

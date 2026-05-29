@@ -4,7 +4,7 @@ Labels: `Built-in`, `Integration`, `Custom collector`, `Partial`, `Not primary f
 
 | Solution | Deployment | Data capture | Auto-organization | Consolidation / dreaming | Retrieval model | Agent access | Workspace / team | UI / filtering | Setup burden | Setup time |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [Membase](../solutions/membase.md) | Hosted | Built-in + Integration | Built-in | Built-in | Knowledge graph + hybrid Wiki search | MCP + plugins | Built-in | Built-in | Low | Official: under 5 min |
+| [Membase](../solutions/membase.md) | Hosted | Built-in + Integration | Built-in | Built-in | Graph + vector hybrid RAG for Memory; hybrid Wiki search | MCP + plugins | Built-in | Built-in | Low | Official: under 5 min |
 | [OpenHuman](../solutions/openhuman.md) | Desktop local + managed services | Built-in + Integration | Built-in | Partial | Local Memory Tree + semantic search | Built-in agent + MCP/agentmemory path | Not primary fit | Built-in | Low-medium | Official: minutes |
 | [GBrain](../solutions/gbrain.md) | Local/self-hosted | Built-in + Custom collector | Built-in | Built-in | Keyword + vector/hybrid + graph signals | CLI + MCP | Integration | Partial | Medium-high | Hands-on: 30 min+ |
 | [Supermemory](../solutions/supermemory.md) | Hosted + API | Built-in + Integration | Built-in | Partial | Memory API + RAG + memory graph | MCP + API + SDK | Integration | Built-in | Low-medium | Official: minutes |

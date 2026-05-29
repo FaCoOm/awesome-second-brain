@@ -50,9 +50,9 @@ Cognee is a strong option when the user wants persistent AI memory and graph con
 
 Cognee is a graph-memory alternative for users who want MCP plus local/API deployment choices. Membase is easier for hosted cross-agent personal/team memory with Memory and Wiki stores.
 
-## Setup Guide
+## Official Setup / Evaluation Links
 
-- [Set up Cognee](../setup-guides/cognee.md)
+- [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Setup and operations cover first install, authentication, source sync, indexing,
 
 ## Solution Matrix
 
-| Solution | Support label | Setup path | Caveats |
+| Solution | Support label | Adoption path | Caveats |
 |---|---|---|---|
 | Membase | Built-in | Account + agent connection. | Fastest path, hosted tradeoff. |
 | OpenHuman | Built-in + Integration | Native desktop install, onboarding, app connections, provider choices. | Early beta; connector setup can expand scope. |

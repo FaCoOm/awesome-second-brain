@@ -13,9 +13,9 @@ Auto organization is the system's ability to turn raw context into durable knowl
 
 ## Solution Matrix
 
-| Solution | Support label | Setup path | Caveats |
+| Solution | Support label | Adoption path | Caveats |
 |---|---|---|---|
-| Membase | Built-in | Memory knowledge graph and linked Wiki documents. | Internal product behavior is managed by Membase. |
+| Membase | Built-in | Memory graph extraction plus linked Wiki documents. | Retrieval also uses vector search; internal product behavior is managed by Membase. |
 | OpenHuman | Built-in | Memory Tree, semantic search, Markdown vault, token compression, collapse flows. | Exact consolidation quality should be tested. |
 | GBrain | Built-in | Schema packs, page type inference, link/timeline/fact extraction. | Quality improves with structured Markdown and review. |
 | Supermemory | Built-in | Processing pipeline, memory graph, metadata/filtering. | Exact graph semantics should be verified per use case. |
@@ -28,5 +28,6 @@ Auto organization is the system's ability to turn raw context into durable knowl
 ## Sources
 
 - [Membase overview](https://docs.membase.so/)
+- [Membase OpenClaw connector](https://docs.membase.so/connectors/openclaw)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

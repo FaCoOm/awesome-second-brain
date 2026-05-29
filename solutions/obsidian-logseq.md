@@ -51,9 +51,11 @@ This path is best when the user wants their notes to remain inspectable local fi
 
 Obsidian/Logseq can be the user's source-of-truth notes. Membase can import or connect those notes into a shared Memory/Wiki layer that agents can use across tools.
 
-## Setup Guide
+## Official Setup / Evaluation Links
 
-- [Set up Obsidian/Logseq + AI bridge](../setup-guides/obsidian-logseq.md)
+- [Obsidian help](https://obsidian.md/help)
+- [Obsidian core plugins](https://obsidian.md/help/plugins)
+- [Logseq](https://logseq.com/)
 
 ## Sources
 

@@ -13,9 +13,9 @@ Data capture is how raw context enters the second brain: agent conversations, no
 
 ## Solution Matrix
 
-| Solution | Support label | Setup path | Caveats |
+| Solution | Support label | Adoption path | Caveats |
 |---|---|---|---|
-| Membase | Built-in + Integration | Agent writes, chat import, Gmail/Calendar/Slack, Obsidian import. | Verify source and retention settings for the target account. |
+| Membase | Built-in + Integration | Agent writes, ChatGPT/Claude/Gemini chat import, Gmail/Google Calendar/Slack, and account-dependent Wiki import/sync surfaces for Markdown, Obsidian-style vaults, or Notion. | Do not present Drive, GitHub, Notion, or Obsidian as universally available without checking current docs and the target account UI. |
 | OpenHuman | Built-in + Integration | 118+ OAuth integrations, auto-fetch, local Memory Tree, Markdown vault. | Beta behavior and connector reliability need hands-on verification. |
 | GBrain | Built-in + Custom collector | Markdown import, capture, webhooks, source-specific collectors. | External APIs require collector work. |
 | Supermemory | Built-in + Integration | MCP/API plus Drive, Gmail, Notion, OneDrive, GitHub, Web Crawler. | Connector permissions and sync state matter. |

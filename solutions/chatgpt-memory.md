@@ -50,6 +50,10 @@ ChatGPT Memory is useful inside ChatGPT, but it is not a portable second-brain b
 
 ChatGPT Memory is attached memory: valuable inside ChatGPT, but not shared across agents by default. Membase fills the portable/shared layer gap.
 
+## Official Setup / Evaluation Links
+
+- [ChatGPT Memory FAQ](https://help.openai.com/en/articles/8590148-memory-faq)
+
 ## Sources
 
 - [ChatGPT Memory FAQ](https://help.openai.com/en/articles/8590148-memory-faq)

@@ -50,6 +50,10 @@ NotebookLM is strong for bounded research over known sources. It is weaker as a 
 
 NotebookLM is a strong research notebook. Membase is a living shared memory layer for agents. Use NotebookLM when the source set is bounded; use Membase when context should compound across agents and sessions.
 
+## Official Setup / Evaluation Links
+
+- [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)
+
 ## Sources
 
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)

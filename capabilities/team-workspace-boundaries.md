@@ -13,7 +13,7 @@ Boundaries define who can read, write, update, delete, and share memory across p
 
 ## Solution Matrix
 
-| Solution | Support label | Setup path | Caveats |
+| Solution | Support label | Adoption path | Caveats |
 |---|---|---|---|
 | Membase | Built-in | Shared Memory/Wiki and connected agents. | Verify governance details for the target plan. |
 | OpenHuman | Not primary fit | Personal local app and connected sources. | Team/workspace governance is not the core fit. |

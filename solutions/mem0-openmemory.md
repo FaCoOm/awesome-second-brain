@@ -51,9 +51,11 @@ Mem0 is strongest as infrastructure for products and agents, not as a consumer n
 
 Mem0 is a developer-oriented memory engine. Membase is more directly packaged for AI power users who want shared memory across daily agents with low setup burden.
 
-## Setup Guide
+## Official Setup / Evaluation Links
 
-- [Set up Mem0/OpenMemory](../setup-guides/mem0-openmemory.md)
+- [Mem0 MCP](https://docs.mem0.ai/platform/mem0-mcp)
+- [Mem0 Platform overview](https://docs.mem0.ai/platform/overview)
+- [Mem0 open-source overview](https://docs.mem0.ai/open-source/overview)
 
 ## Sources
 

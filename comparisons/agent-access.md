@@ -2,7 +2,7 @@
 
 | Solution | MCP | API / SDK | CLI | Plugins / clients | Write-back | Notes |
 |---|---|---|---|---|---|---|
-| [Membase](../solutions/membase.md) | Built-in | Partial | Integration installer | Claude Code, OpenClaw, Hermes, Codex, Cursor, VS Code, OpenCode, ChatGPT, Claude | Built-in | Remote MCP exposes Memory and Wiki tools. |
+| [Membase](../solutions/membase.md) | Built-in | Partial | Integration installer | Claude Code, OpenClaw, Hermes, Codex, Cursor, VS Code, OpenCode, ChatGPT, Claude, Gemini CLI | Built-in | Remote MCP exposes Memory tools, Wiki CRUD/search tools, profile/recent resources, and a `start` prompt. |
 | [OpenHuman](../solutions/openhuman.md) | Integration | Partial | Not primary fit | OpenHuman desktop agent and agentmemory/MCP-related sharing path | Built-in inside OpenHuman | Primarily its own agent experience, not a generic memory API. |
 | [GBrain](../solutions/gbrain.md) | Built-in | Integration | Built-in | Agent skills and MCP clients | Built-in | Verify actual tool calls; local and remote callers can have different trust behavior. |
 | [Supermemory](../solutions/supermemory.md) | Built-in | Built-in | Not primary fit | MCP-compatible clients | Built-in | Supports OAuth and API key auth for MCP. |

@@ -10,7 +10,7 @@
 - Primary users: AI agent operators, local-first brain builders, developers wiring memory into agents
 - Best second-brain role: Local or self-hosted agent brain
 - Last reviewed: 2026-05-29
-- Reviewed evidence: local checkout `0.41.26.0`, commit `42d99b6f`, plus local dogfooding reports
+- Reviewed evidence: local checkout `0.41.26.0`, commit `42d99b6f`, and private 2026-05-29 dogfooding handoff notes
 
 ## One-line Summary
 
@@ -25,13 +25,13 @@ GBrain is best understood as a brain database and operations layer for an agent-
 | Area | Evaluation |
 |---|---|
 | Deployment | Local PGLite; Postgres/Supabase and HTTP MCP for team or remote use. |
-| Data capture | Built-in Markdown import, capture, file/stdin/webhook paths; Gmail/Calendar/Slack/Notion-style sources need recipes or custom collectors. |
-| Auto-organization | Built-in schema packs, page type inference, link extraction, timeline extraction, fact/take workflows, and deterministic graph signals. |
+| Data capture | Built-in Markdown import, capture, file/stdin, HTTP ingest, inbox folder, file watcher, and skillpack ingestion surfaces; external SaaS sources need recipes or custom collectors. |
+| Auto-organization | Built-in schema packs, page type inference, link extraction, timeline extraction, fact/take workflows, and deterministic graph signals. It is not a magic semantic classifier for arbitrary raw text. |
 | Consolidation / dreaming | Built-in `gbrain dream`, `gbrain autopilot`, sync/embed jobs, and maintenance phases. |
-| Retrieval model | Keyword search, vector/hybrid query when embeddings are configured, graph/link signals, and `think` synthesis. |
+| Retrieval model | Keyword search, RRF-style hybrid query when embeddings are configured, graph/link signals, timeline/fact retrieval, and `think` synthesis. |
 | Agent access | Built-in CLI plus stdio/HTTP MCP. |
-| Workspace / team support | Strong but operational: sources, Postgres/Supabase, OAuth clients, federated reads, and HTTP MCP. |
-| UI / filtering | CLI-first and operations-focused. Human UI quality depends on the chosen setup. |
+| Workspace / team support | Strong but operational: sources, separate brains, mounts/thin clients, Postgres/Supabase, OAuth clients, federated reads, and HTTP MCP. |
+| UI / filtering | Operations UI exists for HTTP MCP admin, agents, request logs, jobs, calibration, and live activity. A Notion/Roam-style visual knowledge UI is not the primary surface. |
 | Privacy / control | Strong local/self-hosted control with Markdown/git-backed source options. |
 | Setup burden | Medium-high. Useful active-context setups require sync, embeddings, dream/autopilot, collectors, and verification. |
 
@@ -42,12 +42,15 @@ GBrain is best understood as a brain database and operations layer for an agent-
 - Real maintenance loop through dream/autopilot.
 - CLI and MCP make it agent-operable.
 - Deterministic graph behavior is easier to debug than pure semantic linking.
+- Source/type/tag/date filters and source-scoped slugs make multi-source brains analyzable.
 
 ## Limitations
 
 - External app ingestion is not one-click; collectors must own OAuth, pagination, rate limits, and normalization.
 - Imported is not the same as embedded or curated.
 - Slack/Gmail/Calendar quality depends on connector health and source-specific pipelines.
+- Gmail and Calendar recipes are viable, but the handoff test still required custom collectors; Slack live backfill failed through a shared-token gateway and needed a direct-token collector.
+- Notion export import can make Markdown searchable, but CSV/database properties and relation graphs need extra mapping.
 - Useful operation requires ongoing jobs and monitoring.
 
 ## Best For
@@ -66,9 +69,12 @@ GBrain is best understood as a brain database and operations layer for an agent-
 
 GBrain represents the local/self-hosted brain pattern. Membase represents the hosted shared-memory pattern. GBrain is stronger when users want control and operability; Membase is easier when users want shared memory across agents without running the stack.
 
-## Setup Guide
+## Official Setup / Evaluation Links
 
-- [Set up GBrain](../setup-guides/gbrain.md)
+- [GBrain installation guide for AI agents](https://github.com/garrytan/gbrain/blob/master/INSTALL_FOR_AGENTS.md)
+- [GBrain integrations docs](https://github.com/garrytan/gbrain/blob/master/docs/integrations/README.md)
+- [GBrain live sync guide](https://github.com/garrytan/gbrain/blob/master/docs/guides/live-sync.md)
+- [GBrain company brain tutorial](https://github.com/garrytan/gbrain/blob/master/docs/tutorials/company-brain.md)
 
 ## Sources
 
@@ -77,4 +83,4 @@ GBrain represents the local/self-hosted brain pattern. Membase represents the ho
 - [GBrain integrations docs](https://github.com/garrytan/gbrain/blob/master/docs/integrations/README.md)
 - [GBrain live sync guide](https://github.com/garrytan/gbrain/blob/master/docs/guides/live-sync.md)
 - [GBrain company brain tutorial](https://github.com/garrytan/gbrain/blob/master/docs/tutorials/company-brain.md)
-- Internal dogfooding and Wiki analysis reports listed in the GBrain setup guide.
+- Private 2026-05-29 dogfooding handoff notes summarized in this profile.
