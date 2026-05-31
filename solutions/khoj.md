@@ -9,7 +9,7 @@
 - Deployment: Khoj Cloud or self-hosted
 - Primary users: People who want a personal AI over files, notes, and documents
 - Best second-brain role: Personal AI over existing knowledge sources
-- Last reviewed: 2026-05-29
+- Last reviewed: 2026-05-31
 
 ## One-line Summary
 

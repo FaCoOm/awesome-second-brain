@@ -15,16 +15,16 @@ Retrieval and use cover how the system finds relevant memory, whether it can pre
 
 | Solution | Support label | Adoption path | Caveats |
 |---|---|---|---|
-| Membase | Built-in | Graph + vector hybrid RAG for Memory; hybrid Wiki search with source/project/date filters. | Verify source availability and current connector behavior for the target account. |
-| OpenHuman | Built-in | Local Memory Tree, semantic search, Markdown vault, and context compression. | Source/provenance behavior needs hands-on verification. |
-| GBrain | Built-in | Keyword search, vector/hybrid query, graph/link signals, timeline/fact retrieval, and `think` synthesis. | Quality depends on sync, embeddings, and curated source structure. |
-| Supermemory | Built-in | Search, RAG, memory graph, project scoping, metadata, and API filters. | Connector and project scoping must be configured carefully. |
+| Membase | Built-in | Graph + vector hybrid RAG for Memory with source/project/date filters; vector + keyword hybrid search for Wiki with collection scoping. | Dashboard chat and connected agents can use both stores; verify source availability for the target account. |
+| OpenHuman | Built-in | Local Memory Tree, Obsidian-compatible Markdown vault, memory graph, and context compression. | Source/provenance behavior needs hands-on verification. |
+| GBrain | Built-in | `search` for cheap hybrid retrieval, `query` for expanded hybrid retrieval with filters, graph/link signals, timeline/fact retrieval, and `think` synthesis with citations, conflicts, and gap analysis. | Quality depends on sync, embeddings, curated source structure, and reranker/provider configuration. |
+| Supermemory | Built-in | Hybrid search across extracted memories and document chunks, graph memory, project/container scoping, metadata, and API filters. | Connector and project scoping must be configured carefully. |
 | Mem0/OpenMemory | Built-in | Layered memory search with user IDs, run IDs, and metadata. | App owners define grounding and source metadata quality. |
 | Zep/Graphiti | Built-in | Temporal knowledge graph, facts, episodes, and Graph RAG. | Best when application data is modeled explicitly. |
 | Cognee | Built-in | Knowledge graph memory and recall tools. | Retrieval quality depends on ingestion and graph processing mode. |
 | Khoj | Built-in | Natural-language search and chat over files and notes. | Strong source Q&A, weaker as a broad second-brain layer across tools. |
 | Obsidian/Logseq + AI bridge | Integration | Local search, backlinks, graph views, and bridge-provided RAG/search. | Grounding quality depends on the selected bridge. |
-| ChatGPT Memory | Partial | Platform memory and chat history reference. | Source and retrieval internals are platform-controlled. |
+| ChatGPT Memory | Partial | Platform memory, chat history reference, and supported Memory Sources. | Source and retrieval internals are platform-controlled and plan/region dependent. |
 | Claude Projects/Claude Code | Built-in | Project knowledge search/RAG and Claude context surfaces. | Grounding is scoped to Claude contexts and plan behavior. |
 | NotebookLM | Built-in | Source-grounded notebook retrieval and source selection. | Strong for bounded source sets, weak as a live second brain across workflows. |
 

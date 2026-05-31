@@ -17,8 +17,8 @@ Memory evolution is the ongoing work that keeps a second brain useful after capt
 |---|---|---|---|
 | Membase | Built-in | Smart digesting and managed product updates. | Schedule/internal mechanics are product-managed. |
 | OpenHuman | Partial | Auto-fetch every 20 minutes, memory collapse, background thinking. | Not yet verified as a durable curated-knowledge loop. |
-| GBrain | Built-in | `gbrain dream`, `gbrain autopilot`, sync/embed jobs. | User operates jobs and verifies quality. |
-| Supermemory | Partial | Managed processing and sync pipeline. | Not primarily framed as a user-operated dream loop. |
+| GBrain | Built-in | `gbrain dream` maintenance cycle, `gbrain autopilot`, sync/embed jobs. | User operates jobs and verifies quality. |
+| Supermemory | Built-in | Product-managed graph memory updates, relationship tracking, and automatic forgetting. | Not exposed as a user-operated dream loop. |
 | Mem0/OpenMemory | Partial | Memory promotion/search behavior and platform processing. | Explicit consolidation policy is app-owned. |
 | Zep/Graphiti | Built-in | Temporal graph updates, facts, summaries. | Application must ingest updates correctly. |
 | Cognee | Built-in | `improve` and graph processing workflows. | Terminology differs from dreaming. |

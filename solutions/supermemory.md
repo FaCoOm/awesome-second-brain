@@ -9,7 +9,7 @@
 - Deployment: Hosted MCP and API platform
 - Primary users: Developers and AI power users who want hosted memory across tools
 - Best second-brain role: Hosted memory API and connector layer
-- Last reviewed: 2026-05-29
+- Last reviewed: 2026-05-31
 
 ## One-line Summary
 
@@ -26,7 +26,7 @@ Supermemory is a strong fit when the user wants hosted memory with developer-fac
 | Deployment / ownership | Hosted MCP at `https://mcp.supermemory.ai/mcp` plus API platform. |
 | Context capture | Built-in connectors for Google Drive, Gmail, Notion, OneDrive, GitHub, and Web Crawler; API ingestion for custom apps. |
 | Knowledge organization | Built-in document processing, memory graph, metadata, and filtering concepts. |
-| Memory evolution | Partial. The platform processes and indexes synced content, but a user-visible dreaming loop is not the primary positioning. |
+| Memory evolution | Built-in product-managed graph memory updates, relationship tracking, and automatic forgetting. This is not exposed as a user-operated dreaming loop. |
 | Retrieval / use | Search, RAG, memory graph, and API retrieval surfaces. |
 | Agent activation / write-back | Built-in MCP, OAuth/API-key auth, API, SDK, and supported MCP clients. |
 | Personal / team scope | Project scoping and container tags help separate contexts. Team governance should be verified for the target plan. |
@@ -45,7 +45,7 @@ Supermemory is a strong fit when the user wants hosted memory with developer-fac
 
 - Hosted platform by default.
 - Less local-control-oriented than GBrain, Khoj, or Obsidian/Logseq.
-- Consolidation behavior is less explicit than systems with named dream/autopilot loops.
+- Memory evolution is product-managed rather than exposed as a named user-operated dream/autopilot loop.
 
 ## Best For
 
@@ -68,6 +68,8 @@ Supermemory offers a strong hosted memory API and connector story. The tradeoff 
 - [Supermemory MCP](https://supermemory.ai/mcp/)
 - [Supermemory MCP setup](https://supermemory.ai/docs/supermemory-mcp/setup)
 - [Supermemory connectors](https://supermemory.ai/docs/connectors/overview)
+- [Supermemory graph memory](https://supermemory.ai/docs/concepts/graph-memory)
+- [Supermemory search](https://supermemory.ai/docs/search)
 
 ## Sources
 

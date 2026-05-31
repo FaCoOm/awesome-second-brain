@@ -15,21 +15,22 @@ Feedback and correction cover whether users can see what the system knows, filte
 
 | Solution | Support label | Adoption path | Caveats |
 |---|---|---|---|
-| Membase | Built-in | Dashboard for sources, chat, memories, Wiki graph/table views, filters, and agent setup. | Export, retention, and plan-specific governance should be verified. |
+| Membase | Built-in | Dashboard for sources, Chat in Dashboard, memories, Memory graph/table views, Wiki graph/table views, filters, and agent setup. | Memories can be browsed, moved to projects, and deleted, but not manually created/edited from the Memories tab yet; export, retention, and plan-specific governance should be verified. |
 | OpenHuman | Built-in | Desktop UI, Memory Tree, Markdown vault, onboarding, voice, and app surfaces. | Early beta behavior should be tested directly. |
-| GBrain | Partial | CLI and operations UI for HTTP MCP admin, jobs, request logs, calibration, and live activity. | Not a polished Notion/Roam-style knowledge UI. |
+| GBrain | Partial | CLI plus HTTP admin surfaces for client registration, request logs, jobs, live activity, and scoped operations. | Useful for operations inspection, not a polished Notion/Roam-style knowledge UI. |
 | Supermemory | Built-in | Hosted app, console, connector status, projects, and filters. | Team/admin inspection depends on plan and setup. |
 | Mem0/OpenMemory | Built-in | Platform dashboard and self-hosted dashboard/server paths. | Application owners still define user-facing review flows. |
 | Zep/Graphiti | Partial | Developer/platform UI and graph APIs. | End-user second-brain UI is not the primary surface. |
 | Cognee | Partial | Developer/admin surfaces and MCP tool references. | End-user inspection should be verified for the target workflow. |
 | Khoj | Built-in | Web, desktop, browser, and editor/client interfaces. | Inspection depends on source and deployment choices. |
 | Obsidian/Logseq + AI bridge | Built-in | Graph, backlinks, tags, properties, search, pages, and blocks. | Agent writes need review discipline. |
-| ChatGPT Memory | Built-in | Settings, Manage memories, memory search/sort controls, and memory sources. | Only covers ChatGPT platform memory. |
+| ChatGPT Memory | Built-in | Settings, Manage memories, memory search/sort controls, memory history restore, and Memory Sources. | Only covers ChatGPT platform memory and supported platform sources. |
 | Claude Projects/Claude Code | Built-in | Claude project UI, knowledge base, instructions, sharing controls, and RAG indicators. | Project visibility depends on workspace plan and permissions. |
-| NotebookLM | Built-in | Notebook UI, sources panel, source selection, labels, and generated artifacts. | Strong inspection for imported sources, not full second-brain operations. |
+| NotebookLM | Built-in | Notebook UI, sources panel, source selection, labels/categories, and generated artifacts. | Strong inspection for imported sources, not full second-brain operations. |
 
 ## Sources
 
-- [Membase memory management](https://docs.membase.so/features/memory-management)
+- [Membase Memory](https://docs.membase.so/features/memory)
+- [Membase Chat in Dashboard](https://docs.membase.so/features/chat)
 - [ChatGPT Memory FAQ](https://help.openai.com/en/articles/8590148-memory-faq)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)

@@ -2,7 +2,7 @@
 
 ## What This Capability Means
 
-Agent activation and write-back define how AI tools search, retrieve, cite, write, update, or maintain the second brain while doing work.
+Agent activation and write-back define how AI tools search, retrieve, cite, write, update, or maintain the second brain while doing work. Some systems also expose a first-party chat surface, which matters when users want to query the brain before wiring up an external agent.
 
 ## Evaluation Questions
 

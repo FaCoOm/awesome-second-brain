@@ -31,11 +31,11 @@ Use `setup-guides/` for verified setup paths and `examples/` for scenario-level 
 
 Every solution profile should answer:
 
-- deployment and control model
-- context capture model
-- knowledge organization model
-- consolidation or maintenance model
-- retrieval and grounding model
+- deployment and ownership summary
+- context capture behavior
+- knowledge organization behavior
+- consolidation or maintenance behavior
+- retrieval and grounding behavior
 - AI-tool activation and write-back surfaces
 - workspace and team support
 - UI, inspection, and correction surfaces
@@ -58,11 +58,14 @@ Use primary sources whenever possible:
 
 When using local or internal test reports, summarize them clearly and avoid presenting unverified assumptions as product claims.
 
+Closed-source and hosted products are welcome. Contributors do not need to prove or disclose internal models, prompts, ranking logic, graph construction, or infrastructure details. Describe the public behavior that can be verified from docs, product UI, APIs, repos, or hands-on testing. Mark private or unavailable details as `Not disclosed` or `Unknown`.
+
 ## Writing Style
 
 - Be factual and specific.
 - Prefer decision-oriented landscape wording over tutorial wording.
 - Distinguish built-in support from integration support and custom collector work.
+- Distinguish observable product behavior from undisclosed internals.
 - Use the standard support labels from [README.md](README.md).
 - Keep recommendations scoped to the workflow they are best for, and explain tradeoffs without promotional framing.
 

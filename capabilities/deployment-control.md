@@ -17,7 +17,7 @@ Deployment and ownership define where memory lives, who operates storage and ind
 |---|---|---|---|
 | Membase | Hosted | Account + hosted memory layer and remote MCP. | Fast setup, less infrastructure control. |
 | OpenHuman | Hybrid local + managed services | Desktop local state with managed sign-in, model routing, search proxying, and OAuth flows. | Local-first does not mean fully offline by default. |
-| GBrain | Local/self-hosted | Local PGLite, Postgres/Supabase, and stdio/HTTP MCP paths. | User operates sync, jobs, and storage. |
+| GBrain | Local/self-hosted | Local PGLite for personal brains; Postgres/Supabase plus stdio/HTTP MCP for shared, large, or remote deployments. | PGLite is best for single-user local operation; shared/team deployments add database, OAuth, sync, job, and storage operations. |
 | Supermemory | Hosted + API | Hosted MCP, API, SDK, and connectors. | Self-hosting/control details should be verified for the target plan. |
 | Mem0/OpenMemory | Hosted/self-hosted | Hosted Mem0 Platform or open-source server/library path. | Self-hosting still requires memory infrastructure decisions. |
 | Zep/Graphiti | Hosted + OSS library | Zep managed platform or Graphiti library integration. | Platform and library are related but not identical surfaces. |

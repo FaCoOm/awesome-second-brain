@@ -9,7 +9,7 @@
 - Deployment: Local-first notes, optional sync/cloud services, and plugin bridges
 - Primary users: Knowledge workers who want human-owned notes as the source of truth
 - Best second-brain role: Local PKM substrate for an AI memory bridge
-- Last reviewed: 2026-05-29
+- Last reviewed: 2026-05-31
 
 ## One-line Summary
 

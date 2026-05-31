@@ -15,7 +15,7 @@ Privacy, portability, and control cover where memory is stored, whether users ca
 
 | Solution | Support label | Adoption path | Caveats |
 |---|---|---|---|
-| Membase | Partial | Hosted controls and dashboard. | Verify export, retention, and deletion requirements. |
+| Membase | Partial | Hosted controls, dashboard browsing, project assignment, and deletion flows. | Memory manual create/edit is not available from the Memories tab yet; verify export, retention, and deletion requirements. |
 | OpenHuman | Partial | Local Memory Tree, Markdown vault, and runtime state with managed services for default experience. | Local-first does not mean fully offline by default. |
 | GBrain | Built-in | Local/self-hosted files and database. | User owns operations and backups. |
 | Supermemory | Partial | Hosted app, API, connector management. | Connector deletion semantics need review. |
@@ -24,7 +24,7 @@ Privacy, portability, and control cover where memory is stored, whether users ca
 | Cognee | Built-in in local mode | Standalone local/Docker or API mode. | Shared API mode changes control boundary. |
 | Khoj | Built-in with self-hosting | Cloud or self-hosted. | Cloud convenience changes control boundary. |
 | Obsidian/Logseq + AI bridge | Built-in | Local vault/graph and backups. | Plugin permissions can expand risk. |
-| ChatGPT Memory | Partial | ChatGPT memory settings, deletion controls, and Temporary Chat. | Platform-bound and not portable by default. |
+| ChatGPT Memory | Partial | ChatGPT memory settings, deletion controls, Temporary Chat, and connected-app/source management. | Platform-bound and not portable by default; fully removing personalization context may require deleting related chats, files, or connected-app data. |
 | Claude Projects/Claude Code | Partial | Plan, project, sharing, and workspace controls. | Project knowledge remains Claude-scoped. |
 | NotebookLM | Partial | Hosted notebook controls and source management. | No local deployment for ordinary users. |
 

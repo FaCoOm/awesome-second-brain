@@ -9,29 +9,29 @@
 - Deployment: Hosted ChatGPT feature
 - Primary users: ChatGPT users
 - Best second-brain role: Platform-native personalization baseline
-- Last reviewed: 2026-05-29
+- Last reviewed: 2026-05-31
 
 ## One-line Summary
 
-ChatGPT Memory lets ChatGPT use saved memories and, when enabled, reference chat history to personalize future conversations.
+ChatGPT Memory lets ChatGPT use saved memories and, when enabled, reference chat history and supported memory sources to personalize future conversations.
 
 ## Second-Brain Fit
 
-ChatGPT Memory is useful inside ChatGPT, but it is not a complete self-evolving second brain. It is best treated as a baseline for what platform-native personalization can do before a user adopts a broader capture, organization, and retrieval layer.
+ChatGPT Memory is useful inside ChatGPT, but it is not a complete self-evolving second brain. It is best treated as a baseline for platform-native personalization, including saved memories, chat history, and plan-dependent memory sources, before a user adopts a broader capture, organization, and retrieval layer.
 
 ## Capabilities
 
 | Area | Evaluation |
 |---|---|
 | Deployment / ownership | Hosted ChatGPT platform. |
-| Context capture | Built-in saved memories and reference chat history. |
+| Context capture | Built-in saved memories and reference chat history. Memory Sources can also include custom instructions, files, and connected Gmail depending on plan, region, and settings. |
 | Knowledge organization | Built-in automatic memory management and user controls. |
 | Memory evolution | Built-in platform behavior; not exposed as a user-operated workflow. |
-| Retrieval / use | Platform-controlled memory and chat-history reference. |
+| Retrieval / use | Platform-controlled memory, chat-history reference, and memory-source personalization inside ChatGPT. |
 | Agent activation / write-back | ChatGPT platform only. |
-| Personal / team scope | Workspace/admin behavior depends on ChatGPT plan and settings. |
-| Feedback / correction | Settings, Manage memories, memory search/sort controls, and memory sources. |
-| Privacy / control | Users can ask what is remembered, delete memories, turn settings off, and use Temporary Chat. |
+| Personal / team scope | Workspace/admin behavior depends on ChatGPT plan and settings. Enterprise workspace owners can turn Memory on or off; Reference Chat History is not available to Enterprise and Edu customers according to the current FAQ. |
+| Feedback / correction | Settings, Manage memories, memory search/sort controls, memory history restore, and Memory Sources feedback. |
+| Privacy / control | Users can ask what is remembered, delete memories, turn settings off, and use Temporary Chat. Fully removing personalization context may also require deleting related chats, files, or connected-app data. |
 | Setup / operations | Low. Turn memory settings on or off. |
 
 ## Strengths
@@ -43,7 +43,7 @@ ChatGPT Memory is useful inside ChatGPT, but it is not a complete self-evolving 
 ## Limitations
 
 - Not portable across Claude, Cursor, Codex, or other AI tools.
-- Not designed as a source-ingestion or team knowledge backend.
+- Not designed as a general source-ingestion or team knowledge backend; supported files and Gmail sources are platform-, plan-, and region-scoped.
 - Retrieval and consolidation internals are not developer-operable.
 
 ## Best For

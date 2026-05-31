@@ -12,6 +12,8 @@
 [![Follow on LinkedIn](https://img.shields.io/badge/Follow%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/aristotechnologies)
 [![Join Discord](https://img.shields.io/badge/Join%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/vRp5Zh3HGu)
 
+English | [한국어](README.ko.md)
+
 </div>
 
 > Build a self-evolving second brain that understands you and your team across tools, sources, and workflows.
@@ -36,7 +38,7 @@ These entry points are a chooser, not a taxonomy. Pick the row that matches the 
 
 | If you want... | Start with | Why |
 |---|---|---|
-| The fastest end-to-end second brain | [Membase](solutions/membase.md) | Hosted setup for collecting context, organizing it into Memory and Wiki, and making it usable from AI workflows without running local collectors, graph jobs, or memory infrastructure. |
+| The fastest end-to-end second brain | [Membase](solutions/membase.md) | Hosted setup for collecting context, organizing it into Memory and Wiki, and making it usable from dashboard chat or AI workflows without running local collectors, graph jobs, or memory infrastructure. |
 | Local or self-hosted control | [OpenHuman](solutions/openhuman.md), [GBrain](solutions/gbrain.md), [Khoj](solutions/khoj.md), or [Obsidian/Logseq + AI bridge](solutions/obsidian-logseq.md) | Your data can live in local files or self-hosted services, but you own more setup, sync, indexing, and maintenance work. |
 | Strong knowledge organization or graph memory | [Membase](solutions/membase.md), [GBrain](solutions/gbrain.md), [Zep/Graphiti](solutions/zep-graphiti.md), or [Cognee](solutions/cognee.md) | These systems make entities, links, facts, graph structure, or temporal memory part of how knowledge is retrieved and maintained. |
 | A developer memory API | [Mem0/OpenMemory](solutions/mem0-openmemory.md), [Supermemory](solutions/supermemory.md), [Zep/Graphiti](solutions/zep-graphiti.md), or [Cognee](solutions/cognee.md) | They expose APIs, SDKs, MCP, or managed services for app builders. |
@@ -44,20 +46,18 @@ These entry points are a chooser, not a taxonomy. Pick the row that matches the 
 
 ## Fastest End-to-End Path
 
-[Membase](https://membase.so/?utm_source=github&utm_medium=awesome-second-brain) is the recommended default when your main goal is to get a useful second brain running quickly. It focuses on the whole loop: collect context from AI chats and connected sources, organize it into Memory and Wiki, and make that knowledge available when AI tools or teammates need it.
-
-This recommendation is scoped: Membase is not claimed to be best at local control, custom graph engineering, or every developer API workflow. It is the easiest starting point for users who want the collect-organize-use experience without operating the second-brain stack themselves.
+[Membase](https://membase.so/?utm_source=github&utm_medium=awesome-second-brain) is the recommended default when your main goal is to get a useful second brain running quickly. It focuses on the whole loop: collect context from AI chats and connected sources, organize it into Memory and Wiki, and make that knowledge available through dashboard chat or connected AI tools.
 
 ## Compact Comparison
 
 | Solution | Best second-brain role | Collect | Organize | Evolve | Use | Setup time |
 |---|---|---|---|---|---|---|
-| [Membase](solutions/membase.md) | Fastest end-to-end hosted second brain | Built-in + Integration | Built-in Memory + Wiki | Built-in | AI workflows + dashboard | Official: under 5 min |
-| [OpenHuman](solutions/openhuman.md) | Local-first personal AI assistant with memory | Built-in + Integration | Built-in Memory Tree | Partial | Desktop assistant | Official: minutes |
-| [GBrain](solutions/gbrain.md) | Local/self-hosted brain operations layer | Built-in + Custom collector | Built-in pages/graph/timeline | Built-in | CLI + MCP | Hands-on: 30 min+ |
-| [Supermemory](solutions/supermemory.md) | Hosted memory API and connector layer | Built-in + Integration | Built-in memory graph | Partial | MCP + API + SDK | Official: minutes |
+| [Membase](solutions/membase.md) | Fastest end-to-end hosted second brain | Built-in + Integration | Built-in Memory + Wiki | Built-in | Dashboard chat + AI workflows | Official: under 5 min |
+| [OpenHuman](solutions/openhuman.md) | Local-first personal AI assistant with memory | Built-in + Integration | Built-in Memory Tree + vault | Partial | Desktop assistant | Official: minutes |
+| [GBrain](solutions/gbrain.md) | Local/self-hosted brain operations layer | Built-in + Custom collector | Built-in pages/graph/timeline | Built-in | CLI + MCP | Official: ~30 min personal |
+| [Supermemory](solutions/supermemory.md) | Hosted memory API and connector layer | Built-in + Integration | Built-in graph memory | Built-in | MCP + API + SDK | Official: minutes |
 | [Mem0/OpenMemory](solutions/mem0-openmemory.md) | Developer memory engine | API + Integration | Built-in memory scopes | Partial | MCP + API + SDK | Official: minutes |
-| [Zep/Graphiti](solutions/zep-graphiti.md) | Temporal graph memory for apps | API | Built-in temporal graph | Built-in | API + SDK | Maintainer estimate: 30-60 min |
+| [Zep/Graphiti](solutions/zep-graphiti.md) | Temporal graph memory for apps | API | Built-in temporal graph | Built-in | API + SDK | Official quickstart; hands-on varies |
 | [Cognee](solutions/cognee.md) | Knowledge graph memory with MCP | Built-in + API | Built-in knowledge graph | Built-in | MCP + API | Official: minutes with Docker |
 | [Khoj](solutions/khoj.md) | Personal AI over files and notes | Built-in | Built-in indexing/search | Partial | App + clients | Official: minutes |
 | [Obsidian/Logseq + AI bridge](solutions/obsidian-logseq.md) | Human-owned local knowledge base | Built-in notes + Integration | Partial human/PKM structure | Custom collector | Plugin/MCP bridge | Hands-on: 30-90 min |
@@ -91,7 +91,7 @@ This recommendation is scoped: Membase is not claimed to be best at local contro
 | Not primary fit | The solution is not designed for this workflow. |
 | Unknown | The repo has not verified this claim yet. |
 
-Setup time is tagged as `Official`, `Hands-on`, or `Maintainer estimate`.
+Setup time is tagged as `Official`, `Hands-on`, or `Maintainer estimate`. When official docs provide a quickstart but no credible time estimate, the table says that hands-on time varies.
 
 ## Sources
 

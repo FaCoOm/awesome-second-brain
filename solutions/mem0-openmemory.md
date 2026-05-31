@@ -9,7 +9,7 @@
 - Deployment: Hosted platform, Python/Node library, self-hosted server, and MCP
 - Primary users: Developers building AI apps with long-term memory
 - Best second-brain role: Developer memory layer
-- Last reviewed: 2026-05-29
+- Last reviewed: 2026-05-31
 
 ## One-line Summary
 

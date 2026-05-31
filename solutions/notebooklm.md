@@ -9,7 +9,7 @@
 - Deployment: Hosted Google product
 - Primary users: Researchers, students, analysts, and teams working from bounded source sets
 - Best second-brain role: Source-grounded research notebook baseline
-- Last reviewed: 2026-05-29
+- Last reviewed: 2026-05-31
 
 ## One-line Summary
 
@@ -24,8 +24,8 @@ NotebookLM is strong for bounded research over known sources. It is weaker as a 
 | Area | Evaluation |
 |---|---|
 | Deployment / ownership | Hosted Google product. |
-| Context capture | Built-in upload/import for docs, slides, sheets, images, Word, text, Markdown, PDF, CSV, PowerPoint, web URLs, ePub, YouTube, audio, and Gemini Chats. |
-| Knowledge organization | Built-in source summaries, source labels/categories, and generated artifacts. |
+| Context capture | Built-in upload/import/discovery for docs, slides, sheets, images, Word, text, Markdown, PDF, CSV, PowerPoint, web URLs, ePub, YouTube, audio, Gemini Chats, Fast Research, and Deep Research. |
+| Knowledge organization | Built-in source summaries, source labels/categories for notebooks with enough sources, and generated artifacts. |
 | Memory evolution | Partial. Useful summaries and artifacts exist, but not an ongoing second-brain consolidation loop. |
 | Retrieval / use | Source-grounded notebook chat and source selection. |
 | Agent activation / write-back | NotebookLM/Gemini platform only for ordinary users. |

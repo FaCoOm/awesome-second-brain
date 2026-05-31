@@ -15,9 +15,9 @@ Personal and team scope defines who can read, write, update, delete, and share m
 
 | Solution | Support label | Adoption path | Caveats |
 |---|---|---|---|
-| Membase | Built-in | Shared Memory/Wiki and connected AI tools. | Verify governance details for the target plan. |
+| Membase | Partial | Memory project tags and Wiki collections for scoped search/filtering. | Full team/workspace separation is coming soon; verify governance details for the target plan. |
 | OpenHuman | Not primary fit | Personal local app and connected sources. | Team/workspace governance is not the core fit. |
-| GBrain | Integration | Sources, Postgres/Supabase, OAuth clients, federated reads. | Operationally heavier than hosted products. |
+| GBrain | Built-in but operational | Brains, sources, source-scoped OAuth clients, federated reads, mounts, Postgres/Supabase, and HTTP MCP. | Directory-only scoping is convention-based; enforced team isolation needs explicit source/OAuth design. |
 | Supermemory | Integration | Project scoping and connector metadata. | Team governance should be verified. |
 | Mem0/OpenMemory | Built-in | User, session, and organizational memory. | Requires careful scope design. |
 | Zep/Graphiti | Built-in | Projects, users, sessions, groups. | Best as app infrastructure. |

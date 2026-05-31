@@ -9,7 +9,7 @@
 - Deployment: Standalone local/Docker mode or shared API mode
 - Primary users: Developers and AI power users who want knowledge graph memory through MCP
 - Best second-brain role: Knowledge graph memory with MCP access
-- Last reviewed: 2026-05-29
+- Last reviewed: 2026-05-31
 
 ## One-line Summary
 
@@ -28,7 +28,7 @@ Cognee is a strong option when the user wants persistent AI memory and graph con
 | Knowledge organization | Built-in knowledge graph construction and memory tools. |
 | Memory evolution | Built-in improve/processing workflows, but terminology differs from "dreaming." |
 | Retrieval / use | Knowledge graph memory with `remember`, `recall`, `forget_memory`, and `improve` tools. |
-| Agent activation / write-back | MCP plus API; clients include Cursor, Claude Desktop, Continue, Cline, and Roo Code. |
+| Agent activation / write-back | MCP plus API; documented clients include Claude Code, Cursor, Codex, Continue, Cline, Roo Code, Goose, and Python agents. |
 | Personal / team scope | Standalone mode isolates memory; API mode supports shared graph use across clients. |
 | Feedback / correction | Developer/admin surfaces and tool references; end-user UI should be verified for the target workflow. |
 | Privacy / control | Local mode gives more control; API mode centralizes sharing. |

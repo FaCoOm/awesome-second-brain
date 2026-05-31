@@ -10,11 +10,11 @@
 - Deployment: Local desktop app with managed services for account sign-in, model routing, search proxying, and OAuth/integration flows
 - Primary users: People who want a local-first personal AI assistant with memory, UI, voice, and app integrations
 - Best second-brain role: Local-first personal AI assistant with automatic memory capture
-- Last reviewed: 2026-05-29
+- Last reviewed: 2026-05-31
 
 ## One-line Summary
 
-OpenHuman is an open-source desktop AI assistant with local Memory Tree storage, an Obsidian-style Markdown vault, semantic search, auto-fetch integrations, and a UI-first experience.
+OpenHuman is an open-source desktop AI assistant with local Memory Tree storage, an Obsidian-style Markdown vault, auto-fetch integrations, token compression, and a UI-first experience.
 
 ## Second-Brain Fit
 
@@ -26,9 +26,9 @@ OpenHuman should be evaluated as a personal AI assistant with a built-in second 
 |---|---|
 | Deployment / ownership | Desktop app on macOS, Windows, and Linux; local memory and runtime state with managed services where needed. |
 | Context capture | Built-in 118+ integrations through OAuth/Composio-style connector flows; auto-fetch every 20 minutes according to docs. |
-| Knowledge organization | Built-in Memory Tree, local SQLite knowledge base, semantic search, Obsidian-style Markdown vault, token compression, and memory collapse flows. |
+| Knowledge organization | Built-in Memory Tree, local SQLite knowledge base, Obsidian-style Markdown vault, token compression, hierarchical summary trees, and memory collapse flows. |
 | Memory evolution | Built-in background thinking and auto-fetch/collapse behavior, but exact consolidation policy should be verified in hands-on use. |
-| Retrieval / use | Local Memory Tree, semantic search, Markdown vault, and context compression. |
+| Retrieval / use | Local Memory Tree, Obsidian-compatible Markdown vault, memory graph, and context compression. |
 | Agent activation / write-back | Primarily its own desktop assistant; MCP/agentmemory sharing is documented for related persistent storage workflows. |
 | Personal / team scope | Personal-first. Team/workspace sharing is not the primary fit. |
 | Feedback / correction | Strong UI-first positioning: desktop mascot, onboarding, voice, Google Meet participation, and local memory surfaces. |

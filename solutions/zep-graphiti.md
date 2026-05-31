@@ -9,7 +9,7 @@
 - Deployment: Hosted Zep plus Graphiti library integration
 - Primary users: Developers building agent applications that need temporal graph memory
 - Best second-brain role: Temporal knowledge graph memory backend
-- Last reviewed: 2026-05-29
+- Last reviewed: 2026-05-31
 
 ## One-line Summary
 
