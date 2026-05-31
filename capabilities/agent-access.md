@@ -1,0 +1,25 @@
+# Agent Activation / Write-back
+
+## What This Capability Means
+
+Agent activation and write-back define how AI tools search, retrieve, cite, write, update, or maintain the second brain while doing work. Some systems also expose a first-party chat surface, which matters when users want to query the brain before wiring up an external agent.
+
+## Evaluation Questions
+
+- Is access available through MCP, API, SDK, CLI, plugins, or platform-only tools?
+- Can AI tools write back?
+- Is access scoped by user, source, project, or workspace?
+- Can you verify the host AI tool actually used the memory surface?
+
+## Scoring Guidance
+
+Use this capability to decide whether the second brain is actually usable during AI-assisted work, not just whether storage is configured. A solution scores higher when an external AI tool can read and write memory through a documented surface, scope calls correctly, and show evidence that the host actually invoked the memory surface during work.
+
+For the per-solution comparison, see [../comparisons/agent-access.md](../comparisons/agent-access.md).
+
+## Sources
+
+- [Membase MCP](https://docs.membase.so/features/membase-mcp)
+- [Supermemory MCP](https://supermemory.ai/mcp/)
+- [Mem0 MCP](https://docs.mem0.ai/platform/mem0-mcp)
+- [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

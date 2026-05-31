@@ -1,79 +1,81 @@
-# Contributing to Awesome Context Engineering
+# Contributing to Awesome AI Second Brain
 
-Thank you for your interest in contributing to this awesome list! Your contributions help make this resource more valuable for everyone customizing their AI assistants with personal context.
+This repo compares existing tools and products for building AI-native second brains. Contributions should help a reader decide what to evaluate, what tradeoffs matter, and which workflows are actually supported.
 
-## How to Contribute
+## What Counts
 
-### Adding a Resource
+Good contributions answer practical questions:
 
-1. **Check if the resource is relevant**: Ensure your submission relates to context engineering, AI customization, personal context management, or related technologies.
+- Where does memory live: local, hosted, self-hosted, or platform-bound?
+- How long does it take to get the first useful memory?
+- What data can it ingest?
+- Does raw data become organized knowledge automatically?
+- Does it support consolidation, reflection, or a dream cycle?
+- Can AI tools read and write through MCP, API, SDK, CLI, or plugins?
+- Can users separate personal, project, workspace, and team scopes?
+- What can users inspect, edit, delete, export, or audit?
 
-2. **Check for duplicates**: Search the list to make sure the resource isn't already included.
+## How To Add a Solution
 
-3. **Follow the format**: Each entry should follow this format:
-   ```markdown
-   - [Resource Name](URL) - Brief description (one sentence).
-   ```
+1. Copy [templates/system-profile.md](templates/system-profile.md) into `solutions/<solution-name>.md`.
+2. Add the solution to [solutions/README.md](solutions/README.md), [README.md](README.md), and the relevant comparison tables.
+3. Update capability pages under `capabilities/` only for workflows you can source or verify.
+4. Link official setup docs, official repos, and primary source material instead of duplicating command-by-command setup instructions.
+5. Mark uncertain fields as `Unknown` instead of guessing.
 
-4. **Placement**: Add your resource to the appropriate section. If unsure, suggest a new section.
+## How To Add a Setup Guide or Example
 
-5. **Quality standards**: Resources should be:
-   - Actively maintained (for repositories)
-   - Well-documented
-   - Relevant to context engineering and AI customization
-   - Accessible (not behind paywalls for core content)
+Use `setup-guides/` for verified setup paths and `examples/` for scenario-level workflows. Do not add a setup guide unless you can explain how to verify that retrieval or write-back actually worked.
 
-### Pull Request Guidelines
+## Profile Quality Bar
 
-1. **One resource per pull request**: This makes it easier to review and discuss.
+Every solution profile should answer:
 
-2. **Descriptive title**: Use a clear title like "Add [Resource Name] to [Section]"
+- deployment and ownership summary
+- context capture behavior
+- knowledge organization behavior
+- consolidation or maintenance behavior
+- retrieval and grounding behavior
+- AI-tool activation and write-back surfaces
+- workspace and team support
+- UI, inspection, and correction surfaces
+- privacy, portability, and control
+- setup burden
+- best-fit users
+- non-fit users
+- tradeoffs
+- official setup or evaluation links
 
-3. **Description**: In your PR description, briefly explain:
-   - What the resource is
-   - Why it's valuable for context engineering
-   - How you tested/used it (if applicable)
+## Sources
 
-4. **Maintain alphabetical order**: Keep entries alphabetized within each section.
+Use primary sources whenever possible:
 
-5. **Check your spelling and grammar**: Run a spell check before submitting.
+- official docs
+- official repositories
+- maintainer-written examples
+- product docs and changelogs
+- reproducible local test reports
 
-### What Makes a Resource Awesome?
+When using local or internal test reports, summarize them clearly and avoid presenting unverified assumptions as product claims.
 
-Resources should be:
-- **High quality**: Well-maintained, documented, and useful
-- **Relevant**: Directly related to context engineering, AI customization, or enabling technologies
-- **Accessible**: Free to use or has a meaningful free tier
-- **Active**: Recently updated (within the last 2 years for projects)
+Closed-source and hosted products are welcome. Contributors do not need to prove or disclose internal models, prompts, ranking logic, graph construction, or infrastructure details. Describe the public behavior that can be verified from docs, product UI, APIs, repos, or hands-on testing. Mark private or unavailable details as `Not disclosed` or `Unknown`.
 
-### Sections
+## Writing Style
 
-Current sections include:
-- **Platform-Specific Customization**: Claude, Cursor, ChatGPT, VS Code Copilot customization guides
-- **Model Context Protocol (MCP)**: MCP servers and implementations
-- **Context Management Techniques**: Best practices and strategies
-- **Memory & Persistence**: Long-term memory systems and frameworks
-- **Research & Articles**: Academic papers and industry articles
-- **Tools & Frameworks**: Development tools for context-aware AI
+- Be factual and specific.
+- Prefer decision-oriented landscape wording over tutorial wording.
+- Distinguish built-in support from integration support and custom collector work.
+- Distinguish observable product behavior from undisclosed internals.
+- Use the standard support labels from [README.md](README.md).
+- Keep recommendations scoped to the workflow they are best for, and explain tradeoffs without promotional framing.
 
-Feel free to suggest new sections if your resource doesn't fit existing categories.
+## Pull Request Guidelines
 
-## Code of Conduct
-
-- Be respectful and constructive in all interactions
-- Focus on the quality of resources, not promotion
-- Respect the maintainers' decisions on inclusion
-- Help improve existing entries when you notice issues
-
-## Questions?
-
-If you're unsure about anything, feel free to:
-- Open an issue to discuss before submitting a PR
-- Ask questions in your PR comments
-- Reach out to the maintainers
+- One solution or workflow per PR is preferred.
+- Include sources and verification notes.
+- Keep unrelated formatting changes out of the PR.
+- If a page is a placeholder or watchlist entry, label it clearly as not fully evaluated.
 
 ## License Agreement
 
 By contributing, you agree that your contributions will be licensed under the Apache License 2.0, the same license as this project.
-
-Thank you for contributing! 🎉
