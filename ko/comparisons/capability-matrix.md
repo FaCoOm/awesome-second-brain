@@ -9,6 +9,7 @@
 | [GBrain](../solutions/gbrain.md) | 내장 + 커스텀 수집기 | 내장 page/graph/timeline/schema | 내장 | 저비용 hybrid search + 확장 query + `think` 종합 | 부분 운영/관리 UI | 내장, 단 운영 필요 | 로컬/self-hosted 통제 | CLI + MCP | 중간-높음 | 공식: 개인용 약 30분 |
 | [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md) | 내장 | 내장 Markdown wiki/schema/index/log | 부분 지원 | wiki orientation + file search + page synthesis | 내장 Markdown 검토 + lint workflow | 부분 지원 | 로컬/사용자 서버 파일 | Hermes 번들 skill | 중간 | 공식 quickstart 있음, 실제 소요 시간은 달라짐 |
 | [Supermemory](../solutions/supermemory.md) | 내장 + 연동 | 내장 graph memory | 내장 | Memory API + hybrid search + graph memory | 내장 hosted app/console | 연동 | 호스팅형 제어 | MCP + API + SDK | 낮음-중간 | 공식: 몇 분 |
+| [Hyperspell](../solutions/hyperspell.md) | 내장 + 연동 | 내장 context graph + metadata | 내장 + procedural memory | indexed/live search + optional answers | API review flow + app-owned UI | 내장 user model | 호스팅형 제어 | MCP + API + SDK + plugin | 낮음-중간 | 공식: 5분 이내 주장, beta 여부에 따라 달라짐 |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | API + 연동 | 내장 memory 범위 | 부분 지원 | Layered memory search | 내장 dashboard/server 경로 | 내장 | Hosted 또는 self-hosted | MCP + API + SDK | 중간 | 공식: 몇 분 |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | API | 내장 temporal graph | 내장 | Temporal knowledge graph + Graph RAG | 부분 개발자 UI/API | 내장 | Hosted 또는 OSS library 경로 | API + SDK | 중간 | 공식 quickstart 있음, 실제 소요 시간은 달라짐 |
 | [Cognee](../solutions/cognee.md) | 내장 + API | 내장 knowledge graph | 내장 | Knowledge graph memory | 부분 개발자/관리자 화면 | API 모드에서 내장 | 로컬 모드 또는 공유 API 모드 | MCP + API | 중간 | 공식: Docker 기준 몇 분 |

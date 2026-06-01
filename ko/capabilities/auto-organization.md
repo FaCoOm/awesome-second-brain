@@ -20,6 +20,7 @@
 | GBrain | 내장 | schema pack, `gbrain-base-v2`, schema detect/suggest/review flow, page type 추론, 자동 링크, 타임라인/사실 추출, take. | 구조화된 Markdown, 활성 스키마 선택, 검토가 있을수록 품질이 좋아집니다. |
 | Hermes Agent + LLM Wiki | 내장 | schema, index, log, raw source, entity page, concept page, comparison page, query page, frontmatter, tag, wikilink, confidence, contradiction marker를 갖춘 에이전트 유지보수형 Markdown wiki. | 정리 품질은 에이전트가 skill을 따르는 정도와 사용자의 schema 관리 규율에 달려 있습니다. |
 | Supermemory | 내장 | 처리 파이프라인, 사실 기반 graph memory, 관계 추적, 메타데이터/필터링. | 정확한 그래프 의미는 용도별로 확인해야 합니다. |
+| Hyperspell | 내장 | memory, 연결된 data source, metadata filter, collection, structured resource data, LLM-ready summary, context graph claim, trace에서 추출한 procedural memory. | app owner가 taxonomy, metadata, review UI, safe recall boundary를 설계해야 합니다. |
 | Mem0/OpenMemory | 내장 | 계층화된 memory 유형과 검색/승격 모델. | 앱은 범위와 메타데이터를 신중히 선택해야 합니다. |
 | Zep/Graphiti | 내장 | entity node, entity edge, episodic node, fact, summary. | temporal graph 앱에는 강하지만 no-code PKM은 아닙니다. |
 | Cognee | 내장 | knowledge graph memory 도구와 처리. | 그래프 품질은 수집과 처리 방식에 의존합니다. |
@@ -34,5 +35,7 @@
 - [Membase overview](https://docs.membase.so/)
 - [How Membase works](https://docs.membase.so/core-concepts/how-membase-works)
 - [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
+- [Hyperspell core concepts](https://docs.hyperspell.com/core/concepts)
+- [Hyperspell procedural memory](https://docs.hyperspell.com/usage/procedural-memory)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

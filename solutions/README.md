@@ -9,6 +9,7 @@ Solution profiles explain what role each product or project can play in an AI-na
 | [GBrain](gbrain.md) | Local or self-hosted brain operations layer | Core, hands-on researched |
 | [Hermes Agent + LLM Wiki](hermes-llm-wiki.md) | Agent-operated local Markdown wiki | Core |
 | [Supermemory](supermemory.md) | Hosted memory API and connector layer | Core |
+| [Hyperspell](hyperspell.md) | Hosted company/user context layer for AI agents | Core, private beta caveat |
 | [Mem0/OpenMemory](mem0-openmemory.md) | Developer memory layer with hosted and self-hosted paths | Core |
 | [Zep/Graphiti](zep-graphiti.md) | Temporal knowledge graph memory for applications | Core |
 | [Cognee](cognee.md) | Knowledge graph memory with MCP | Core |

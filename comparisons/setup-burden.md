@@ -14,6 +14,7 @@
 | Solution | What you operate | Main risk |
 |---|---|---|
 | [Supermemory](../solutions/supermemory.md) | MCP/API auth, optional project scoping, connectors, API usage. | Connector status, project boundaries, and source deletion semantics. |
+| [Hyperspell](../solutions/hyperspell.md) | App/API keys, user tokens, Hyperspell Connect, source selection, metadata/collection design, MCP or SDK integration. | Private beta availability and app-owned governance/review UI. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | API keys, SDK integration, hosted or self-hosted stack. | Memory scope design, governance, and retrieval tuning. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | App integration, user/session/group model, graph ingestion, graph backend, LLM/embedding provider. | Requires product engineering rather than end-user setup. |
 | [Cognee](../solutions/cognee.md) | Docker/local/API mode, MCP client config, graph processing. | Separate standalone instances vs shared API mode can fragment memory. |

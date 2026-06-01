@@ -24,9 +24,10 @@ Choose this path when data ownership matters more than one-command setup.
 
 ## If You Want Strong Knowledge Organization
 
-Start with [Membase](../solutions/membase.md), [Zep/Graphiti](../solutions/zep-graphiti.md), [Cognee](../solutions/cognee.md), [GBrain](../solutions/gbrain.md), or [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md).
+Start with [Membase](../solutions/membase.md), [Hyperspell](../solutions/hyperspell.md), [Zep/Graphiti](../solutions/zep-graphiti.md), [Cognee](../solutions/cognee.md), [GBrain](../solutions/gbrain.md), or [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md).
 
 - Membase is the hosted, lowest-burden option when you want captured context organized into Memory and Wiki with graph + vector retrieval for memory and direct dashboard chat for use.
+- Hyperspell is strongest when a product or internal agent needs a hosted context graph, metadata, indexed/live search, and procedural memory over connected workspace sources.
 - Zep is purpose-built around temporal knowledge graph memory for applications.
 - Cognee exposes knowledge graph memory and can run in standalone or shared API mode.
 - GBrain gives a deterministic Markdown/page/link/timeline model plus a documented source-scoped OAuth path for self-hosted second brains, but you operate the stack.
@@ -36,13 +37,13 @@ Choose this path when relationships, entities, facts, and time are first-class r
 
 ## If You Want Memory To Evolve Over Time
 
-Start with [Membase](../solutions/membase.md), [GBrain](../solutions/gbrain.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
+Start with [Membase](../solutions/membase.md), [GBrain](../solutions/gbrain.md), [Hyperspell](../solutions/hyperspell.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
 
-These options do more than store raw notes. They include product-managed digestion, graph memory updates, automatic forgetting, dream/autopilot jobs, agent-maintained wiki updates, temporal graph updates, or graph processing workflows that help memory improve after capture.
+These options do more than store raw notes. They include product-managed digestion, graph memory updates, procedural memory extraction, automatic forgetting, dream/autopilot jobs, agent-maintained wiki updates, temporal graph updates, or graph processing workflows that help memory improve after capture.
 
 ## If You Are Building A Product
 
-Start with [Mem0/OpenMemory](../solutions/mem0-openmemory.md), [Supermemory](../solutions/supermemory.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
+Start with [Mem0/OpenMemory](../solutions/mem0-openmemory.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
 
 These options expose APIs, SDKs, MCP, or hosted infrastructure. They are better product primitives than a human notes app when memory is part of an application architecture.
 

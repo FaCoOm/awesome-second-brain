@@ -40,8 +40,8 @@
 |---|---|---|
 | 가장 빠른 end-to-end 세컨드 브레인 | [Membase](ko/solutions/membase.md) | 로컬 수집기, 그래프 작업, memory 인프라를 직접 운영하지 않고도 맥락을 수집하고 Memory/Wiki로 정리한 뒤 대시보드 채팅이나 AI workflow에서 활용할 수 있는 호스팅형 설정입니다. |
 | 로컬 또는 self-hosted 통제권 | [OpenHuman](ko/solutions/openhuman.md), [GBrain](ko/solutions/gbrain.md), [Hermes Agent + LLM Wiki](ko/solutions/hermes-llm-wiki.md), [Khoj](ko/solutions/khoj.md), [Obsidian/Logseq + AI bridge](ko/solutions/obsidian-logseq.md) | 데이터가 로컬 파일이나 self-hosted 서비스에 남을 수 있지만, 설정, 동기화, 인덱싱, 유지보수를 더 많이 직접 책임져야 합니다. |
-| 강한 지식 정리 또는 graph memory | [Membase](ko/solutions/membase.md), [GBrain](ko/solutions/gbrain.md), [Hermes Agent + LLM Wiki](ko/solutions/hermes-llm-wiki.md), [Zep/Graphiti](ko/solutions/zep-graphiti.md), [Cognee](ko/solutions/cognee.md) | 엔티티, 링크, 사실, wiki page, 그래프 구조, 시간성 memory가 지식 검색과 유지보수의 핵심 요소가 됩니다. |
-| 개발자용 memory API | [Mem0/OpenMemory](ko/solutions/mem0-openmemory.md), [Supermemory](ko/solutions/supermemory.md), [Zep/Graphiti](ko/solutions/zep-graphiti.md), [Cognee](ko/solutions/cognee.md) | 앱 개발자를 위한 API, SDK, MCP, 관리형 서비스를 제공합니다. |
+| 강한 지식 정리 또는 graph memory | [Membase](ko/solutions/membase.md), [GBrain](ko/solutions/gbrain.md), [Hermes Agent + LLM Wiki](ko/solutions/hermes-llm-wiki.md), [Hyperspell](ko/solutions/hyperspell.md), [Zep/Graphiti](ko/solutions/zep-graphiti.md), [Cognee](ko/solutions/cognee.md) | 엔티티, 링크, 사실, wiki page, context graph, 그래프 구조, 시간성 memory가 지식 검색과 유지보수의 핵심 요소가 됩니다. |
+| 개발자용 memory API | [Mem0/OpenMemory](ko/solutions/mem0-openmemory.md), [Supermemory](ko/solutions/supermemory.md), [Hyperspell](ko/solutions/hyperspell.md), [Zep/Graphiti](ko/solutions/zep-graphiti.md), [Cognee](ko/solutions/cognee.md) | 앱 개발자를 위한 API, SDK, MCP, 관리형 서비스를 제공합니다. |
 | 제한된 자료 연구 또는 플랫폼 내 개인화 | [NotebookLM](ko/solutions/notebooklm.md), [ChatGPT Memory](ko/solutions/chatgpt-memory.md), [Claude Projects/Claude Code](ko/solutions/claude-projects-code.md) | 하나의 notebook, 자료 묶음, AI 플랫폼 안에서 작업할 때 유용합니다. |
 
 ## 가장 빠른 End-to-End 경로
@@ -57,6 +57,7 @@
 | [GBrain](ko/solutions/gbrain.md) | 로컬/self-hosted 브레인 운영 계층 | 내장 + 커스텀 수집기 | 내장 page/graph/timeline | 내장 | CLI + MCP | 공식: 개인용 약 30분 |
 | [Hermes Agent + LLM Wiki](ko/solutions/hermes-llm-wiki.md) | 에이전트가 운영하는 로컬 Markdown wiki | 내장 자료 수집 흐름 | 내장 Markdown wiki | 부분 지원 | Hermes skill + 로컬 파일 | 공식 quickstart 있음, 실제 소요 시간은 달라짐 |
 | [Supermemory](ko/solutions/supermemory.md) | 호스팅형 memory API와 커넥터 계층 | 내장 + 연동 | 내장 graph memory | 내장 | MCP + API + SDK | 공식: 몇 분 |
+| [Hyperspell](ko/solutions/hyperspell.md) | AI agent용 호스팅 company/user context 계층 | 내장 + 연동 | 내장 context graph + metadata | 내장 + procedural memory | MCP + API + SDK | 공식: 5분 이내 주장, beta 여부에 따라 달라짐 |
 | [Mem0/OpenMemory](ko/solutions/mem0-openmemory.md) | 개발자용 memory engine | API + 연동 | 내장 memory 범위 | 부분 지원 | MCP + API + SDK | 공식: 몇 분 |
 | [Zep/Graphiti](ko/solutions/zep-graphiti.md) | 앱을 위한 temporal graph memory | API | 내장 temporal graph | 내장 | API + SDK | 공식 quickstart 있음, 실제 소요 시간은 달라짐 |
 | [Cognee](ko/solutions/cognee.md) | MCP가 있는 knowledge graph memory | 내장 + API | 내장 knowledge graph | 내장 | MCP + API | 공식: Docker 기준 몇 분 |

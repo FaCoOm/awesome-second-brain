@@ -20,6 +20,7 @@ Context capture is how raw personal, team, and source context enters the second 
 | GBrain | Built-in + Custom collector | Markdown import, `capture`, file/stdin capture, HTTP `/ingest`, inbox folder, `sync --watch` polling, recipes, and skillpack ingestion sources. | External APIs require recipe/custom collector work; `sync --watch` is polling, not streaming. |
 | Hermes Agent + LLM Wiki | Built-in source workflow | The bundled skill defines capture paths for URLs, PDFs, pasted text, files, articles, papers, transcripts, and assets into `raw/`. | Not a broad OAuth connector layer; source gathering is agent/user workflow driven. |
 | Supermemory | Built-in + Integration | MCP/API plus Drive, Gmail, Notion, OneDrive, GitHub, Web Crawler. | Connector permissions, sync state, and container/project tags matter. |
+| Hyperspell | Built-in + Integration | Hyperspell Connect, workspace integrations, manual add, bulk ingestion, file upload, web crawler, folder sync policies, and trace ingestion. | Private beta/account availability varies; app owners still choose sources, metadata, and user scoping. |
 | Mem0/OpenMemory | API + Integration | SDK/API/MCP writes from app or AI workflow. | Capture design is application-owned. |
 | Zep/Graphiti | API | Chat history, business data, graph endpoints. | Requires app integration. |
 | Cognee | Built-in + API | MCP memory/data tools and graph processing. | Standalone vs shared mode affects where data lands. |
@@ -36,4 +37,6 @@ Context capture is how raw personal, team, and source context enters the second 
 - [Membase Obsidian connector](https://docs.membase.so/connectors/obsidian)
 - [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
 - [Supermemory connectors](https://supermemory.ai/docs/connectors/overview)
+- [Hyperspell integrations](https://docs.hyperspell.com/integrations/overview)
+- [Hyperspell Connect](https://docs.hyperspell.com/usage/connect)
 - [Khoj docs](https://docs.khoj.dev/)

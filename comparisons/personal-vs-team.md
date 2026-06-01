@@ -7,6 +7,7 @@
 | [GBrain](../solutions/gbrain.md) | Strong | Strong | Strong / operational | Company-brain path uses sources, source-scoped OAuth clients, federated reads, HTTP MCP, and usually Postgres/Supabase; directory-only scoping is convention-based. |
 | [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md) | Strong | Strong | Partial / operational | Multiple wiki directories, schemas, vaults, or repos can separate projects, but team permissions are external to the skill. |
 | [Supermemory](../solutions/supermemory.md) | Strong | Strong | Possible | Project scoping and connectors help, but team governance must be checked. |
+| [Hyperspell](../solutions/hyperspell.md) | Strong | Strong | Strong for app builders | Multi-tenant user model, user tokens, metadata, collections, source selection, and folder policies help, but app teams own governance UX. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | Strong | Strong | Strong | User, session, and organizational memory make it product-friendly. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | Possible | Strong | Strong | Best as app infrastructure for users, sessions, groups, and business data. |
 | [Cognee](../solutions/cognee.md) | Strong | Strong | Strong in API mode | Standalone mode isolates clients; API mode centralizes sharing. |

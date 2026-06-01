@@ -20,6 +20,7 @@
 | GBrain | 내장 + 커스텀 수집기 | CLI/init, brain repo, import/sync/embed 작업, dream/autopilot, stdio/HTTP MCP. company brain에는 source/OAuth/database 설계가 추가됩니다. | 공식 agent install은 개인용 기준 약 30분을 목표로 하지만 production source coverage는 여전히 운영 부담이 큽니다. |
 | Hermes Agent + LLM Wiki | 내장 skill | Hermes 설치/설정, 필요시 `WIKI_PATH` 설정, source 선별, Markdown output 검토, lint 또는 maintenance pass 실행. | Hermes에는 빠른 설치 경로가 있지만 wiki 품질은 운영과 검토에 의존합니다. |
 | Supermemory | 내장 + 연동 | MCP/API와 커넥터. | 커넥터 상태와 프로젝트 범위 지정이 중요합니다. |
+| Hyperspell | 내장 + 연동 | dashboard/API key, SDK/API 또는 MCP 설정, app user ID 또는 user token, Hyperspell Connect, source 선택, metadata/scope 설계. | 공식 5분 이내 claim은 demo에는 가능해 보이지만 production setup은 beta access, app integration, governance 선택에 따라 달라집니다. |
 | Mem0/OpenMemory | 연동 | hosted MCP/API 또는 self-hosted stack. | memory 설계는 애플리케이션 작업입니다. |
 | Zep/Graphiti | API | 앱 연동, 그래프 수집, 그래프 backend, LLM/embedding provider 설정. | 빌더 중심입니다. 공식 quickstart는 있지만 backend 선택에 따라 실제 소요 시간이 달라집니다. |
 | Cognee | 내장 | Docker/local/API 모드와 MCP 설정. | 모드를 신중히 선택해야 합니다. |
@@ -33,5 +34,7 @@
 
 - [Membase quickstart](https://docs.membase.so/getting-started/quickstart)
 - [Hermes Agent website](https://hermes-agent.nousresearch.com/)
+- [Hyperspell quickstart](https://docs.hyperspell.com/core/quickstart)
+- [Hyperspell manual integration](https://docs.hyperspell.com/core/integration)
 - [Supermemory MCP setup](https://supermemory.ai/docs/supermemory-mcp/setup)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

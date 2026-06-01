@@ -20,6 +20,7 @@
 | GBrain | Local/self-hosted | 개인용 brain은 local PGLite. 공유형, 대규모, remote deployment는 Postgres/Supabase와 stdio/HTTP MCP. | PGLite는 단일 사용자 로컬 운영에 가장 적합합니다. shared/team deployment에는 database, OAuth, sync, job, storage 운영이 추가됩니다. |
 | Hermes Agent + LLM Wiki | Local/server-owned | Hermes는 사용자가 통제하는 인프라에서 실행되고, wiki는 `WIKI_PATH` 또는 `~/wiki`의 Markdown 디렉터리입니다. | model provider, web extraction, browser use, sync 선택에 따라 cloud dependency가 생길 수 있습니다. |
 | Supermemory | Hosted + API | 호스팅 MCP, API, SDK, 커넥터. | self-hosting/control 세부 사항은 대상 요금제에서 확인해야 합니다. |
+| Hyperspell | Hosted + API | hosted dashboard, memory/context platform, SDK, API, MCP server, 공개 plugin/SDK repo. | 핵심 memory platform은 managed입니다. private beta 사용 가능 여부와 data residency/retention 세부 사항을 확인해야 합니다. |
 | Mem0/OpenMemory | Hosted/self-hosted | hosted Mem0 Platform 또는 open-source server/library 경로. | self-hosting에도 memory 인프라 결정이 필요합니다. |
 | Zep/Graphiti | Hosted + OSS library | Zep managed platform 또는 Graphiti library 연동. | 플랫폼과 library는 관련되어 있지만 같은 표면은 아닙니다. |
 | Cognee | Local/API mode | standalone local/Docker 설정 또는 공유 API 모드. | 모드 선택이 memory 격리와 공유에 영향을 줍니다. |
@@ -33,5 +34,7 @@
 
 - [Membase quickstart](https://docs.membase.so/getting-started/quickstart)
 - [Hermes Agent website](https://hermes-agent.nousresearch.com/)
+- [Hyperspell docs](https://docs.hyperspell.com/)
+- [Hyperspell GitHub org](https://github.com/hyperspell)
 - [Mem0 open-source overview](https://docs.mem0.ai/open-source/overview)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

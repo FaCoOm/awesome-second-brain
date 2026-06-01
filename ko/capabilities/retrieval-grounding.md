@@ -20,6 +20,7 @@
 | GBrain | 내장 | `search`는 저비용 hybrid retrieval, `query`는 필터가 있는 확장 hybrid retrieval, graph/link 신호, timeline/fact retrieval, `think`는 인용/충돌/누락 분석이 있는 종합 답변. | 품질은 동기화, 임베딩, 정리된 출처 구조, reranker/provider 설정에 의존합니다. |
 | Hermes Agent + LLM Wiki | 내장 | skill이 `SCHEMA.md`, `index.md`, `log.md`로 orientation하고, file search, 관련 page 읽기, compiled wiki page 기반 답변 종합, 가치 있는 답변의 wiki 저장을 수행합니다. | 기본적으로 vector DB나 graph RAG engine은 아닙니다. 최신성은 wiki maintenance에 달려 있습니다. |
 | Supermemory | 내장 | 추출된 memory와 문서 chunk를 함께 찾는 hybrid search, graph memory, project/container 범위 지정, 메타데이터, API 필터. | 커넥터와 프로젝트 범위를 신중히 설정해야 합니다. |
+| Hyperspell | 내장 | indexed search, live search, multi-source query, metadata/date/resource filter, source weighting, LLM-ready summary, optional answer generation, MCP search/get tool. | indexed/live availability는 source에 따라 다릅니다. beta integration과 query behavior는 계정별로 검증해야 합니다. |
 | Mem0/OpenMemory | 내장 | user ID, run ID, metadata가 있는 layered memory search. | 앱 소유자가 grounding과 출처 메타데이터 품질을 정의합니다. |
 | Zep/Graphiti | 내장 | temporal knowledge graph, fact, episode, Graph RAG. | 애플리케이션 데이터가 명시적으로 모델링될 때 가장 좋습니다. |
 | Cognee | 내장 | knowledge graph memory와 recall 도구. | 검색 품질은 수집과 그래프 처리 모드에 의존합니다. |
@@ -33,5 +34,7 @@
 
 - [Membase MCP](https://docs.membase.so/features/membase-mcp)
 - [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
+- [Hyperspell manual integration](https://docs.hyperspell.com/core/integration)
+- [Hyperspell MCP overview](https://docs.hyperspell.com/advanced/mcp-overview)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)

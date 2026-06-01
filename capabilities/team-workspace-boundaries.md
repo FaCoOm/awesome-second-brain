@@ -20,6 +20,7 @@ Personal and team scope defines who can read, write, update, delete, and share m
 | GBrain | Built-in but operational | Brains, sources, source-scoped OAuth clients, federated reads, mounts, Postgres/Supabase, and HTTP MCP. | Directory-only scoping is convention-based; enforced team isolation needs explicit source/OAuth design. |
 | Hermes Agent + LLM Wiki | Partial | Separate wiki directories, schemas, vaults, or repos can create project boundaries. | Permissions, shared review, and team governance are external filesystem/sync/process concerns. |
 | Supermemory | Integration | Project scoping and connector metadata. | Team governance should be verified. |
+| Hyperspell | Built-in for app builders | Multi-tenant app user IDs, user tokens, source selection, metadata, collections, resource filters, and folder policies. | Team/workspace governance UX is app-owned; account/plan behavior should be verified. |
 | Mem0/OpenMemory | Built-in | User, session, and organizational memory. | Requires careful scope design. |
 | Zep/Graphiti | Built-in | Projects, users, sessions, groups. | Best as app infrastructure. |
 | Cognee | Built-in in API mode | Shared backend/API mode. | Standalone mode isolates clients. |
@@ -33,5 +34,7 @@ Personal and team scope defines who can read, write, update, delete, and share m
 
 - [Membase attached vs universal memory](https://docs.membase.so/core-concepts/attached-vs-universal)
 - [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
+- [Hyperspell core concepts](https://docs.hyperspell.com/core/concepts)
+- [Hyperspell folder sync](https://docs.hyperspell.com/usage/folder-sync)
 - [Mem0 memory types](https://docs.mem0.ai/core-concepts/memory-types)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

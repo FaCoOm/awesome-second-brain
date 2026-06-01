@@ -20,6 +20,7 @@ Feedback and correction cover whether users can see what the system knows, filte
 | GBrain | Partial | CLI plus HTTP admin surfaces for client registration, request logs, jobs, live activity, and scoped operations. | Useful for operations inspection, not a polished Notion/Roam-style knowledge UI. |
 | Hermes Agent + LLM Wiki | Built-in in files | Users can inspect and edit Markdown pages, source folders, `index.md`, `log.md`, `SCHEMA.md`, frontmatter, confidence flags, and contradiction markers. | No polished hosted dashboard; review happens in files, editor, Obsidian, git, or similar tools. |
 | Supermemory | Built-in | Hosted app, console, connector status, projects, and filters. | Team/admin inspection depends on plan and setup. |
+| Hyperspell | Partial | Dashboard, list/get/update memory APIs, metadata filtering, indexing status, query errors, webhooks, evaluation API, and folder manual-review states. | End-user second-brain UI is mostly app-owned; verify dashboard visibility for target account. |
 | Mem0/OpenMemory | Built-in | Platform dashboard and self-hosted dashboard/server paths. | Application owners still define user-facing review flows. |
 | Zep/Graphiti | Partial | Developer/platform UI and graph APIs. | End-user second-brain UI is not the primary surface. |
 | Cognee | Partial | Developer/admin surfaces and MCP tool references. | End-user inspection should be verified for the target workflow. |
@@ -34,5 +35,7 @@ Feedback and correction cover whether users can see what the system knows, filte
 - [Membase Memory](https://docs.membase.so/features/memory)
 - [Membase Chat in Dashboard](https://docs.membase.so/features/chat)
 - [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
+- [Hyperspell list memories](https://docs.hyperspell.com/api-reference/memories/list-memories)
+- [Hyperspell folder sync](https://docs.hyperspell.com/usage/folder-sync)
 - [ChatGPT Memory FAQ](https://help.openai.com/en/articles/8590148-memory-faq)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)

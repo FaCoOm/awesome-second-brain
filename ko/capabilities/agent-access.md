@@ -21,5 +21,6 @@
 
 - [Membase MCP](https://docs.membase.so/features/membase-mcp)
 - [Supermemory MCP](https://supermemory.ai/mcp/)
+- [Hyperspell MCP overview](https://docs.hyperspell.com/advanced/mcp-overview)
 - [Mem0 MCP](https://docs.mem0.ai/platform/mem0-mcp)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

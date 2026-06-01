@@ -20,6 +20,7 @@ Memory evolution is the ongoing work that keeps a second brain useful after capt
 | GBrain | Built-in | `gbrain dream` maintenance cycle, `gbrain autopilot`, sync/embed jobs. | User operates jobs and verifies quality. |
 | Hermes Agent + LLM Wiki | Partial | The bundled skill defines re-ingest, source drift checks, query filing, lint, archive, page splitting, and log rotation. | Not an autonomous maintenance loop by default; user or Hermes automation must trigger upkeep. |
 | Supermemory | Built-in | Product-managed graph memory updates, relationship tracking, and automatic forgetting. | Not exposed as a user-operated dream loop. |
+| Hyperspell | Built-in + Partial | Connected memories update when source data changes; procedural memory extracts reusable steps from agent traces; homepage claims query/conversation reinforcement. | Exact consolidation and reinforcement mechanics are product-managed and should be verified for the target account. |
 | Mem0/OpenMemory | Partial | Memory promotion/search behavior and platform processing. | Explicit consolidation policy is app-owned. |
 | Zep/Graphiti | Built-in | Temporal graph updates, facts, summaries. | Application must ingest updates correctly. |
 | Cognee | Built-in | `improve` and graph processing workflows. | Terminology differs from dreaming. |
@@ -33,5 +34,7 @@ Memory evolution is the ongoing work that keeps a second brain useful after capt
 
 - [Membase overview](https://docs.membase.so/)
 - [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
+- [Hyperspell procedural memory](https://docs.hyperspell.com/usage/procedural-memory)
+- [Hyperspell core concepts](https://docs.hyperspell.com/core/concepts)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

@@ -9,6 +9,7 @@
 | [GBrain](gbrain.md) | 로컬 또는 self-hosted 브레인 운영 계층 | 핵심, 직접 검증 |
 | [Hermes Agent + LLM Wiki](hermes-llm-wiki.md) | 에이전트가 운영하는 로컬 Markdown wiki | 핵심 |
 | [Supermemory](supermemory.md) | 호스팅형 memory API와 커넥터 계층 | 핵심 |
+| [Hyperspell](hyperspell.md) | AI agent용 호스팅 company/user context 계층 | 핵심, private beta 주의 |
 | [Mem0/OpenMemory](mem0-openmemory.md) | hosted/self-hosted 경로가 있는 개발자용 memory 계층 | 핵심 |
 | [Zep/Graphiti](zep-graphiti.md) | 애플리케이션을 위한 temporal knowledge graph memory | 핵심 |
 | [Cognee](cognee.md) | MCP가 있는 knowledge graph memory | 핵심 |

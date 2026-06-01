@@ -20,6 +20,7 @@ Knowledge organization is the system's ability to turn raw context into durable,
 | GBrain | Built-in | Schema packs, `gbrain-base-v2`, schema detect/suggest/review flows, page type inference, auto-linking, timeline/fact extraction, and takes. | Quality improves with structured Markdown, active schema selection, and review. |
 | Hermes Agent + LLM Wiki | Built-in | Agent-maintained Markdown wiki with schema, index, log, raw sources, entity pages, concept pages, comparison pages, query pages, frontmatter, tags, wikilinks, confidence, and contradiction markers. | Organization quality depends on the agent following the skill and the user maintaining schema discipline. |
 | Supermemory | Built-in | Processing pipeline, fact-based graph memory, relationship tracking, metadata/filtering. | Exact graph semantics should be verified per use case. |
+| Hyperspell | Built-in | Memories, connected data sources, metadata filters, collections, structured resource data, LLM-ready summaries, context graph claims, and procedural memories from traces. | App owners still design taxonomy, metadata, review UI, and safe recall boundaries. |
 | Mem0/OpenMemory | Built-in | Layered memory types and search/promotion model. | App must choose scope and metadata carefully. |
 | Zep/Graphiti | Built-in | Entity nodes, entity edges, episodic nodes, facts, summaries. | Strong for temporal graph apps, not no-code PKM. |
 | Cognee | Built-in | Knowledge graph memory tools and processing. | Graph quality depends on ingestion and processing. |
@@ -34,5 +35,7 @@ Knowledge organization is the system's ability to turn raw context into durable,
 - [Membase overview](https://docs.membase.so/)
 - [How Membase works](https://docs.membase.so/core-concepts/how-membase-works)
 - [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
+- [Hyperspell core concepts](https://docs.hyperspell.com/core/concepts)
+- [Hyperspell procedural memory](https://docs.hyperspell.com/usage/procedural-memory)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

@@ -7,6 +7,7 @@
 | [GBrain](../solutions/gbrain.md) | 예, local PGLite와 self-hosted Postgres/Supabase 경로 | HTTP MCP는 원격 배포 가능 | 세컨드 브레인 운영에 대한 최대 통제권 | PGLite는 로컬 개인 사용에 적합합니다. shared/team deployment에는 Postgres/Supabase, OAuth, sync, embedding, collector, maintenance가 추가됩니다. |
 | [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md) | 예, 로컬/서버 Hermes runtime과 Markdown wiki 디렉터리 | 선택한 hosting, sync, model provider에 따라 선택적으로 사용 | 확인 가능한 에이전트 유지보수형 wiki | 관리형 connector/governance 계층은 없고, wiki hygiene과 runtime configuration은 사용자가 책임집니다. |
 | [Supermemory](../solutions/supermemory.md) | API/self-hosting 세부 사항은 제품 경로에 따라 다름 | 예 | 커넥터가 있는 hosted memory API | 호스팅 편의성과 플랫폼 경계. |
+| [Hyperspell](../solutions/hyperspell.md) | 공개 SDK/MCP/plugin 레포는 있지만 핵심 memory platform은 hosted | 예 | agent용 hosted connector, context graph, retrieval layer | private beta 사용 가능 여부와 낮은 로컬 인프라 통제권. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | OSS/self-hosted 설정으로 가능 | Mem0 Platform으로 가능 | hosted 또는 직접 소유 stack을 가진 개발자용 memory 계층 | memory 범위와 거버넌스 설계 필요. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | Graphiti는 open source, Zep은 managed | 예 | 앱을 위한 temporal graph memory | 제품 엔지니어링과 backend/provider 선택 필요. |
 | [Cognee](../solutions/cognee.md) | 예, standalone/Docker/local 설정 | 예, API mode/shared backend | MCP가 있는 knowledge graph memory | 모드 선택이 공유와 격리에 영향. |
