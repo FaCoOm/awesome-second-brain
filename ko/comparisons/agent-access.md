@@ -11,7 +11,7 @@
 | [Honcho](../solutions/honcho.md) | 내장 | 내장 | 연동 | Claude Code, OpenCode, OpenClaw, Hermes, Codex, Cursor, Windsurf, VS Code, Cline, Zed, SDK | 내장 | MCP가 workspace, peer, session, conclusion, search, context, dream 도구를 노출합니다. SDK/API는 application integration을 지원합니다. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | 내장 | 내장 | 연동 | MCP 호환 client와 framework 연동 | 내장 | 앱 memory를 위한 좋은 개발자 primitive입니다. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | 부분 지원 | 내장 | 주 용도 아님 | LangGraph/Autogen 생태계 연동 | 내장 | 애플리케이션 인프라로 접근할 때 가장 좋습니다. |
-| [Cognee](../solutions/cognee.md) | 내장 | 내장 | 연동 | Claude Code, Cursor, Codex, Continue, Cline, Roo Code, Goose, Python agents | 내장 | standalone mode는 데이터를 격리하고 API mode는 backend를 공유합니다. |
+| [Cognee](../solutions/cognee.md) | 내장 | 내장 SDK/API | 연동 | Claude Code plugin, Cursor, Codex, Continue, Cline, Roo Code, Goose, OpenClaw plugin, Python agents | 내장 | SDK/local mode는 Docker 없이 실행할 수 있습니다. standalone mode는 데이터를 격리하고 API mode는 backend를 공유합니다. |
 | [Khoj](../solutions/khoj.md) | 부분 지원 | 연동 | 부분 지원 | Emacs, Obsidian, desktop, web | 부분 지원 | 개인 assistant와 검색 앱으로 가장 좋습니다. |
 | [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md) | 연동 | 플러그인 의존 | 플러그인 의존 | 커뮤니티 플러그인과 bridge | 부분 지원 | AI 도구 활용 품질은 bridge에 의존합니다. |
 | [ChatGPT Memory](../solutions/chatgpt-memory.md) | 주 용도 아님 | 주 용도 아님 | 주 용도 아님 | ChatGPT platform | ChatGPT 안에서 내장 | 기본적으로 ChatGPT 밖으로 portable하지 않습니다. |

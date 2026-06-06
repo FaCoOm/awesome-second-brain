@@ -11,7 +11,7 @@
 | [Honcho](../solutions/honcho.md) | Built-in | Built-in | Integration | Claude Code, OpenCode, OpenClaw, Hermes, Codex, Cursor, Windsurf, VS Code, Cline, Zed, SDKs | Built-in | MCP exposes workspace, peer, session, conclusion, search, context, and dream tools; SDK/API supports application integration. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | Built-in | Built-in | Integration | MCP-compatible clients and framework integrations | Built-in | Good developer primitive for app memory. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | Partial | Built-in | Not primary fit | LangGraph/Autogen ecosystem integrations | Built-in | Best accessed as application infrastructure. |
-| [Cognee](../solutions/cognee.md) | Built-in | Built-in | Integration | Claude Code, Cursor, Codex, Continue, Cline, Roo Code, Goose, Python agents | Built-in | Standalone mode isolates data; API mode shares a backend. |
+| [Cognee](../solutions/cognee.md) | Built-in | Built-in SDK/API | Integration | Claude Code plugin, Cursor, Codex, Continue, Cline, Roo Code, Goose, OpenClaw plugin, Python agents | Built-in | SDK/local mode can run without Docker; standalone mode isolates data; API mode shares a backend. |
 | [Khoj](../solutions/khoj.md) | Partial | Integration | Partial | Emacs, Obsidian, desktop, web | Partial | Best as a personal assistant and retrieval app. |
 | [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md) | Integration | Plugin-dependent | Plugin-dependent | Community plugins and bridges | Partial | AI-tool activation quality depends on the bridge. |
 | [ChatGPT Memory](../solutions/chatgpt-memory.md) | Not primary fit | Not primary fit | Not primary fit | ChatGPT platform | Built-in inside ChatGPT | Not portable outside ChatGPT by default. |

@@ -62,7 +62,7 @@ These entry points are a chooser, not a taxonomy. Pick the row that matches the 
 | [Hindsight](solutions/hindsight.md) | Agent memory API with memory banks | API + Integration | Built-in memory banks + observations | Built-in consolidation | MCP + API + SDK | Official quickstart; hands-on varies |
 | [Mem0/OpenMemory](solutions/mem0-openmemory.md) | Developer memory engine | API + Integration | Built-in memory scopes | Partial | MCP + API + SDK | Official: minutes |
 | [Zep/Graphiti](solutions/zep-graphiti.md) | Temporal graph memory for apps | API | Built-in temporal graph | Built-in | API + SDK | Official quickstart; hands-on varies |
-| [Cognee](solutions/cognee.md) | Knowledge graph memory with MCP | Built-in + API | Built-in knowledge graph | Built-in | MCP + API | Official: minutes with Docker |
+| [Cognee](solutions/cognee.md) | Knowledge graph memory SDK with MCP/plugins | Built-in + API/SDK | Built-in knowledge graph | Built-in | SDK + MCP + API + plugins | Official: minutes via package install; Docker optional |
 | [Khoj](solutions/khoj.md) | Personal AI over files and notes | Built-in | Built-in indexing/search | Partial | App + clients | Official: minutes |
 | [Obsidian/Logseq + AI bridge](solutions/obsidian-logseq.md) | Human-owned local knowledge base | Built-in notes + Integration | Partial human/PKM structure | Custom collector | Plugin/MCP bridge | Hands-on: 30-90 min |
 | [ChatGPT Memory](solutions/chatgpt-memory.md) | ChatGPT-native personalization baseline | Built-in | Built-in | Built-in | ChatGPT only | Official: instant |

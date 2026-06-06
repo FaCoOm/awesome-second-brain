@@ -61,7 +61,7 @@
 | [Honcho](ko/solutions/honcho.md) | Stateful agent memory와 user-modeling 계층 | API + 연동 | 내장 peer representation + conclusion | 내장 background reasoning | MCP + API + SDK | 공식 quickstart 있음, self-hosting은 달라짐 |
 | [Mem0/OpenMemory](ko/solutions/mem0-openmemory.md) | 개발자용 memory engine | API + 연동 | 내장 memory 범위 | 부분 지원 | MCP + API + SDK | 공식: 몇 분 |
 | [Zep/Graphiti](ko/solutions/zep-graphiti.md) | 앱을 위한 temporal graph memory | API | 내장 temporal graph | 내장 | API + SDK | 공식 quickstart 있음, 실제 소요 시간은 달라짐 |
-| [Cognee](ko/solutions/cognee.md) | MCP가 있는 knowledge graph memory | 내장 + API | 내장 knowledge graph | 내장 | MCP + API | 공식: Docker 기준 몇 분 |
+| [Cognee](ko/solutions/cognee.md) | MCP/plugin이 있는 knowledge graph memory SDK | 내장 + API/SDK | 내장 knowledge graph | 내장 | SDK + MCP + API + plugin | 공식: package install 기준 몇 분, Docker는 선택 사항 |
 | [Khoj](ko/solutions/khoj.md) | 파일과 노트 위의 개인 AI | 내장 | 내장 인덱싱/검색 | 부분 지원 | 앱 + 클라이언트 | 공식: 몇 분 |
 | [Obsidian/Logseq + AI bridge](ko/solutions/obsidian-logseq.md) | 사람이 관리하는 로컬 지식 베이스 | 내장 노트 + 연동 | 사람이 관리하는 PKM 구조에 부분 의존 | 커스텀 수집기 | 플러그인/MCP bridge | 직접 설정: 30-90분 |
 | [ChatGPT Memory](ko/solutions/chatgpt-memory.md) | ChatGPT 내 개인화 기준선 | 내장 | 내장 | 내장 | ChatGPT 전용 | 공식: 즉시 |

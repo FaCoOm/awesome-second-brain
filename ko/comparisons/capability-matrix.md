@@ -13,7 +13,7 @@
 | [Honcho](../solutions/honcho.md) | API + 연동 | 내장 peer representation + conclusion | 내장 background reasoning | Search + context + representation | 부분 개발자/API 도구 | 내장 peer/workspace model | Hosted 또는 self-hosted | MCP + API + SDK | 중간 | 공식 quickstart 있음, self-hosting은 달라짐 |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | API + 연동 | 내장 memory 범위 | 부분 지원 | Layered memory search | 내장 dashboard/server 경로 | 내장 | Hosted 또는 self-hosted | MCP + API + SDK | 중간 | 공식: 몇 분 |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | API | 내장 temporal graph | 내장 | Temporal knowledge graph + Graph RAG | 부분 개발자 UI/API | 내장 | Hosted 또는 OSS library 경로 | API + SDK | 중간 | 공식 quickstart 있음, 실제 소요 시간은 달라짐 |
-| [Cognee](../solutions/cognee.md) | 내장 + API | 내장 knowledge graph | 내장 | Knowledge graph memory | 부분 개발자/관리자 화면 | API 모드에서 내장 | 로컬 모드 또는 공유 API 모드 | MCP + API | 중간 | 공식: Docker 기준 몇 분 |
+| [Cognee](../solutions/cognee.md) | 내장 + API/SDK | 내장 knowledge graph | 내장 | Knowledge graph memory | 부분 개발자/관리자 화면 | API 모드에서 내장 | SDK/local mode, 선택적 Docker, 또는 공유 API/Cloud mode | SDK + MCP + API + plugin | 중간 | 공식: package install 기준 몇 분, Docker는 선택 사항 |
 | [Khoj](../solutions/khoj.md) | 내장 | 내장 인덱싱/검색 | 부분 지원 | 개인 파일과 노트 검색 | 내장 앱/클라이언트 UI | 부분 지원 | Cloud 또는 self-hosted | 앱 + 클라이언트 | 중간 | 공식: 몇 분 |
 | [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md) | 내장 노트 + 연동 | 사람이 관리하는 PKM 구조에 부분 의존 | 커스텀 수집기 | 로컬 search/graph + plugin RAG | 내장 사람 검토 UI | 부분 지원 | 로컬 vault/graph 통제 | Plugin/MCP bridge | 중간-높음 | 직접 설정: 30-90분 |
 | [ChatGPT Memory](../solutions/chatgpt-memory.md) | 내장 + 플랫폼 자료 | 내장 | 내장 | 플랫폼 memory + 대화 히스토리 + Memory Sources | 내장 설정과 Memory Sources | 부분 지원 | 플랫폼 제어 | 플랫폼 전용 | 낮음 | 공식: 즉시 |
