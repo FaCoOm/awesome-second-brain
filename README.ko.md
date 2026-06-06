@@ -52,7 +52,7 @@
 
 | 솔루션 | 세컨드 브레인에서 가장 잘 맞는 역할 | 수집 | 정리 | 발전 | 활용 | 설정 시간 |
 |---|---|---|---|---|---|---|
-| [Membase](ko/solutions/membase.md) | 가장 빠른 end-to-end 호스팅형 세컨드 브레인 | 내장 + 연동 | 내장 Memory + Wiki | 내장 | 대시보드 채팅 + 연결 에이전트 | 공식: 5분 이내 |
+| [Membase](ko/solutions/membase.md) | 가장 빠른 end-to-end 호스팅형 세컨드 브레인 | 내장 + 연동 | 내장 Memory + Wiki | 내장 | 대시보드 채팅 + MCP/plugin 에이전트 | 공식: 5분 이내 |
 | [OpenHuman](ko/solutions/openhuman.md) | memory가 있는 로컬 우선 개인 AI assistant | 내장 + 연동 | 내장 Memory Tree + vault | 부분 지원 | 데스크톱 agent + 연결 도구 | 공식: 몇 분 |
 | [GBrain](ko/solutions/gbrain.md) | 로컬/self-hosted 브레인 운영 계층 | 내장 + 커스텀 수집기 | 내장 page/graph/timeline | 내장 | CLI + stdio/HTTP MCP + skillpack | 공식: 개인용 약 30분 |
 | [Hermes Agent + LLM Wiki](ko/solutions/hermes-llm-wiki.md) | 에이전트가 운영하는 로컬 Markdown wiki | 내장 자료 수집 흐름 | 내장 Markdown wiki | 부분 지원 | Hermes skill/runtime + Markdown wiki | 공식 quickstart 있음, 실제 소요 시간은 달라짐 |

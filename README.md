@@ -52,7 +52,7 @@ These entry points are a chooser, not a taxonomy. Pick the row that matches the 
 
 | Solution | Best second-brain role | Collect | Organize | Evolve | Use | Setup time |
 |---|---|---|---|---|---|---|
-| [Membase](solutions/membase.md) | Fastest end-to-end hosted second brain | Built-in + Integration | Built-in Memory + Wiki | Built-in | Dashboard chat + connected agents | Official: under 5 min |
+| [Membase](solutions/membase.md) | Fastest end-to-end hosted second brain | Built-in + Integration | Built-in Memory + Wiki | Built-in | Dashboard chat + MCP/plugin agents | Official: under 5 min |
 | [OpenHuman](solutions/openhuman.md) | Local-first personal AI assistant with memory | Built-in + Integration | Built-in Memory Tree + vault | Partial | Desktop agent + connected tools | Official: minutes |
 | [GBrain](solutions/gbrain.md) | Local/self-hosted brain operations layer | Built-in + Custom collector | Built-in pages/graph/timeline | Built-in | CLI + stdio/HTTP MCP + skillpack | Official: ~30 min personal |
 | [Hermes Agent + LLM Wiki](solutions/hermes-llm-wiki.md) | Agent-operated local Markdown wiki | Built-in source workflow | Built-in Markdown wiki | Partial | Hermes skill/runtime + Markdown wiki | Official quickstart; hands-on varies |
