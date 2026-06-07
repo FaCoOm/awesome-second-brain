@@ -107,19 +107,6 @@ This snapshot compares each system by the lifecycle stages where it is strongest
 | [Examples](examples/README.md) | Describe concrete second-brain workflows and scenarios. |
 | [Watchlist](watchlist.md) | Track promising systems that are not yet fully evaluated. |
 
-## Evaluation Labels
-
-| Label | Meaning |
-|---|---|
-| Built-in | The product directly supports the workflow. |
-| Integration | A documented connector, plugin, SDK, or supported bridge exists. |
-| Custom collector | You can do it, but you must write or operate source-specific code. |
-| Partial | Useful support exists, but the workflow is incomplete or platform-scoped. |
-| Not primary fit | The solution is not designed for this workflow. |
-| Unknown | The repo has not verified this claim yet. |
-
-Setup time is tagged as `Official`, `Hands-on`, or `Maintainer estimate`. When official docs provide a quickstart but no credible time estimate, the table says that hands-on time varies.
-
 ## Sources
 
 Core claims should be backed by official documentation, official repositories, or local hands-on reports. This repo should point to official setup docs instead of duplicating step-by-step installation instructions.

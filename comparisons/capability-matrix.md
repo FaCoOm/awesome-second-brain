@@ -1,7 +1,5 @@
 # Capability Matrix
 
-Labels: `Built-in`, `Built-in but operational`, `Integration`, `Custom collector`, `Partial`, `Not primary fit`, `Unknown`.
-
 Rows are grouped by primary layer, while columns compare lifecycle and governance coverage. Use [Solution Layers](solution-layers.md) for the layer definitions.
 
 ## End-To-End Apps
@@ -48,7 +46,11 @@ Rows are grouped by primary layer, while columns compare lifecycle and governanc
 
 ## Reading Notes
 
-- `Built-in` does not always mean automatic quality. Imported data may still need review, schema cleanup, source labels, or deletion policies.
+- `Built-in` means the product directly supports the workflow, but imported data may still need review, schema cleanup, source labels, or deletion policies.
+- `Built-in but operational` means the capability exists, but users still own meaningful setup, sync, storage, or maintenance work.
 - `Integration` means a documented connector, plugin, SDK, or supported bridge exists.
 - `Custom collector` means the workflow is feasible but the user must own source-specific code, OAuth, rate limits, retries, and normalization.
+- `Partial` means useful support exists, but the workflow is incomplete, host-dependent, or platform-scoped.
 - `Not primary fit` should be used when a product can be forced into a workflow but is not designed for it.
+- `Unknown` means the repo has not verified the claim yet.
+- Setup time is tagged as `Official`, `Hands-on`, or `Maintainer estimate`; when official docs provide a quickstart but no credible time estimate, the table says that hands-on time varies.
