@@ -68,7 +68,8 @@ Conditionally required when source-backed and relevant:
 
 - `comparisons/*` pages, such as chooser, setup burden, agent access, local vs cloud, or personal vs team
 - `capabilities/*` pages for workflows the solution actually supports
-- Korean mirrors under `ko/` when the solution is part of the main curated set
+
+Korean mirrors under `ko/` are maintainer-managed. External contributors do not need to include Korean translations unless a maintainer asks for them in that PR.
 
 If a solution does not yet have enough evidence for those decision paths, use a narrower contribution type or do not add it yet.
 
