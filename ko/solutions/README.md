@@ -35,6 +35,7 @@
 | [Honcho](honcho.md) | Stateful agent memory와 user-modeling 계층 | 핵심, 출처 기반 |
 | [Hindsight](hindsight.md) | memory bank가 있는 agent memory API | 핵심, 출처 기반 |
 | [Mnemosyne](mnemosyne.md) | MCP와 Hermes 연동이 있는 local-first agent memory layer | 핵심, 출처 기반 |
+| [taOSmd](taosmd.md) | zero-loss archive가 있는 local-first offline agent memory layer | 핵심, 출처 기반 |
 | [Mem0/OpenMemory](mem0-openmemory.md) | hosted/self-hosted 경로가 있는 개발자용 memory 계층 | 핵심 |
 
 ## Memory Substrates

@@ -13,6 +13,7 @@
 | Dory | MCP-aware agent를 위한 local-first shared memory daemon. | emerging local-first 세컨드 브레인 후보. |
 | Open Second Brain | agent를 위한 Obsidian-native memory layer. | emerging Obsidian/MCP 후보이며 OpenHuman과 별개. |
 | MAGI | AI agent를 위한 persistent memory. | emerging AI-memory 후보. |
+| [tracecraft](https://github.com/Arrmlet/tracecraft) | S3-compatible 또는 Hugging Face storage를 사용해 shared state, task claim, handoff, session trace를 저장하는 serverless multi-agent coordination substrate. | Agent memory와 인접한 emerging coordination-substrate candidate; memory layer나 second-brain system 자체는 아닙니다. |
 
 ## 승격 규칙
 

@@ -17,6 +17,7 @@
 | [Hyperspell](../solutions/hyperspell.md) | app/API key, user token, Hyperspell Connect, source 선택, metadata/collection 설계, MCP 또는 SDK 연동. | private beta 사용 가능 여부와 app-owned governance/review UI. |
 | [Honcho](../solutions/honcho.md) | hosted MCP/API key 또는 self-hosted FastAPI server, SDK/MCP 연동, peer/session 설계, self-hosting용 provider key. | agent memory 품질은 integration 설계에 의존하며, self-hosting은 backend 운영을 추가합니다. |
 | [Mnemosyne](../solutions/mnemosyne.md) | Python package, local SQLite data path, MCP/SDK/Hermes plugin 설정, embedding 설정, memory bank, consolidation cadence. | 시작은 쉽지만 검색 품질과 write-back 안전성은 agent integration과 memory-scope 설계에 달려 있습니다. |
+| [taOSmd](../solutions/taosmd.md) | Python package source install, local embedding model, local LLM(Ollama 또는 RKLLM), data directory, 선택적 MCP/HTTP serve 설정. | 아직 PyPI package가 없고, retrieval/extraction 품질은 local model과 configuration에 달려 있습니다. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | API key, SDK 연동, hosted/self-hosted stack. | memory 범위 설계, 거버넌스, 검색 튜닝. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | 앱 연동, user/session/group 모델, 그래프 수집, 그래프 backend, LLM/embedding provider. | 최종 사용자 설정보다 제품 엔지니어링이 필요함. |
 | [Cognee](../solutions/cognee.md) | Python package/SDK 설정, 선택적 MCP client config, 선택적 Docker 또는 API/Cloud mode, 그래프 처리. | 별도 standalone instance와 공유 API 모드 선택이 memory를 쪼갤 수 있음. |

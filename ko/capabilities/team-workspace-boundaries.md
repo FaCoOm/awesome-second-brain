@@ -23,6 +23,7 @@
 | Hyperspell | app builder 기준 내장 | multi-tenant app user ID, user token, source selection, metadata, collection, resource filter, folder policy. | team/workspace governance UX는 app이 책임집니다. 계정/plan 동작은 확인해야 합니다. |
 | Honcho | app builder 기준 내장 | workspace가 app/environment를 격리하고 peer/session이 user, agent, group 등 entity를 모델링합니다. | 최종 사용자 governance UX와 permission flow는 app이 책임집니다. |
 | Mnemosyne | 부분 지원 | Memory bank와 global/session scope가 domain 또는 agent context를 분리할 수 있습니다. | Team permission, admin control, review workflow는 memory backend 바깥에서 해결해야 합니다. |
+| taOSmd | 부분 지원 | Agent별 shelf와 cross-agent read가 agent context와 project를 나눕니다. | Team permission, admin control, review workflow는 memory layer 일부가 아닙니다. |
 | Mem0/OpenMemory | 내장 | user, session, 조직 memory. | 신중한 범위 설계가 필요합니다. |
 | Zep/Graphiti | 내장 | project, user, session, group. | 앱 인프라로 사용할 때 가장 좋습니다. |
 | Cognee | API 모드에서 내장 | 공유 backend/API 모드. | standalone 모드는 클라이언트를 격리합니다. |
@@ -40,5 +41,7 @@
 - [Hyperspell folder sync](https://docs.hyperspell.com/usage/folder-sync)
 - [Honcho overview](https://honcho.dev/docs/v3/documentation/introduction/overview)
 - [Mnemosyne repository](https://github.com/AxDSan/Mnemosyne)
+- [taOSmd repository](https://github.com/jaylfc/taosmd)
+- [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Mem0 memory types](https://docs.mem0.ai/core-concepts/memory-types)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

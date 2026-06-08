@@ -23,6 +23,7 @@
 | Hyperspell | 부분 지원 | user token, source connection control, metadata filter, folder skip/manual/sync policy, manual review flow, 홈페이지의 삭제 claim. | 기본적으로 hosted입니다. export, retention, deletion, plan-specific governance는 확인해야 합니다. |
 | Honcho | self-hosting 기준 내장 | managed service 또는 self-hosted FastAPI server. workspace와 peer는 범위 지정 primitive를 제공합니다. | self-hosting은 더 많은 통제를 주지만 service, storage, provider key, update 운영을 추가합니다. |
 | Mnemosyne | local storage 기준 내장 | Local SQLite database, export/import command, memory update/delete/invalidate tool, configurable data directory. | Embedding, LLM, sync, agent behavior는 설정한 provider와 workflow 선택에 따라 달라집니다. |
+| taOSmd | local storage 기준 내장 | Offline local SQLite store, configurable data directory, correction/supersede tool, raw turn을 보존하는 append-only archive, A2A bus secret redaction. | Embedding과 LLM 동작은 설정한 local model에 의존합니다. |
 | Mem0/OpenMemory | 내장 | hosted 또는 self-hosted. | self-hosting이 가장 강한 통제권을 제공합니다. |
 | Zep/Graphiti | 부분 지원 | 호스팅형 Zep 또는 Graphiti library. | 플랫폼 보존 정책과 그래프 데이터 처리를 확인하세요. |
 | Cognee | 로컬 모드에서 내장 | SDK/local mode, 선택적 Docker MCP 설정, 또는 API/Cloud mode. | 공유 API 모드는 통제 경계를 바꿉니다. |
@@ -41,5 +42,7 @@
 - [Honcho repository](https://github.com/plastic-labs/honcho)
 - [Mnemosyne configuration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/configuration.md)
 - [Mnemosyne Hermes integration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/hermes-integration.md)
+- [taOSmd repository](https://github.com/jaylfc/taosmd)
+- [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Mem0 open-source overview](https://docs.mem0.ai/open-source/overview)
 - [Khoj docs](https://docs.khoj.dev/)

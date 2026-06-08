@@ -10,6 +10,7 @@
 | [Hyperspell](../solutions/hyperspell.md) | 공개 SDK/MCP/plugin 레포는 있지만 핵심 memory platform은 hosted | 예 | agent용 hosted connector, context graph, retrieval layer | private beta 사용 가능 여부와 낮은 로컬 인프라 통제권. |
 | [Honcho](../solutions/honcho.md) | 예, self-hosted FastAPI server | 예, managed service와 hosted MCP | hosted 또는 직접 소유 배포 경로가 있는 stateful agent memory | self-hosting에는 service, provider key, storage, update 운영이 추가됨. |
 | [Mnemosyne](../solutions/mnemosyne.md) | 예, package, MCP, SDK, Hermes plugin을 통한 local SQLite database | 주 모델은 아님 | MCP와 Hermes workflow용 local-first agent memory | embedding, memory scope, consolidation, agent integration behavior를 사용자가 운영해야 합니다. |
+| [taOSmd](../solutions/taosmd.md) | 예, local-first/offline; local SQLite, ONNX embedding, local LLM(Ollama 또는 RKLLM on RK3588) | hosted product는 아님. optional remote client가 사용자가 운영하는 `taosmd serve` instance를 호출할 수 있음 | zero-loss archive가 있는 modest 또는 single-board hardware용 offline local-first agent memory | local LLM, embedding model, data directory, serve 배포를 직접 운영해야 합니다. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | OSS/self-hosted 설정으로 가능 | Mem0 Platform으로 가능 | hosted 또는 직접 소유 stack을 가진 개발자용 memory 계층 | memory 범위와 거버넌스 설계 필요. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | Graphiti는 open source, Zep은 managed | 예 | 앱을 위한 temporal graph memory | 제품 엔지니어링과 backend/provider 선택 필요. |
 | [Cognee](../solutions/cognee.md) | 예, SDK/local 설정과 선택적 Docker MCP | 예, API/Cloud mode/shared backend | MCP/plugin이 있는 knowledge graph memory SDK | 모드 선택이 공유와 격리에 영향. |

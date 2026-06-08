@@ -22,6 +22,7 @@
 | Supermemory | Hosted + API | 호스팅 MCP, API, SDK, 커넥터. | self-hosting/control 세부 사항은 대상 요금제에서 확인해야 합니다. |
 | Hyperspell | Hosted + API | hosted dashboard, memory/context platform, SDK, API, MCP server, 공개 plugin/SDK repo. | 핵심 memory platform은 managed입니다. private beta 사용 가능 여부와 data residency/retention 세부 사항을 확인해야 합니다. |
 | Mnemosyne | Local-first | Python package, local SQLite database, MCP server, SDK call, Hermes plugin path. | Embedding, consolidation, memory scope, agent integration behavior는 사용자가 운영해야 합니다. |
+| taOSmd | Local-first | Python package source install, local SQLite store, ONNX embedding, local LLM(Ollama 또는 RKLLM on RK3588), optional remote client. | Local model, data directory, serve 배포를 사용자가 운영해야 합니다. |
 | Mem0/OpenMemory | Hosted/self-hosted | hosted Mem0 Platform 또는 open-source server/library 경로. | self-hosting에도 memory 인프라 결정이 필요합니다. |
 | Zep/Graphiti | Hosted + OSS library | Zep managed platform 또는 Graphiti library 연동. | 플랫폼과 library는 관련되어 있지만 같은 표면은 아닙니다. |
 | Cognee | SDK/local/API mode | local database를 쓰는 Python package/SDK, 선택적 local/Docker MCP 설정, 또는 공유 API/Cloud mode. | 모드 선택이 memory 격리와 공유에 영향을 줍니다. |
@@ -39,5 +40,7 @@
 - [Hyperspell GitHub org](https://github.com/hyperspell)
 - [Mnemosyne docs](https://docs.mnemosyne.site/)
 - [Mnemosyne PyPI package](https://pypi.org/project/mnemosyne-memory/)
+- [taOSmd repository](https://github.com/jaylfc/taosmd)
+- [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Mem0 open-source overview](https://docs.mem0.ai/open-source/overview)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
