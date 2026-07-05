@@ -20,6 +20,8 @@ English | [한국어](README.ko.md)
 
 A curated comparison of second brain, AI memory, and knowledge systems for people who want AI to understand their personal context, team knowledge, and working history. It focuses on the full lifecycle: collecting scattered context, organizing it into durable knowledge, keeping it fresh over time, and making it useful when people or AI tools work.
 
+Readers use different names for this space. Treat `AI second brain`, `agent memory`, `context engineering`, `memory layer`, `Graph RAG`, and `organizational knowledge base` as overlapping intents, not separate product categories. If you want personal coding-agent memory, start with local workspaces, agent memory layers, and platform baselines. If you want a business persistent knowledge base, start with end-to-end apps, memory substrates, and governance-heavy team options.
+
 ## Second-Brain Lifecycle
 
 Use this repo to decide how you want your second brain to work end to end:
@@ -76,15 +78,17 @@ This snapshot compares each system by the lifecycle stages where it is strongest
 | [Honcho](solutions/honcho.md) | Organize, Evolve, Use | You need peer representations, conclusions, session context, and user or agent modeling over time. | Developer integration and hosting choices matter. |
 | [Hindsight](solutions/hindsight.md) | Organize, Evolve, Use | You need memory banks, observations, consolidation, and multi-mode recall for agents. | Retrieval-to-action evidence depends on the surrounding workflow. |
 | [Mnemosyne](solutions/mnemosyne.md) | Organize, Evolve, Use | You need local SQLite memory with MCP, SDK, CLI, Hermes integration, tiers, and consolidation. | Local operation and agent logging still need owner attention. |
-| [taOSmd](solutions/taosmd.md) | Organize, Evolve, Use, Govern | You want an offline, local-first agent memory layer on modest or single-board hardware, with a zero-loss verbatim archive, source-linked verifiable recall, and MCP, HTTP, API, and CLI access. | You run a local LLM and embedding model yourself, and there is no PyPI package or hosted option yet. |
+| [taOSmd](solutions/taosmd.md) | Organize, Evolve, Use, Govern | You want an offline, local-first agent memory layer on modest or single-board hardware, with a zero-loss verbatim archive, source-linked verifiable recall, and MCP, HTTP, API, and CLI access. | You run a local LLM and embedding model yourself; PyPI or source install exists, with no hosted option. |
 | [Mem0/OpenMemory](solutions/mem0-openmemory.md) | Evolve, Use | You need user/run-scoped memory for apps with hosted or self-hosted paths. | More of an app memory primitive than a complete second-brain workflow. |
+| [Cognee](solutions/cognee.md) | Organize, Evolve, Use | You need graph-oriented memory through SDK, MCP, API, plugins, clients, local deployment, or cloud paths. | It can act as a graph substrate, but most readers adopt it through agent-facing memory surfaces first. |
 
 ### Memory Substrates
 
 | Solution | Strongest lifecycle coverage | Best when | Main tradeoff |
 |---|---|---|---|
 | [Zep/Graphiti](solutions/zep-graphiti.md) | Organize, Evolve, Use | You need temporal graph memory and Graph RAG under an application. | Not a complete user-facing second brain by itself. |
-| [Cognee](solutions/cognee.md) | Organize, Evolve, Use | You need graph-oriented memory infrastructure with SDK, MCP, API, plugins, or cloud paths. | Requires application or workflow integration above it. |
+
+Cognee can also serve as a graph memory substrate, but this repo now lists it under Agent Memory Layers because its official surfaces include SDK, API, MCP, plugins, clients, and cloud/local memory workflows rather than only lower-level graph infrastructure.
 
 ### Platform Baselines
 
@@ -101,6 +105,8 @@ This snapshot compares each system by the lifecycle stages where it is strongest
 | [Chooser](comparisons/chooser.md) | Pick a starting solution by lifecycle gap and tradeoff. |
 | [Solution Layers](comparisons/solution-layers.md) | Understand the app, workspace, API layer, substrate, or platform shape after choosing a lifecycle gap. |
 | [Capability Matrix](comparisons/capability-matrix.md) | Compare lifecycle support, governance, operating burden, activation surfaces, and setup time. |
+| [Memory Systems Research](comparisons/memory-systems-research.md) | Review the latest source-backed audit of adjacent memory, context database, indexing, and compression systems. |
+| [System Pipeline Proposals](comparisons/system-pipeline-proposals.md) | Design complete memory/context stacks for coding agents, AI products, enterprise knowledge, private research, and freshness-heavy RAG. |
 | [Capability Definitions](capabilities/README.md) | Understand the evaluation dimensions behind the matrix. |
 | [Activation Evidence](capabilities/activation-evidence.md) | Evaluate whether retrieved memory was loaded, cited, refused, written back, or actually used. |
 | [Setup Burden](comparisons/setup-burden.md) | See what you actually have to operate. |

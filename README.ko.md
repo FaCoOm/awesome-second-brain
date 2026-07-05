@@ -73,15 +73,17 @@
 | [Honcho](ko/solutions/honcho.md) | 정리, 발전, 활용 | peer representation, conclusion, session context, 사용자 또는 agent modeling을 시간에 따라 유지해야 할 때. | developer integration과 hosting 선택이 중요합니다. |
 | [Hindsight](ko/solutions/hindsight.md) | 정리, 발전, 활용 | agent에 memory bank, observation, consolidation, multi-mode recall이 필요할 때. | retrieval-to-action evidence는 주변 workflow에 달려 있습니다. |
 | [Mnemosyne](ko/solutions/mnemosyne.md) | 정리, 발전, 활용 | MCP, SDK, CLI, Hermes integration, tier, consolidation이 있는 local SQLite memory가 필요할 때. | local operation과 agent logging은 사용자가 챙겨야 합니다. |
-| [taOSmd](ko/solutions/taosmd.md) | 정리, 발전, 활용, 관리 | Modest 또는 single-board hardware에서 zero-loss verbatim archive와 MCP, HTTP, API, CLI access가 있는 offline local-first agent memory layer가 필요할 때. | Local LLM과 embedding model을 직접 운영해야 하며, 아직 PyPI package나 hosted option은 없습니다. |
+| [taOSmd](ko/solutions/taosmd.md) | 정리, 발전, 활용, 관리 | Modest 또는 single-board hardware에서 zero-loss verbatim archive와 MCP, HTTP, API, CLI access가 있는 offline local-first agent memory layer가 필요할 때. | Local LLM과 embedding model을 직접 운영해야 하며, PyPI 또는 source install 경로는 있지만 hosted option은 없습니다. |
 | [Mem0/OpenMemory](ko/solutions/mem0-openmemory.md) | 발전, 활용 | hosted 또는 self-hosted 경로로 app에 user/run-scoped memory를 붙이고 싶을 때. | 완성형 second-brain workflow라기보다 app memory primitive에 가깝습니다. |
+| [Cognee](ko/solutions/cognee.md) | 정리, 발전, 활용 | SDK, MCP, API, plugin, client, local/cloud path가 있는 graph-oriented memory가 필요할 때. | graph substrate로도 쓸 수 있지만, 이 레포에서는 agent-facing memory surface를 주 역할로 봅니다. |
 
 ### Memory Substrates
 
 | 솔루션 | 강한 생애주기 범위 | 이럴 때 적합 | 주요 트레이드오프 |
 |---|---|---|---|
 | [Zep/Graphiti](ko/solutions/zep-graphiti.md) | 정리, 발전, 활용 | 애플리케이션 아래에 temporal graph memory와 Graph RAG가 필요할 때. | 그 자체로 완성형 user-facing second brain은 아닙니다. |
-| [Cognee](ko/solutions/cognee.md) | 정리, 발전, 활용 | SDK, MCP, API, plugin, cloud path가 있는 graph-oriented memory infrastructure가 필요할 때. | 그 위에 application이나 workflow integration이 필요합니다. |
+
+Cognee는 graph memory substrate로도 쓸 수 있지만, 공식 surface가 SDK, API, MCP, plugin, client, cloud/local memory workflow까지 포함하므로 이 레포에서는 Agent Memory Layers에 둡니다.
 
 ### Platform Baselines
 
@@ -98,6 +100,8 @@
 | [Chooser](ko/comparisons/chooser.md) | 생애주기 빈칸과 트레이드오프에 맞는 시작 솔루션 고르기 |
 | [Solution Layers](ko/comparisons/solution-layers.md) | 생애주기 빈칸을 고른 뒤 app, workspace, API layer, substrate, platform 형태 이해하기 |
 | [Capability Matrix](ko/comparisons/capability-matrix.md) | 생애주기 지원, 거버넌스, 운영 부담, 활용 채널, 설정 시간 비교 |
+| [Memory Systems Research](comparisons/memory-systems-research.md) | 인접 memory, context database, indexing, compression system의 source-backed audit |
+| [System Pipeline Proposals](comparisons/system-pipeline-proposals.md) | coding agent, AI product, enterprise knowledge, private research, freshness-heavy RAG용 memory/context stack 설계 |
 | [Capability Definitions](ko/capabilities/README.md) | 매트릭스 뒤의 평가 축 이해하기 |
 | [Activation Evidence](ko/capabilities/activation-evidence.md) | 검색된 memory가 실제 작업에서 로드, 인용, 거절, 쓰기 반영, 활용됐는지 평가 |
 | [Setup Burden](ko/comparisons/setup-burden.md) | 실제로 무엇을 운영해야 하는지 보기 |
