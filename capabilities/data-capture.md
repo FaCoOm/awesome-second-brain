@@ -44,7 +44,7 @@ Context capture is how raw personal, team, and source context enters the second 
 - [Hyperspell Connect](https://docs.hyperspell.com/usage/connect)
 - [Honcho overview](https://honcho.dev/docs/v3/documentation/introduction/overview)
 - [Mnemosyne docs](https://docs.mnemosyne.site/)
-- [Mnemosyne Hermes integration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/hermes-integration.md)
+- [Mnemosyne Hermes integration](https://github.com/mnemosyne-oss/mnemosyne/blob/main/docs/hermes-integration.md)
 - [taOSmd repository](https://github.com/jaylfc/taosmd)
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Khoj docs](https://docs.khoj.dev/)

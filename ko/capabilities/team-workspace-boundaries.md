@@ -40,7 +40,7 @@
 - [Hyperspell core concepts](https://docs.hyperspell.com/core/concepts)
 - [Hyperspell folder sync](https://docs.hyperspell.com/usage/folder-sync)
 - [Honcho overview](https://honcho.dev/docs/v3/documentation/introduction/overview)
-- [Mnemosyne repository](https://github.com/AxDSan/Mnemosyne)
+- [Mnemosyne repository](https://github.com/mnemosyne-oss/mnemosyne)
 - [taOSmd repository](https://github.com/jaylfc/taosmd)
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Mem0 memory types](https://docs.mem0.ai/core-concepts/memory-types)

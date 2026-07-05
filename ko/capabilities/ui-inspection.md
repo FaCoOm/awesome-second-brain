@@ -41,7 +41,7 @@
 - [Hyperspell list memories](https://docs.hyperspell.com/api-reference/memories/list-memories)
 - [Hyperspell folder sync](https://docs.hyperspell.com/usage/folder-sync)
 - [Honcho MCP integration](https://honcho.dev/docs/v3/guides/integrations/mcp)
-- [Mnemosyne Hermes integration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/hermes-integration.md)
+- [Mnemosyne Hermes integration](https://github.com/mnemosyne-oss/mnemosyne/blob/main/docs/hermes-integration.md)
 - [taOSmd repository](https://github.com/jaylfc/taosmd)
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [ChatGPT Memory FAQ](https://help.openai.com/en/articles/8590148-memory-faq)

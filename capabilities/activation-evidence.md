@@ -62,7 +62,7 @@ Activation evidence is not the same as perfect observability. A practical second
 - [Membase MCP](https://docs.membase.so/features/membase-mcp)
 - [GBrain solution profile](../solutions/gbrain.md)
 - [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
-- [Mnemosyne Hermes integration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/hermes-integration.md)
+- [Mnemosyne Hermes integration](https://github.com/mnemosyne-oss/mnemosyne/blob/main/docs/hermes-integration.md)
 - [taOSmd repository](https://github.com/jaylfc/taosmd)
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)

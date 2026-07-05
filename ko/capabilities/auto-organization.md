@@ -42,7 +42,7 @@
 - [Hyperspell procedural memory](https://docs.hyperspell.com/usage/procedural-memory)
 - [Honcho overview](https://honcho.dev/docs/v3/documentation/introduction/overview)
 - [Mnemosyne docs](https://docs.mnemosyne.site/)
-- [Mnemosyne repository](https://github.com/AxDSan/Mnemosyne)
+- [Mnemosyne repository](https://github.com/mnemosyne-oss/mnemosyne)
 - [taOSmd repository](https://github.com/jaylfc/taosmd)
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)

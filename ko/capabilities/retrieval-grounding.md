@@ -41,7 +41,7 @@
 - [Hyperspell MCP overview](https://docs.hyperspell.com/advanced/mcp-overview)
 - [Honcho MCP integration](https://honcho.dev/docs/v3/guides/integrations/mcp)
 - [Mnemosyne docs](https://docs.mnemosyne.site/)
-- [Mnemosyne configuration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/configuration.md)
+- [Mnemosyne configuration](https://github.com/mnemosyne-oss/mnemosyne/blob/main/docs/configuration.md)
 - [taOSmd repository](https://github.com/jaylfc/taosmd)
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)

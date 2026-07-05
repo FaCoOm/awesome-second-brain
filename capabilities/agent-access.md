@@ -24,7 +24,7 @@ For the per-solution comparison, see [../comparisons/agent-access.md](../compari
 - [Hyperspell MCP overview](https://docs.hyperspell.com/advanced/mcp-overview)
 - [Honcho MCP integration](https://honcho.dev/docs/v3/guides/integrations/mcp)
 - [Mnemosyne docs](https://docs.mnemosyne.site/)
-- [Mnemosyne Hermes integration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/hermes-integration.md)
+- [Mnemosyne Hermes integration](https://github.com/mnemosyne-oss/mnemosyne/blob/main/docs/hermes-integration.md)
 - [taOSmd repository](https://github.com/jaylfc/taosmd)
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Mem0 MCP](https://docs.mem0.ai/platform/mem0-mcp)
