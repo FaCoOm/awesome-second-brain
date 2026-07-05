@@ -12,14 +12,33 @@ Second-brain products, agent memory APIs, and retrieval substrates are often dis
 | Memory substrate | Provide lower-level graph, retrieval, entity, temporal, or knowledge infrastructure that apps build on. | Infrastructure teams, backend engineers, framework builders | Data model, retrieval architecture, update semantics, scaling, operational complexity |
 | Platform baseline | Provide memory or source-grounded context inside one AI platform or bounded research surface. | Users already committed to one platform | Platform fit, exportability, visibility, source control, lock-in |
 
+## Categorization Standard
+
+Classify each system by the first layer a reader must adopt, then document secondary roles in the profile. Use official repositories and docs for product identity and factual claims. If a product spans multiple roles, pick one primary authority: freshness layer, memory/context authority, compression layer, or runtime activation layer.
+
+## Reader Intent Map
+
+Product language is not layer language. Map the user's goal to the adoption layer before comparing tools.
+
+| Reader phrase | Usually means | Start with |
+|---|---|---|
+| Personal coding-agent memory | The agent should remember project facts, preferences, sessions, and decisions across runs. | Local workspace, agent memory layer, or platform baseline |
+| Business persistent knowledge base | Teams need durable, inspectable, permissioned knowledge across docs, chats, apps, and workflows. | End-to-end app, local workspace, or memory substrate plus app layer |
+| Memory layer or memory API | Developers need scoped read/write memory for an agent or product. | Agent memory layer |
+| Context engineering | The system must select, shape, cite, and load the right context at runtime. | Agent memory layer, memory substrate, or platform baseline |
+| Graph RAG or knowledge graph memory | The system needs entities, relationships, temporal facts, or graph retrieval under an app. | Memory substrate |
+| AI second brain | Broad umbrella for capture, organization, evolution, use, and governance. | Pick by lifecycle gap first, then layer |
+
+Rules files such as `CLAUDE.md`, `.cursor/rules/*.mdc`, or `AGENTS.md` can act like durable workspace context, but they are not the same as agent memory unless the platform stores, retrieves, and updates memories across runs. Bounded tools such as NotebookLM or Claude Projects can be strong project workspaces without proving they are general multi-tenant organization-memory infrastructure.
+
 ## Evaluated Solutions By Primary Layer
 
 | Layer | Solutions |
 |---|---|
 | End-to-end app | [Membase](../solutions/membase.md), [OpenHuman](../solutions/openhuman.md), [Khoj](../solutions/khoj.md), [Hjarni](../solutions/hjarni.md) |
 | Local workspace | [GBrain](../solutions/gbrain.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Hermes Agent + Obsidian + Honcho](../solutions/hermes-obsidian-honcho.md), [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md), [Pad](../solutions/pad.md) |
-| Agent memory layer | [Mem0/OpenMemory](../solutions/mem0-openmemory.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [taOSmd](../solutions/taosmd.md) |
-| Memory substrate | [Zep/Graphiti](../solutions/zep-graphiti.md), [Cognee](../solutions/cognee.md) |
+| Agent memory layer | [Mem0/OpenMemory](../solutions/mem0-openmemory.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [taOSmd](../solutions/taosmd.md), [Cognee](../solutions/cognee.md) |
+| Memory substrate | [Zep/Graphiti](../solutions/zep-graphiti.md) |
 | Platform baseline | [ChatGPT Memory](../solutions/chatgpt-memory.md), [Claude Projects/Claude Code](../solutions/claude-projects-code.md), [NotebookLM](../solutions/notebooklm.md) |
 
 ## How To Read Cross-Layer Comparisons
@@ -43,6 +62,8 @@ Layer boundaries are useful because many real deployments combine layers:
 | Agent memory layer + memory substrate | Build product memory with an API layer while relying on graph or retrieval infrastructure underneath. |
 | Local workspace + memory substrate | Use a local wiki or vault as the inspectable source of truth, then index it into graph or retrieval infrastructure for application use. |
 
+Cognee is listed as an agent memory layer because its documented adoption surfaces include SDK, MCP, API, plugins, clients, and cloud/local memory workflows. It can still play the secondary graph-substrate role inside a stack.
+
 ## Contribution Rule
 
-When adding a new system, pick the smallest primary layer that describes what the user actually adopts first. If a project is mostly a graph, database, embedding index, or retrieval backend, add it as a memory substrate or watchlist candidate instead of presenting it as a full second-brain app. If a system spans multiple layers, list its primary adoption surface first and explain secondary roles in the profile.
+When adding a new system, pick the smallest primary layer that describes what the user actually adopts first. If a project is mostly a graph, database, embedding index, or retrieval backend, add it as a memory substrate or watchlist candidate instead of presenting it as a full second-brain app. If a system spans multiple layers, list its primary adoption surface first and explain secondary roles in the profile. Keep Korean mirrors semantically aligned with the same primary layer and role labels.

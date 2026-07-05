@@ -12,14 +12,18 @@
 | Memory substrate | 앱이 그 위에 구축하는 graph, retrieval, entity, temporal, knowledge infrastructure를 제공합니다. | infrastructure team, backend engineer, framework builder | data model, retrieval architecture, update semantics, scaling, 운영 복잡도 |
 | Platform baseline | 하나의 AI platform 또는 제한된 research surface 안에서 memory나 source-grounded context를 제공합니다. | 특정 platform 안에서 이미 일하는 사용자 | platform 적합도, export 가능성, visibility, source control, lock-in |
 
+## 분류 표준
+
+각 시스템은 독자가 먼저 채택해야 하는 계층으로 분류하고, 부수 역할은 profile 안에서 설명합니다. 제품 정체성과 사실 claim은 공식 repository와 문서를 우선합니다. 여러 역할을 겸하는 제품은 freshness layer, memory/context authority, compression layer, runtime activation layer 중 하나를 primary authority로 고릅니다.
+
 ## 주 계층별 평가 솔루션
 
 | 계층 | 솔루션 |
 |---|---|
 | End-to-end app | [Membase](../solutions/membase.md), [OpenHuman](../solutions/openhuman.md), [Khoj](../solutions/khoj.md) |
 | Local workspace | [GBrain](../solutions/gbrain.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md) |
-| Agent memory layer | [Mem0/OpenMemory](../solutions/mem0-openmemory.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [taOSmd](../solutions/taosmd.md) |
-| Memory substrate | [Zep/Graphiti](../solutions/zep-graphiti.md), [Cognee](../solutions/cognee.md) |
+| Agent memory layer | [Mem0/OpenMemory](../solutions/mem0-openmemory.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [taOSmd](../solutions/taosmd.md), [Cognee](../solutions/cognee.md) |
+| Memory substrate | [Zep/Graphiti](../solutions/zep-graphiti.md) |
 | Platform baseline | [ChatGPT Memory](../solutions/chatgpt-memory.md), [Claude Projects/Claude Code](../solutions/claude-projects-code.md), [NotebookLM](../solutions/notebooklm.md) |
 
 ## 계층이 다른 솔루션을 같이 읽는 법
@@ -43,6 +47,8 @@
 | Agent memory layer + memory substrate | product memory는 API layer로 만들고, 그 아래 graph/retrieval infrastructure에 의존합니다. |
 | Local workspace + memory substrate | 확인 가능한 source of truth는 local wiki나 vault에 두고, application use를 위해 graph/retrieval infrastructure로 index합니다. |
 
+Cognee는 documented adoption surface가 SDK, MCP, API, plugin, client, cloud/local memory workflow까지 포함하므로 agent memory layer로 둡니다. stack 안에서는 graph substrate 역할도 할 수 있습니다.
+
 ## 기여 규칙
 
-새 시스템을 추가할 때는 사용자가 실제로 먼저 채택하는 가장 작은 주 계층을 고르세요. 프로젝트가 주로 graph, database, embedding index, retrieval backend라면 완성형 second-brain app처럼 소개하지 말고 memory substrate 또는 watchlist 후보로 넣는 편이 낫습니다. 여러 계층에 걸친 시스템이라면 primary adoption surface를 먼저 표시하고, 부수적인 역할은 profile 안에서 설명하세요.
+새 시스템을 추가할 때는 사용자가 실제로 먼저 채택하는 가장 작은 주 계층을 고르세요. 프로젝트가 주로 graph, database, embedding index, retrieval backend라면 완성형 second-brain app처럼 소개하지 말고 memory substrate 또는 watchlist 후보로 넣는 편이 낫습니다. 여러 계층에 걸친 시스템이라면 primary adoption surface를 먼저 표시하고, 부수적인 역할은 profile 안에서 설명하세요. Korean mirror는 같은 primary layer와 role label을 의미상 유지해야 합니다.

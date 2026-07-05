@@ -37,6 +37,7 @@
 | [Mnemosyne](mnemosyne.md) | MCP와 Hermes 연동이 있는 local-first agent memory layer | 핵심, 출처 기반 |
 | [taOSmd](taosmd.md) | zero-loss archive가 있는 local-first offline agent memory layer | 핵심, 출처 기반 |
 | [Mem0/OpenMemory](mem0-openmemory.md) | hosted/self-hosted 경로가 있는 개발자용 memory 계층 | 핵심 |
+| [Cognee](cognee.md) | SDK, MCP, plugin, client, cloud/local path가 있는 graph-oriented agent memory layer | 핵심 |
 
 ## Memory Substrates
 
@@ -45,7 +46,8 @@
 | 솔루션 | 세컨드 브레인에서 가장 잘 맞는 역할 | 상태 |
 |---|---|---|
 | [Zep/Graphiti](zep-graphiti.md) | 애플리케이션을 위한 temporal knowledge graph memory | 핵심 |
-| [Cognee](cognee.md) | MCP/plugin이 있는 knowledge graph memory SDK | 핵심 |
+
+Cognee는 graph memory substrate로도 유용하지만, 이 레포의 주 평가 surface는 agent-facing memory layer입니다.
 
 ## Platform Baselines
 
