@@ -8,7 +8,7 @@
 - 회사 / 관리자: jaylfc, taOS ecosystem 일부
 - 상태: Python API, CLI, local HTTP/REST, MCP surface가 있는 open-source Python package, 첫 tagged release v0.2.0
 - 오픈소스: 예, GitHub가 인식한 MIT license repository
-- 배포: Local-first. 아직 PyPI release는 없고 source install 경로를 사용합니다. Local ONNX embedding과 Ollama 기반 local LLM, 또는 RK3588 NPU의 RKLLM 경로로 offline 실행합니다. Optional remote client mode는 사용자가 운영하는 `taosmd serve` instance를 local CLI에서 호출합니다.
+- 배포: Local-first. PyPI 또는 source install 경로를 사용합니다. Local ONNX embedding과 Ollama 기반 local LLM, 또는 RK3588 NPU의 RKLLM 경로로 offline 실행합니다. Optional remote client mode는 사용자가 운영하는 `taosmd serve` instance를 local CLI에서 호출합니다.
 - 주요 사용자: modest hardware나 single-board hardware에서 offline local-first agent memory layer를 운영하고 싶은 개발자와 agent 운영자
 - 세컨드 브레인 역할: zero-loss archive가 있는 local-first offline agent memory layer
 - 마지막 검토: 2026-06-08
@@ -27,7 +27,7 @@ taOSmd는 offline으로 modest hardware에서 실행해야 하는 agent용 memor
 
 | 영역 | 평가 |
 |---|---|
-| 배포 / 소유권 | Local-first. 아직 PyPI release는 없고 source install 경로를 사용합니다. Local SQLite store, local ONNX embedding, Ollama 기반 local LLM 또는 RK3588 NPU의 RKLLM을 사용합니다. Optional remote client mode는 사용자가 운영하는 `taosmd serve` instance를 대상으로 합니다. |
+| 배포 / 소유권 | Local-first. PyPI 또는 source install 경로를 사용합니다. Local SQLite store, local ONNX embedding, Ollama 기반 local LLM 또는 RK3588 NPU의 RKLLM을 사용합니다. Optional remote client mode는 사용자가 운영하는 `taosmd serve` instance를 대상으로 합니다. |
 | 맥락 수집 | API, HTTP, MCP 기반입니다. 각 conversation turn을 append-only archive에 verbatim으로 먼저 기록하고, vector와 knowledge graph indexing을 그 위에 얹습니다. Capture는 agent/developer 주도이며 넓은 OAuth connector 계층은 아닙니다. |
 | 지식 정리 | Append-only archive, local vector index, temporal knowledge graph, stored turn 위의 librarian retrieval layer가 내장되어 있습니다. |
 | Memory 발전 | Correction과 supersede가 knowledge graph와 vector layer 양쪽에서 superseded fact가 recall되지 않게 하고, retention score가 memory를 aging합니다. Scheduled dream이나 consolidation cycle은 없고 raw archive는 항상 보존됩니다. |
@@ -36,7 +36,7 @@ taOSmd는 offline으로 modest hardware에서 실행해야 하는 agent용 memor
 | 개인 / 팀 범위 | 부분 지원. Agent별 shelf와 cross-agent read가 있지만, team permission과 review workflow는 product surface가 아닙니다. |
 | 검토 / 정정 | Correction과 supersede가 raw archive row를 보존한 채 knowledge graph와 vector layer에 적용되고, pending-review list가 low-confidence item을 노출합니다. |
 | 프라이버시 / 통제권 | 기본적으로 local-first/offline입니다. Local SQLite store, local ONNX embedding, configurable data directory를 사용하고 cloud call이 없습니다. A2A bus에서는 secret이 redaction됩니다. Embedding과 LLM 동작은 설정한 local model에 의존합니다. |
-| 설정 / 운영 | 중간. 검증된 경로는 source install, local embedding model, local LLM입니다. 아직 PyPI package가 없고, retrieval/extraction 품질은 local model과 configuration에 달려 있습니다. |
+| 설정 / 운영 | 중간. 검증된 경로는 PyPI 또는 source install, local embedding model, local LLM입니다. Retrieval/extraction 품질은 local model과 configuration에 달려 있습니다. |
 
 ## 강점
 
@@ -50,7 +50,7 @@ taOSmd는 offline으로 modest hardware에서 실행해야 하는 agent용 memor
 ## 한계
 
 - 완성형 소비자 세컨드 브레인 앱이 아니라 memory backend입니다.
-- 아직 PyPI package가 없습니다. 현재 지원되는 설치 경로는 source install입니다. Local LLM과 model까지 설치하는 one-line bootstrap은 clean machine에서 계속 검증 중입니다.
+- PyPI install 경로는 있지만, local LLM과 model까지 설치하는 one-line bootstrap은 clean machine에서 계속 검증 중입니다.
 - 넓은 app connector, hosted dashboard, team permission, source governance가 주된 제품 surface는 아닙니다.
 - Benchmark 숫자는 maintainer-run local result이며, 재현 없이는 independent third-party evaluation으로 다루면 안 됩니다.
 - Retrieval과 extraction 품질은 local embedding/LLM model, configuration, agent write behavior에 의존합니다.
@@ -71,7 +71,7 @@ taOSmd는 offline으로 modest hardware에서 실행해야 하는 agent용 memor
 
 ## 트레이드오프
 
-taOSmd는 강한 local control, low-end hardware에 맞는 offline footprint, zero-loss archive를 제공하지만, model 운영과 integration 판단을 사용자에게 넘깁니다. Hosted option과 PyPI package가 아직 없기 때문에 검증된 경로는 source install과 local LLM/embedding model 운영입니다. 주요 요구가 완성형 hosted 세컨드 브레인 제품이 아니라 local 또는 programmable agent memory라면 Mnemosyne, Mem0/OpenMemory, Hindsight, Honcho, Cognee와 비교하는 것이 적절하며, offline 운영, low-end hardware, byte-for-byte source record가 중요할 때 더 높게 평가할 수 있습니다.
+taOSmd는 강한 local control, low-end hardware에 맞는 offline footprint, zero-loss archive를 제공하지만, model 운영과 integration 판단을 사용자에게 넘깁니다. Hosted option은 없으므로 검증된 경로는 PyPI 또는 source install과 local LLM/embedding model 운영입니다. 주요 요구가 완성형 hosted 세컨드 브레인 제품이 아니라 local 또는 programmable agent memory라면 Mnemosyne, Mem0/OpenMemory, Hindsight, Honcho, Cognee와 비교하는 것이 적절하며, offline 운영, low-end hardware, byte-for-byte source record가 중요할 때 더 높게 평가할 수 있습니다.
 
 ## 공식 설정 / 평가 링크
 
