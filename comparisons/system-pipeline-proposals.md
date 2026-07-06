@@ -17,17 +17,71 @@ This report turns the catalog into implementable second-brain and agent-memory s
 | Write back | Save decisions, corrections, new memories, and task outcomes. | Does useful work improve the memory system instead of disappearing in chat history? |
 | Govern | Inspect, correct, delete, export, scope, audit, and permission memory. | Who can change memory, and how are mistakes reversed? |
 
-## Field 1: Personal Coding-Agent Memory
+## Field 1: Industry-Grade Coding-Agent Pipeline
 
-Goal: help coding agents remember project facts, local conventions, decisions, and prior sessions without turning the repository into an opaque hosted knowledge base.
+Goal: design a complete OpenCode-like coding agent stack that can plan, edit, test, remember, retrieve, verify, and operate safely across real repositories. Treat this as a system pipeline, not a product pick: one agent runtime coordinates one memory authority, one inspectable workspace source of truth, optional graph/freshness layers, and strict operational controls.
 
-| Stack | Systems | Best fit | Risks to audit |
+### Reference Architecture
+
+| Layer | Job | Strong fit | Pass condition |
 |---|---|---|---|
-| Local wiki plus agent memory | Hermes Agent + LLM Wiki, Mnemosyne, Claude Code memory | Developers who want inspectable Markdown plus local recall in agent sessions. | Ensure retrieved memory is cited in tool logs; avoid stale wiki facts becoming unreviewed instructions. |
-| Offline agent memory | taOSmd, Claude Code memory, Cursor rules | Local-first or low-power environments where the archive and MCP/API surfaces matter. | Verify local model/embedding setup, backup policy, and cross-agent scoping. |
-| Cross-client graph memory | Cognee, Cursor rules, Claude Code memory | Users who move between MCP-compatible coding clients and want shared graph memory. | Avoid per-client standalone stores that fragment memory. |
+| Agent runtime | Run the agentic loop: gather context, call tools, edit files, verify, summarize, fork, and recover. | OpenCode agents/tools/skills/MCP, Claude Code agentic harness concepts | Every action is represented as a tool call, permission decision, subagent task, or session event. |
+| Policy and instruction layer | Load durable repo, user, and org rules before work begins. | `AGENTS.md`, `CLAUDE.md`, Cursor rules, OpenCode rules/skills | Agent follows current repo commands, style, safety, and verification rules without repeating them in every prompt. |
+| Work surface | Keep human-reviewable truth in files, issues, docs, branches, worktrees, and session notes. | Git worktrees, Markdown wiki, Obsidian/Logseq, Hermes Agent + LLM Wiki | A maintainer can inspect what the agent believes and change it with normal repo/file workflows. |
+| Memory authority | Store durable cross-session facts, decisions, preferences, summaries, and corrections. | Mnemosyne, taOSmd, Hindsight, Mem0/OpenMemory, Supermemory | Exactly one system owns memory writes; every memory has scope, provenance, and correction path. |
+| Context graph | Model entities, relationships, timelines, code concepts, people, decisions, and dependencies. | Cognee, Zep/Graphiti, taOSmd graph store | Graph facts are source-backed and can be repaired when sources change. |
+| Freshness layer | Re-index changed code/docs and mark stale derived context. | CocoIndex-style incremental flow, product-native refresh, git/file watchers | Changed files cause incremental updates or visible stale-state warnings. |
+| Retrieval layer | Select context through keyword, semantic, graph, temporal, scoped, and recency-aware search. | Hybrid memory search, graph search, code search, local wiki search | Retrieval returns source IDs, snippets, timestamps, and reason-for-selection. |
+| Compression layer | Fit relevant context into model budget without losing traceability. | Headroom-style compression, OpenViking-style session compression, curated Markdown summaries | Compressed context links back to original sources and can be rejected when lossy. |
+| Injection layer | Deliver selected context to the agent through the runtime's supported surfaces. | MCP resources/tools/prompts, OpenCode MCP servers, Claude/Cursor rule loading, skills | Tool logs or traces show which context was loaded before the agent acted. |
+| Write-back layer | Save new decisions, fixes, test evidence, user corrections, and task summaries. | MCP write tools, memory APIs, local memory CLIs, wiki edits, session summaries | Useful work updates memory or documented source of truth instead of staying only in chat. |
+| Governance layer | Enforce permissions, approvals, sandboxing, audit logs, deletion, export, and scope boundaries. | OpenCode permissions, Claude Code permissions/hooks/sandboxing, MCP roots, managed settings | Dangerous actions require approval or are denied by runtime controls, not model goodwill. |
+| Operations layer | Measure cost, latency, failures, context load, test pass rate, memory quality, and reviewer outcomes. | CI, eval harnesses, traces, audit logs, regression scenarios | The team can answer: what changed, why, which context was used, and whether verification passed. |
 
-Recommended default: start with platform rules files for stable project instructions, add one local or agent memory layer for cross-session recall, then add a graph layer only when entity/relation retrieval is needed.
+### Optimized Development Flow
+
+1. Bootstrap repo truth: create or update `AGENTS.md` / `CLAUDE.md` / rules with architecture, commands, style, known hazards, and verification requirements.
+2. Start in plan mode or a restricted planning agent for ambiguous work; switch to build only after scope and checks are known.
+3. Load only relevant skills and MCP servers; disable broad MCP servers globally and enable them per agent when needed to control context cost.
+4. Capture the task, branch/worktree, current diff, failing tests, relevant files, prior decisions, and user constraints into the memory authority.
+5. Retrieve in tiers: repo rules first, current files second, recent session memory third, semantic/graph memory fourth, external docs last.
+6. Compress retrieved context into a small, cited working packet; drop uncited or low-confidence memories.
+7. Execute with small diffs, task tracking, typed tool calls, permission gates, and subagents for parallel read-only research or isolated review.
+8. Verify through tests, build, lint/LSP, real CLI/browser/API surface, and reviewer gate when risk is high.
+9. Write back only durable learning: decisions, corrections, new constraints, resolved failures, evaluation evidence, and links to commits/issues.
+10. Periodically prune or decay stale memories, regenerate summaries from source, and audit retrieval-to-action evidence.
+
+### Recommended Component Stack
+
+| Need | Default component | Upgrade when |
+|---|---|---|
+| Coding-agent runtime | OpenCode-style runtime with primary agents, subagents, tools, skills, permissions, and MCP | You need managed org policy, hosted execution, or enterprise audit controls. |
+| Repo instructions | `AGENTS.md` plus focused skills/rules | The same mistake repeats or a workflow becomes stable enough to package. |
+| Human-readable source of truth | Markdown wiki or docs in the repo/workspace | Knowledge must outlive one memory vendor or remain reviewable in pull requests. |
+| Local memory authority | Mnemosyne or taOSmd | Offline operation, inspectable SQLite/archive, or local model control matters. |
+| Hosted memory authority | Supermemory, Mem0/OpenMemory, or Hindsight | Multi-app ingestion, team/user scope, or product memory API matters more than local control. |
+| Graph reasoning | Cognee or Zep/Graphiti | Entity/relation/time queries matter enough to justify graph maintenance. |
+| Freshness | Incremental indexing or product-native refresh | Sources change faster than manual summaries can stay correct. |
+| Compression | Source-linked summaries first; dedicated compression only when budgets dominate | Context limits are a measured bottleneck and summaries remain traceable. |
+| Integration bus | MCP resources, prompts, and tools | External systems need typed access instead of ad hoc shell/API calls. |
+| Governance | Permission rules, sandboxing, MCP roots, hooks, CI checks, audit logs | Agents can write files, run shell commands, call external APIs, or touch secrets. |
+
+### Learning Path
+
+| Foundation | What to learn | Proof you understand it |
+|---|---|---|
+| Agent loop | How the runtime alternates between context gathering, tool calls, edits, and verification. | You can trace a task from prompt to tool calls to final verification artifact. |
+| Tool contracts | Built-in tools, MCP tools, schemas, permissions, approvals, and failure modes. | You can explain why a tool was allowed, denied, or asked. |
+| Instruction memory | Difference between rules files, skills, summaries, and semantic memory. | You know what belongs in `AGENTS.md` versus a memory API. |
+| Retrieval design | Keyword, semantic, graph, temporal, scoped, and recency-based search. | You can show why each retrieved source was selected and whether it was used. |
+| Memory writes | What deserves durable memory and what should remain ephemeral transcript. | You can reject noisy memories and keep only reusable, source-backed learnings. |
+| Context compression | How to shrink context without losing provenance. | Every summary links to original files, docs, commits, or tool output. |
+| Governance | Permissions, sandboxing, hooks, MCP roots, secrets, deletion, export, and audit. | A malicious or mistaken prompt cannot silently escalate privileges. |
+| Operations | Cost, latency, evals, stale index repair, memory quality, and incident review. | You can measure whether the agent got faster, safer, or more correct. |
+
+Source-backed starting points: OpenCode agents/tools/MCP docs, MCP server/client concepts, Claude Code glossary and permissions docs, Cursor rules docs, and each memory product profile in this catalog.
+
+Recommended default: build the narrowest complete pipeline first: `AGENTS.md` + OpenCode-style agents/skills/permissions + one memory authority + MCP injection + source-linked write-back + verification/audit logs. Add graph, freshness, compression, hosted memory, or enterprise policy only after a measured failure proves the simpler pipeline is insufficient.
 
 ## Field 2: AI Product User Memory
 
