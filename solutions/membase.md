@@ -2,7 +2,7 @@
 
 ## Snapshot
 
-- Website / docs: https://membase.so/ and https://docs.membase.so/
+- Website / docs: https://membase.so/gh and https://docs.membase.so/
 - Company / maintainer: Aristo Technologies
 - Status: Active hosted product in open beta
 - Open source: Hosted service with public MCP/plugin setup paths
