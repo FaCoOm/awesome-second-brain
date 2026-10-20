@@ -8,7 +8,7 @@
 - Company / maintainer: jaylfc (independent), part of the taOS ecosystem
 - Status: Open-source Python package, tagged release v0.3.0, with Python API, CLI, local HTTP/REST, and MCP surfaces
 - Open source: Yes, MIT-licensed repository (recognized by GitHub)
-- Deployment: Local-first. Source install of a Python package (no PyPI release yet), running offline with local ONNX embeddings and a local LLM through Ollama, or an RK3588 NPU through RKLLM. Optional remote client mode points a local CLI at a shared `taosmd serve` instance over your own network.
+- Deployment: Local-first. PyPI or source install of a Python package, running offline with local ONNX embeddings and a local LLM through Ollama, or an RK3588 NPU through RKLLM. Optional remote client mode points a local CLI at a shared `taosmd serve` instance over your own network.
 - Primary users: Developers and agent operators who want an offline, local-first agent memory layer on modest or single-board hardware
 - Best second-brain role: Local-first, offline agent memory layer with a zero-loss archive, source-linked verifiable recall, and maintainer-published retrieval benchmarks
 - Last reviewed: 2026-06-21
@@ -27,7 +27,7 @@ It is closest to Mnemosyne, Mem0/OpenMemory, Hindsight, Honcho, and Cognee in th
 
 | Area | Evaluation |
 |---|---|
-| Deployment / ownership | Local-first. Source install of a Python package (no PyPI release yet); local SQLite stores, local ONNX embeddings, and a local LLM through Ollama, or an RK3588 NPU through RKLLM. An optional remote client mode targets a shared `taosmd serve` instance over your own network. |
+| Deployment / ownership | Local-first. PyPI or source install of a Python package; local SQLite stores, local ONNX embeddings, and a local LLM through Ollama, or an RK3588 NPU through RKLLM. An optional remote client mode targets a shared `taosmd serve` instance over your own network. |
 | Context capture | API-, HTTP-, and MCP-driven. Each conversation turn is recorded verbatim into an append-only archive first; vector and knowledge-graph indexing are layered on top. Capture is agent and developer driven, not a broad OAuth connector layer. |
 | Knowledge organization | Built-in append-only archive, a local vector index, a temporal knowledge graph, and a librarian retrieval layer over the stored turns. |
 | Memory evolution | Correction and supersede mark facts as no longer recalled across both the knowledge graph and the vector layer, a retention score ages memory, and an optional recall gate demotes facts a verifier marks unsupported so they are not served while staying in the archive. There is no scheduled dream or consolidation cycle, and the raw archive is always retained. |
@@ -36,7 +36,7 @@ It is closest to Mnemosyne, Mem0/OpenMemory, Hindsight, Honcho, and Cognee in th
 | Personal / team scope | Partial. Each agent gets its own shelf, with cross-agent reads, but team permissions and review workflows are not a product surface. |
 | Feedback / correction | Correction and supersede operate across the knowledge graph and the vector layer while the raw archive row is retained, and a pending-review list surfaces low-confidence items. A verify pass checks each extracted fact against its archived source span and records the share that is not fully supported, which the project tracks as a standing metric (about 19% of regex-extracted facts on one dataset). |
 | Privacy / control | Local-first and offline by default: local SQLite stores, local ONNX embeddings, a configurable data directory, and no cloud calls. Secrets are redacted on the A2A bus. Embedding and LLM behavior depend on the local models you configure. |
-| Setup / operations | Medium. The verified path is a source install plus a local embedding model and a local LLM. There is no PyPI package yet, and retrieval and extraction quality depend on the local models and configuration you run. |
+| Setup / operations | Medium. The verified path is a package or source install plus a local embedding model and a local LLM. Retrieval and extraction quality depend on the local models and configuration you run. |
 
 ## Strengths
 
@@ -52,7 +52,7 @@ It is closest to Mnemosyne, Mem0/OpenMemory, Hindsight, Honcho, and Cognee in th
 ## Limitations
 
 - It is a memory backend, not a full consumer second-brain application.
-- No PyPI package yet; the supported install today is from source. The one-line bootstrap that also installs the local LLM and models is still being validated on clean machines.
+- PyPI install exists, but the one-line bootstrap that also installs the local LLM and models is still being validated on clean machines.
 - Broad app connectors, a hosted dashboard, team permissions, and source governance are not the main product surface.
 - Benchmark numbers are maintainer-run local results and should not be treated as independent third-party evaluation without reproduction.
 - Retrieval and extraction quality depend on the local embedding and LLM models, configuration, and agent write behavior.
@@ -73,7 +73,7 @@ It is closest to Mnemosyne, Mem0/OpenMemory, Hindsight, Honcho, and Cognee in th
 
 ## Tradeoffs
 
-taOSmd gives strong local control, an offline footprint that fits low-end hardware, and a zero-loss archive, but it shifts model operation and integration decisions to the user. There is no hosted option and no PyPI package yet, so the verified path is a source install plus a local LLM and embedding model. Compare it with Mnemosyne, Mem0/OpenMemory, Hindsight, Honcho, and Cognee when the primary need is local or programmable agent memory rather than a complete hosted second-brain product, and weight it higher when offline operation, low-end hardware, or a byte-for-byte source record matter most.
+taOSmd gives strong local control, an offline footprint that fits low-end hardware, and a zero-loss archive, but it shifts model operation and integration decisions to the user. There is no hosted option, so the verified path is a package or source install plus a local LLM and embedding model. Compare it with Mnemosyne, Mem0/OpenMemory, Hindsight, Honcho, and Cognee when the primary need is local or programmable agent memory rather than a complete hosted second-brain product, and weight it higher when offline operation, low-end hardware, or a byte-for-byte source record matter most.
 
 ## Official Setup / Evaluation Links
 

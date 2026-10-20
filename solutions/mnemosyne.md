@@ -3,15 +3,15 @@
 ## Snapshot
 
 - Website / docs: https://docs.mnemosyne.site/
-- Repo: https://github.com/AxDSan/Mnemosyne
+- Repo: https://github.com/mnemosyne-oss/mnemosyne
 - Package: https://pypi.org/project/mnemosyne-memory/
-- Company / maintainer: Abdias J / AxDSan
+- Company / maintainer: Mnemosyne OSS / Abdias J
 - Status: Open-source Python package with MCP, SDK, and Hermes integration paths
 - Open source: Yes, MIT-licensed repository
-- Deployment: Local SQLite database through Python package, MCP server, Python SDK, or Hermes plugin
+- Deployment: Local SQLite database through Python package, MCP server, Python SDK, CLI, or Hermes plugin
 - Primary users: Agent operators and developers who want local-first persistent memory for MCP or Hermes workflows
 - Best second-brain role: Local-first agent memory layer with MCP and Hermes integration
-- Last reviewed: 2026-06-07
+- Last reviewed: 2026-07-05
 
 ## One-line Summary
 
@@ -27,7 +27,7 @@ It is closest to Hindsight, Mem0/OpenMemory, Honcho, and GBrain in this repo's l
 
 | Area | Evaluation |
 |---|---|
-| Deployment / ownership | Local-first. Official package and docs describe one Python package, one SQLite database, MCP server mode, and a Hermes plugin path. PyPI lists `mnemosyne-memory` as MIT-licensed and Python 3.10+ compatible. |
+| Deployment / ownership | Local-first. Official package and docs describe one Python package, one SQLite database, MCP server mode, CLI, and a Hermes plugin path. PyPI lists `mnemosyne-memory` as MIT-licensed and Python 3.9+ compatible. |
 | Context capture | API-, MCP-, CLI-, and hook-driven. Official examples include `remember`, `recall`, MCP config, Python SDK calls, and Hermes lifecycle hooks such as `pre_llm_call`, `on_session_start`, and `post_tool_call`. |
 | Knowledge organization | Built-in memory architecture with working memory, episodic memory, scratchpad, memory banks, and a TripleStore for temporal knowledge graph data. |
 | Memory evolution | Built-in consolidation is exposed through `sleep` / `consolidate_to_episodic` style flows; users still operate when and how consolidation runs. |
@@ -76,16 +76,16 @@ Mnemosyne gives strong local control and multiple agent activation paths, but it
 ## Official Setup / Evaluation Links
 
 - Documentation: https://docs.mnemosyne.site/
-- Repository: https://github.com/AxDSan/Mnemosyne
+- Repository: https://github.com/mnemosyne-oss/mnemosyne
 - PyPI package: https://pypi.org/project/mnemosyne-memory/
-- Hermes integration: https://github.com/AxDSan/Mnemosyne/blob/main/docs/hermes-integration.md
-- Configuration: https://github.com/AxDSan/Mnemosyne/blob/main/docs/configuration.md
-- Integrations: https://github.com/AxDSan/Mnemosyne/tree/main/docs/integrations
+- Hermes integration: https://github.com/mnemosyne-oss/mnemosyne/blob/main/docs/hermes-integration.md
+- Configuration: https://github.com/mnemosyne-oss/mnemosyne/blob/main/docs/configuration.md
+- Integrations: https://github.com/mnemosyne-oss/mnemosyne/tree/main/docs/integrations
 
 ## Sources
 
 - https://docs.mnemosyne.site/
-- https://github.com/AxDSan/Mnemosyne
+- https://github.com/mnemosyne-oss/mnemosyne
 - https://pypi.org/project/mnemosyne-memory/
-- https://github.com/AxDSan/Mnemosyne/blob/main/docs/hermes-integration.md
-- https://github.com/AxDSan/Mnemosyne/blob/main/docs/configuration.md
+- https://github.com/mnemosyne-oss/mnemosyne/blob/main/docs/hermes-integration.md
+- https://github.com/mnemosyne-oss/mnemosyne/blob/main/docs/configuration.md

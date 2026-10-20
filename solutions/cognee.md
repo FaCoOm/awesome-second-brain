@@ -8,7 +8,7 @@
 - Open source: Open-source core with cloud/API options
 - Deployment: Python package/SDK, local or Docker MCP server, Cognee Cloud/API mode
 - Primary users: Developers and AI power users who want knowledge graph memory through SDK, MCP, or agent plugins
-- Best second-brain role: Knowledge graph memory SDK with MCP/plugin access
+- Best second-brain role: Graph-oriented agent memory layer with secondary substrate use
 - Last reviewed: 2026-05-31
 
 ## One-line Summary
@@ -17,7 +17,7 @@ Cognee exposes persistent knowledge graph memory through a Python SDK, API/Cloud
 
 ## Second-Brain Fit
 
-Cognee is a strong option when the user wants persistent AI memory and graph construction from code, MCP-compatible clients, or agent plugins. It sits between local/self-hosted control and hosted second-brain platforms.
+Cognee is a strong option when the user wants persistent AI memory and graph construction from code, MCP-compatible clients, or agent plugins. This repo now groups it as an agent memory layer because the primary adoption surface is SDK, API, MCP, plugins, clients, and cloud/local memory workflows. It can still serve as a graph memory substrate inside larger stacks.
 
 ## Capabilities
 

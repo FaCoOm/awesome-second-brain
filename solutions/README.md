@@ -42,6 +42,7 @@ These systems expose APIs, SDKs, MCP servers, or managed services that add memor
 | [taOSmd](taosmd.md) | Local-first, offline agent memory layer with a zero-loss archive | Core, source-backed |
 | [Vestige](vestige.md) | Local-first agent memory layer with FSRS-6 decay, active forgetting, and backward causal recall | Core, source-backed |
 | [Mem0/OpenMemory](mem0-openmemory.md) | Developer memory layer with hosted and self-hosted paths | Core |
+| [Cognee](cognee.md) | Graph-oriented agent memory layer with SDK, MCP, plugins, clients, and cloud/local paths | Core |
 
 ## Memory Substrates
 
@@ -50,7 +51,8 @@ These systems are closer to graph, retrieval, or knowledge infrastructure that a
 | Solution | Best second-brain role | Status |
 |---|---|---|
 | [Zep/Graphiti](zep-graphiti.md) | Temporal knowledge graph memory for applications | Core |
-| [Cognee](cognee.md) | Knowledge graph memory SDK with MCP/plugins | Core |
+
+Cognee remains relevant as a graph memory substrate, but its primary evaluated adoption surface is the agent-facing memory layer.
 
 ## Platform Baselines
 
