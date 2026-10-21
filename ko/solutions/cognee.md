@@ -1,77 +1,91 @@
 # Cognee
 
-## 개요
+## Snapshot
 
 - 웹사이트 / 문서: https://docs.cognee.ai/
 - 회사 / 관리자: Cognee
-- 상태: 활성 memory 및 knowledge graph platform
-- 오픈소스: 오픈소스 core와 cloud/API 옵션 제공
-- 배포: Python package/SDK, local 또는 Docker MCP server, Cognee Cloud/API mode
-- 주요 사용자: SDK, MCP, agent plugin을 통해 knowledge graph memory를 원하는 developer와 AI power user
-- 세컨드 브레인 역할: MCP/plugin access가 있는 knowledge graph memory SDK
-- 마지막 검토: 2026-05-31
+- 상태: 오픈소스 memory 및 knowledge-processing platform; 별도의 managed Cloud option
+- 오픈소스: 공식 Python project는 Apache-2.0 license
+- 배포: Local Python SDK; 선택적 self-hosted API/MCP; Cognee Cloud
+- 주요 사용자: agent가 검색할 구조화 memory를 만들려는 developer와 AI power user
+- 세컨드 브레인에서 가장 잘 맞는 역할: Agent memory/knowledge-processing layer; graph/retrieval substrate는 부차적 역할
+- 마지막 검토: 2026-10-21
 
 ## 한 줄 요약
 
-Cognee는 Python SDK, API/Cloud option, MCP, agent integration을 통해 persistent knowledge graph memory를 제공합니다.
+Cognee는 문서, 코드, 텍스트, structured data를 받아 graph/vector 기반 memory로 변환하고 SDK, API, MCP, agent integration을 통해 검색하게 합니다.
 
-## 세컨드 브레인 적합도
+## 세컨드 브레인 적합성
 
-Cognee는 코드, MCP-compatible client, agent plugin에서 persistent AI memory와 graph construction을 원할 때 강한 선택지입니다. local/self-hosted control과 hosted second-brain platform 사이에 위치합니다.
+Cognee는 substrate 전용 제품이 아닙니다. 개발자는 SDK, local service, hosted API를 agent memory layer로 바로 채택해 데이터를 제공하고 연결된 knowledge로 처리한 다음 agent에 context를 돌려줄 수 있습니다. Graph, vector, relational backend는 더 큰 애플리케이션의 substrate로도 활용됩니다.
 
-## 기능 평가
+완성형 personal knowledge-management 앱과는 다릅니다. 주요 surface는 처리와 검색이며 GBrain 또는 LLM Wiki처럼 사람이 직접 검토하고 편집하는 curated wiki 경험은 별도 workflow가 필요합니다.
+
+## 기능
 
 | 영역 | 평가 |
 |---|---|
-| 배포 / 소유권 | default local database를 쓰는 Python package/SDK, local 또는 Docker MCP server, 중앙 backend에 연결되는 API/Cloud mode. Docker는 선택 사항이며 필수가 아닙니다. |
-| 맥락 수집 | SDK/API flow, MCP tool, data operation, memory operation. |
-| 지식 정리 | 내장 knowledge graph construction과 memory tool. |
-| Memory 발전 | 내장 improve/processing workflow가 있지만 terminology는 "dreaming"과 다릅니다. |
-| 검색 / 활용 | `remember`, `recall`, `forget_memory`, `improve` tool이 있는 knowledge graph memory. |
-| 에이전트 활용 / 쓰기 반영 | SDK/API와 MCP, plugin/client integration. documented surface에는 Claude Code, Cursor, Codex, Continue, Cline, Roo Code, Goose, OpenClaw, Python agent가 포함됩니다. |
-| 개인 / 팀 범위 | standalone mode는 memory를 격리하고 API mode는 client 간 shared graph 사용을 지원합니다. |
-| 검토 / 정정 | developer/admin surface와 tool reference. end-user UI는 target workflow에서 확인해야 합니다. |
-| 프라이버시 / 통제권 | local mode는 더 많은 통제권을 주고 API mode는 sharing을 중앙화합니다. |
-| 설정 / 운영 | 중간. package install이 가벼운 경로이고 Docker와 API/Cloud mode는 선택적 배포 방식입니다. graph memory 설계는 여전히 중요합니다. |
+| 배포 / 소유권 | Apache-2.0 local Python 경로, 선택적 self-host API/MCP, 별도 managed Cognee Cloud. |
+| 맥락 수집 | SDK/API로 문서, 코드, 텍스트, structured data 수집; agent integration으로 session/project context 추가 가능. |
+| 지식 정리 | 입력을 chunk, entity, relationship, embedding, queryable knowledge graph로 변환. 자동 생성 wiki와는 다름. |
+| Memory 발전 | Processing/improvement workflow로 memory를 보강할 수 있지만 언제 다시 처리할지는 사용자가 결정. |
+| 검색 / 활용 | 설정한 search mode에 따라 graph context, chunk, summary, generated answer를 반환. |
+| 에이전트 활용 / 쓰기 반영 | Python SDK, API, MCP server, CLI, plugin, agent integration. |
+| 개인 / 팀 범위 | Dataset과 service mode의 user/tenant permission 사용 가능. 격리는 배포와 설정에 달려 있음. |
+| 검토 / 정정 | Dataset 및 data-management API로 확인/삭제 가능; 사람용 wiki editor가 주 surface는 아님. |
+| 프라이버시 / 통제권 | Local model/storage는 자체 운영 가능. Hosted Cloud는 별도 데이터 경계. |
+| 설정 / 운영 | Local SDK 실험은 부담이 낮지만 provider, backend, service, source refresh, permission 설정 시 중간 수준. |
 
-## 강점
+## Cognee에 source 넣기
 
-- SDK-first memory API와 MCP 및 agent integration 경로.
-- standalone vs API mode 구분이 명확함.
-- compatible AI tool 전반의 codebase/project memory에 유용함.
+Drive, Notion, local vault의 원본을 source of truth로 유지하세요. Cognee data workflow에서는 text/file/structured data를 dataset에 넣고 cognification pipeline을 실행해 graph/vector 표현을 만든 뒤 해당 dataset을 검색합니다. 최신 README quickstart에는 상위 수준 remember/recall 호출도 나옵니다. 설치 버전의 API 문서에서 정확한 method와 input 형식을 확인하세요.
+
+Graph와 index는 파생 memory입니다. 감사, 정정, 재수집, 재생성을 위해 원본과 source ID를 Cognee 외부에 보관하세요. 의미 있는 권한과 lifecycle 경계별로 dataset을 나누고, 지원되는 경우 source 이름/URL과 update time을 metadata로 남기세요. Index를 원본 archive나 backup으로 간주하기 전에 update/delete 동작을 검증하세요.
+
+문서화된 소형 local extraction/embedding model을 사용하면 text ingest/retrieval을 hosted API subscription 없이 local에서 실행할 수 있습니다. 첫 사용 시 model을 다운로드하고 local compute를 사용합니다. Generated answer나 일부 media 처리에는 별도 model provider가 필요할 수 있습니다.
+
+## 장점
+
+- 공식 Apache-2.0 source와 local-first 경로.
+- 문서, chunk, entity, relationship을 graph-oriented pipeline으로 연결.
+- SDK, API, MCP, CLI, agent integration을 통한 여러 채택 방식.
+- 직접 agent memory로 쓰거나 하위 graph/retrieval component로 활용 가능.
 
 ## 한계
 
-- 각 client가 standalone instance를 실행하면 mode choice 때문에 memory가 fragmented될 수 있음.
-- 소비자용보다 개발자용에 가까움.
-- team과 governance detail은 API/cloud setup에 의존함.
+- Developer-oriented 제품이라 source 수집/갱신, 권한, 운영 담당자가 필요합니다.
+- Graph memory가 사용자 편집형 wiki를 대신하지 않습니다.
+- 결과와 갱신은 pipeline, model, dataset, metadata에 달려 있습니다.
+- Client마다 별도 standalone 실행 시 공유 memory가 분리될 수 있습니다.
 
-## 잘 맞는 경우
+## 가장 적합한 경우
 
-- MCP-accessible knowledge graph memory를 원하는 developer.
-- SDK, local MCP, 선택적 Docker, shared API/Cloud 배포 선택지가 필요한 사용자.
-- compatible agent client 전반의 codebase/project memory.
+- Agent가 query할 open-source graph memory pipeline을 원하는 개발자.
+- 문서, 코드, 대화에 걸친 fact/relationship을 검색하려는 사용자.
+- GBrain 또는 LLM Wiki와 함께 쓰는 processing/retrieval layer.
 
-## 잘 맞지 않는 경우
+## 적합하지 않은 경우
 
-- 설정 부담이 가장 낮은 선택지를 원하는 비기술 사용자.
-- polished consumer second-brain UI가 먼저 필요한 workflow.
-- memory 배포 모드를 선택하고 운영하고 싶지 않은 팀.
+- Source governance가 포함된 완성형 UI를 원하는 비기술 사용자.
+- Cognee가 직접 관리하는 polished wiki page를 기대하는 사용자.
+- 배포 mode, dataset, refresh, access control을 운영하기 원치 않는 팀.
 
 ## 트레이드오프
 
-Cognee는 SDK/local, MCP, Docker, API/Cloud mode를 통해 platform-bound memory feature보다 더 많은 배포 선택지를 줍니다. 트레이드오프는 mode를 신중히 선택해야 한다는 점입니다. 그렇지 않으면 하나의 shared knowledge graph 대신 client마다 고립된 memory가 생길 수 있습니다.
+Cognee의 Apache-2.0 local 경로는 유료 hosted memory service 의존을 줄입니다. 대신 설치, local model 성능, source synchronization, 지식 검토를 사용자가 맡습니다. 사람이 읽고 관리할 page가 필요하면 별도의 editable workspace와 짝지으세요.
 
-## 공식 설정 / 평가 링크
+## 공식 설정 / 평가 자료
 
-- [Cognee installation](https://docs.cognee.ai/getting-started/installation)
+- [Cognee 설치 및 local quickstart](https://docs.cognee.ai/getting-started/installation)
+- [Cognee API: ingestion, cognification, search, datasets](https://docs.cognee.ai/api-reference/introduction)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
-- [Cognee client integrations](https://docs.cognee.ai/cognee-mcp/integrations)
-- [Cognee GitHub repository](https://github.com/topoteretes/cognee)
+- [Cognee agent integration](https://docs.cognee.ai/cognee-mcp/integrations)
+- [공식 Cognee repository](https://github.com/topoteretes/cognee)
+- [Apache-2.0 license](https://github.com/topoteretes/cognee/blob/main/LICENSE)
 
 ## 출처
 
+- [Cognee README](https://github.com/topoteretes/cognee)
 - [Cognee installation](https://docs.cognee.ai/getting-started/installation)
-- [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
-- [Cognee client integrations](https://docs.cognee.ai/cognee-mcp/integrations)
-- [Cognee GitHub repository](https://github.com/topoteretes/cognee)
+- [Cognee API reference](https://docs.cognee.ai/api-reference/introduction)
+- [Apache-2.0 license](https://github.com/topoteretes/cognee/blob/main/LICENSE)

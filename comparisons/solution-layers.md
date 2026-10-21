@@ -14,7 +14,7 @@ Second-brain products, agent memory APIs, and retrieval substrates are often dis
 
 ## Categorization Standard
 
-Classify each system by the first layer a reader must adopt, then document secondary roles in the profile. Use official repositories and docs for product identity and factual claims. If a product spans multiple roles, pick one primary authority: freshness layer, memory/context authority, compression layer, or runtime activation layer.
+Classify each system by the first layer a reader must adopt, then document secondary roles in the profile. A primary layer is not a claim of architectural equivalence: two agent memory layers may both return context but differ in source ingestion, intermediate representations, update semantics, and human-facing outputs. Use official repositories and docs for product identity and factual claims. If a product spans multiple roles, pick one primary adoption surface and document secondary roles in the profile.
 
 ## Reader Intent Map
 
@@ -62,7 +62,7 @@ Layer boundaries are useful because many real deployments combine layers:
 | Agent memory layer + memory substrate | Build product memory with an API layer while relying on graph or retrieval infrastructure underneath. |
 | Local workspace + memory substrate | Use a local wiki or vault as the inspectable source of truth, then index it into graph or retrieval infrastructure for application use. |
 
-Cognee is listed as an agent memory layer because its documented adoption surfaces include SDK, MCP, API, plugins, clients, and cloud/local memory workflows. It can still play the secondary graph-substrate role inside a stack.
+Cognee is an agent memory and knowledge-processing layer when adopted through its SDK, API, MCP, CLI, or integrations; its graph/vector/relational components can also be a substrate. Supermemory is an agent memory/context service with document RAG and derived profile memory; its hosted credits and advertised local binary are deployment choices, not proof that it is an editable wiki or source-buildable runtime. The focused [Cognee and Supermemory comparison](cognee-supermemory.md) explains the overlap and differences.
 
 ## Contribution Rule
 

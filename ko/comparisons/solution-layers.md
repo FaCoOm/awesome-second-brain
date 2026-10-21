@@ -47,7 +47,7 @@
 | Agent memory layer + memory substrate | product memory는 API layer로 만들고, 그 아래 graph/retrieval infrastructure에 의존합니다. |
 | Local workspace + memory substrate | 확인 가능한 source of truth는 local wiki나 vault에 두고, application use를 위해 graph/retrieval infrastructure로 index합니다. |
 
-Cognee는 documented adoption surface가 SDK, MCP, API, plugin, client, cloud/local memory workflow까지 포함하므로 agent memory layer로 둡니다. stack 안에서는 graph substrate 역할도 할 수 있습니다.
+Cognee는 SDK/API/MCP/CLI로 채택하는 agent memory와 knowledge-processing layer이며 graph/vector/relational component는 substrate 역할도 합니다. Supermemory는 document RAG와 파생 profile memory를 결합한 agent memory/context service입니다. Hosted credit과 local binary는 배포 조건이지 편집형 wiki나 source-buildable runtime의 증거는 아닙니다. [Cognee와 Supermemory 비교](cognee-supermemory.md)에서 자세히 설명합니다.
 
 ## 기여 규칙
 

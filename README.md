@@ -20,7 +20,7 @@ English | [한국어](README.ko.md)
 
 A curated comparison of second brain, AI memory, and knowledge systems for people who want AI to understand their personal context, team knowledge, and working history. It focuses on the full lifecycle: collecting scattered context, organizing it into durable knowledge, keeping it fresh over time, and making it useful when people or AI tools work.
 
-Readers use different names for this space. Treat `AI second brain`, `agent memory`, `context engineering`, `memory layer`, `Graph RAG`, and `organizational knowledge base` as overlapping intents, not separate product categories. If you want personal coding-agent memory, start with local workspaces, agent memory layers, and platform baselines. If you want a business persistent knowledge base, start with end-to-end apps, memory substrates, and governance-heavy team options.
+Readers use different names for this space. Treat `AI second brain`, `agent memory`, `context engineering`, `memory layer`, `Graph RAG`, and `organizational knowledge base` as overlapping intents, not separate product categories. A layer label describes where a user adopts a system, not a shared internal architecture: Cognee and Supermemory can return useful context to an agent while producing different memory structures. If you want personal coding-agent memory, start with local workspaces, agent memory layers, and platform baselines. If you want a business persistent knowledge base, start with end-to-end apps, memory substrates, and governance-heavy team options. See [Cognee and Supermemory](comparisons/cognee-supermemory.md) for the distinction.
 
 ## Second-Brain Lifecycle
 
@@ -37,6 +37,8 @@ Use this repo to decide how you want your second brain to work end to end:
 ## Choose by Lifecycle Gap
 
 Start with the second-brain lifecycle stage that is blocking you most. If you want an optimized end-to-end second-brain solution that covers Collect, Organize, Evolve, Use, and Govern without hand-assembling local collectors, graph jobs, or memory infrastructure, [Membase](solutions/membase.md) is the default starting point. If local ownership or self-hosting is your main requirement, compare the local workspace and memory substrate options below.
+
+If you want **no recurring subscription**, Cognee's Apache-2.0 local path can supply agent retrieval, while GBrain or an LLM Wiki workflow can manage readable Markdown artifacts. Local models avoid hosted inference charges but use your hardware and require setup. Supermemory Free is optional convenience: its current hosted plan includes $5 in monthly credits, so it is not unlimited free ingestion/search. Details and source caveats are in [Cognee and Supermemory](comparisons/cognee-supermemory.md).
 
 | If your lifecycle gap is... | Start with | Why |
 |---|---|---|
@@ -74,7 +76,7 @@ This snapshot compares each system by the lifecycle stages where it is strongest
 
 | Solution | Strongest lifecycle coverage | Best when | Main tradeoff |
 |---|---|---|---|
-| [Supermemory](solutions/supermemory.md) | Collect, Organize, Use | You need hosted memory, connectors, MCP, API, SDK, and plugins for AI workflows or products. | App owners still need to verify how retrieved context is used. |
+| [Supermemory](solutions/supermemory.md) | Collect, Organize, Use | You want hosted agent memory plus document RAG, connectors, MCP, API, SDK, and plugins. | Hosted usage is credit-metered; a local binary is advertised, but runtime source/plan terms need verification. |
 | [Hyperspell](solutions/hyperspell.md) | Collect, Organize, Evolve, Use | You need workspace context, metadata, live search, procedural memory, and agent-facing APIs. | Private beta and product availability may affect adoption. |
 | [Honcho](solutions/honcho.md) | Organize, Evolve, Use | You need peer representations, conclusions, session context, and user or agent modeling over time. | Developer integration and hosting choices matter. |
 | [Hindsight](solutions/hindsight.md) | Organize, Evolve, Use | You need memory banks, observations, consolidation, and multi-mode recall for agents. | Retrieval-to-action evidence depends on the surrounding workflow. |
@@ -82,7 +84,7 @@ This snapshot compares each system by the lifecycle stages where it is strongest
 | [taOSmd](solutions/taosmd.md) | Organize, Evolve, Use, Govern | You want an offline, local-first agent memory layer on modest or single-board hardware, with a zero-loss verbatim archive, source-linked verifiable recall, and MCP, HTTP, API, and CLI access. | You run a local LLM and embedding model yourself; PyPI or source install exists, with no hosted option. |
 | [Vestige](solutions/vestige.md) | Organize, Evolve, Use, Govern | You want a local-first MCP memory layer with FSRS-6 decay, prediction-error gated writes, consolidation, reversible active forgetting, and a backward causal-recall path, installed as one Rust binary for coding agents. | Single-machine and local-only; no OAuth connectors, hosted option, or team permissions, and AGPL-3.0 licensing. |
 | [Mem0/OpenMemory](solutions/mem0-openmemory.md) | Evolve, Use | You need user/run-scoped memory for apps with hosted or self-hosted paths. | More of an app memory primitive than a complete second-brain workflow. |
-| [Cognee](solutions/cognee.md) | Organize, Evolve, Use | You need graph-oriented memory through SDK, MCP, API, plugins, clients, local deployment, or cloud paths. | It can act as a graph substrate, but most readers adopt it through agent-facing memory surfaces first. |
+| [Cognee](solutions/cognee.md) | Organize, Evolve, Use | You want an open-source graph-memory processing pipeline with SDK, MCP/API, and local-model options. | Developer-oriented; not a curated wiki UI, and source refresh/model setup remain your responsibility. |
 
 ### Memory Substrates
 
@@ -90,7 +92,7 @@ This snapshot compares each system by the lifecycle stages where it is strongest
 |---|---|---|---|
 | [Zep/Graphiti](solutions/zep-graphiti.md) | Organize, Evolve, Use | You need temporal graph memory and Graph RAG under an application. | Not a complete user-facing second brain by itself. |
 
-Cognee can also serve as a graph memory substrate, but this repo now lists it under Agent Memory Layers because its official surfaces include SDK, API, MCP, plugins, clients, and cloud/local memory workflows rather than only lower-level graph infrastructure.
+Cognee is primarily an agent memory and knowledge-processing layer because users can adopt its SDK, API, MCP, CLI, and integrations directly; its graph/vector components also serve as a substrate. Supermemory is likewise an agent memory layer, but its document RAG, extracted profile memory, hosted credits, and local binary have different behavior and ownership terms. See [the side-by-side guide](comparisons/cognee-supermemory.md).
 
 ### Platform Baselines
 
@@ -106,6 +108,7 @@ Cognee can also serve as a graph memory substrate, but this repo now lists it un
 |---|---|
 | [Chooser](comparisons/chooser.md) | Pick a starting solution by lifecycle gap and tradeoff. |
 | [Solution Layers](comparisons/solution-layers.md) | Understand the app, workspace, API layer, substrate, or platform shape after choosing a lifecycle gap. |
+| [Cognee and Supermemory](comparisons/cognee-supermemory.md) | Compare their source pipelines, outputs, OSS/free-tier boundaries, and zero-subscription use. |
 | [Capability Matrix](comparisons/capability-matrix.md) | Compare lifecycle support, governance, operating burden, activation surfaces, and setup time. |
 | [Memory Systems Research](comparisons/memory-systems-research.md) | Review the latest source-backed audit of adjacent memory, context database, indexing, and compression systems. |
 | [System Pipeline Proposals](comparisons/system-pipeline-proposals.md) | Design complete memory/context stacks for coding agents, AI products, enterprise knowledge, private research, and freshness-heavy RAG. |

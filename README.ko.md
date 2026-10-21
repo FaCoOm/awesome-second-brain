@@ -18,7 +18,7 @@
 
 > 여러 도구, 정보원, 업무 흐름에 흩어진 나와 팀의 맥락을 이해하는 자가 발전형 세컨드 브레인을 만들기 위한 가이드입니다.
 
-이 레포는 AI가 개인의 맥락, 팀 지식, 업무 히스토리를 이해하게 만들고 싶은 사람들을 위한 세컨드 브레인, AI memory, 지식 시스템 비교 자료입니다. 흩어진 맥락을 수집하고, 오래 쓸 수 있는 지식으로 정리하고, 시간이 지나도 계속 업데이트하며, 사람과 AI 도구가 실제 작업에서 활용할 수 있게 만드는 전체 생애주기를 기준으로 봅니다.
+이 레포는 AI가 개인의 맥락, 팀 지식, 업무 히스토리를 이해하게 만들고 싶은 사람들을 위한 세컨드 브레인, AI memory, 지식 시스템 비교 자료입니다. 흩어진 맥락을 수집하고, 오래 쓸 수 있는 지식으로 정리하고, 시간이 지나도 계속 업데이트하며, 사람과 AI 도구가 실제 작업에서 활용할 수 있게 만드는 전체 생애주기를 기준으로 봅니다. 여기서 계층 이름은 사용자가 처음 도입하는 지점을 뜻하며 같은 내부 구조를 보장하지 않습니다. Cognee와 Supermemory는 agent에 비슷한 context를 반환할 수 있지만 원본 처리 방식, memory 표현, 업데이트 책임은 다릅니다. [Cognee와 Supermemory 비교](ko/comparisons/cognee-supermemory.md)를 보세요.
 
 ## 세컨드 브레인 생애주기
 
@@ -101,6 +101,7 @@ Cognee는 graph memory substrate로도 쓸 수 있지만, 공식 surface가 SDK,
 |---|---|
 | [Chooser](ko/comparisons/chooser.md) | 생애주기 빈칸과 트레이드오프에 맞는 시작 솔루션 고르기 |
 | [Solution Layers](ko/comparisons/solution-layers.md) | 생애주기 빈칸을 고른 뒤 app, workspace, API layer, substrate, platform 형태 이해하기 |
+| [Cognee와 Supermemory](ko/comparisons/cognee-supermemory.md) | source pipeline, 결과물, 오픈소스/free-tier 경계, 구독 없는 선택지 비교 |
 | [Capability Matrix](ko/comparisons/capability-matrix.md) | 생애주기 지원, 거버넌스, 운영 부담, 활용 채널, 설정 시간 비교 |
 | [Memory Systems Research](comparisons/memory-systems-research.md) | 인접 memory, context database, indexing, compression system의 source-backed audit |
 | [System Pipeline Proposals](comparisons/system-pipeline-proposals.md) | coding agent, AI product, enterprise knowledge, private research, freshness-heavy RAG용 memory/context stack 설계 |

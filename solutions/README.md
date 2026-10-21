@@ -34,7 +34,7 @@ These systems expose APIs, SDKs, MCP servers, or managed services that add memor
 
 | Solution | Best second-brain role | Status |
 |---|---|---|
-| [Supermemory](supermemory.md) | Hosted memory API and connector layer | Core |
+| [Supermemory](supermemory.md) | Agent memory/context service with document RAG; hosted credits plus an advertised local binary | Core, runtime-source scope needs verification |
 | [Hyperspell](hyperspell.md) | Hosted company/user context layer for AI agents | Core, private beta caveat |
 | [Honcho](honcho.md) | Stateful agent memory and user-modeling layer | Core, source-backed |
 | [Hindsight](hindsight.md) | Agent memory API with memory banks | Core, source-backed |
@@ -42,7 +42,7 @@ These systems expose APIs, SDKs, MCP servers, or managed services that add memor
 | [taOSmd](taosmd.md) | Local-first, offline agent memory layer with a zero-loss archive | Core, source-backed |
 | [Vestige](vestige.md) | Local-first agent memory layer with FSRS-6 decay, active forgetting, and backward causal recall | Core, source-backed |
 | [Mem0/OpenMemory](mem0-openmemory.md) | Developer memory layer with hosted and self-hosted paths | Core |
-| [Cognee](cognee.md) | Graph-oriented agent memory layer with SDK, MCP, plugins, clients, and cloud/local paths | Core |
+| [Cognee](cognee.md) | Open-source graph-memory processing and agent layer; graph substrate as a secondary role | Core, Apache-2.0 |
 
 ## Memory Substrates
 
@@ -52,7 +52,7 @@ These systems are closer to graph, retrieval, or knowledge infrastructure that a
 |---|---|---|
 | [Zep/Graphiti](zep-graphiti.md) | Temporal knowledge graph memory for applications | Core |
 
-Cognee remains relevant as a graph memory substrate, but its primary evaluated adoption surface is the agent-facing memory layer.
+Cognee is not substrate-only: its SDK/API/MCP and agent integrations are a direct memory-processing layer, while its graph and vector backends can serve as infrastructure beneath another app. Supermemory also spans more than episodic memory: it combines agent memory with document retrieval. Their shared category does not imply equivalent data models; see [the focused comparison](../comparisons/cognee-supermemory.md).
 
 ## Platform Baselines
 

@@ -6,6 +6,7 @@
 |---|---|
 | [Chooser](chooser.md) | 어떤 생애주기 빈칸을 먼저 해결할지 결정할 때 시작하는 곳. |
 | [Solution Layers](solution-layers.md) | 생애주기 빈칸을 고른 뒤 app, workspace, API layer, substrate, platform 형태 이해하기. |
+| [Cognee와 Supermemory](cognee-supermemory.md) | source 처리, 결과물, 소유권, 구독 없는 운영 방식의 차이. |
 | [Capability Matrix](capability-matrix.md) | 평가된 솔루션 전반의 지원 수준, 설정 시간, 활용 채널, 유지보수 부담. |
 | [Memory Systems Research](../../comparisons/memory-systems-research.md) | 인접 memory, context database, indexing, compression system의 source-backed audit. |
 | [System Pipeline Proposals](../../comparisons/system-pipeline-proposals.md) | coding agent, AI product, enterprise knowledge, private research, freshness-heavy RAG용 memory/context stack 설계. |

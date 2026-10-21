@@ -23,7 +23,7 @@
 
 | 솔루션 | 맥락 수집 | 지식 정리 | Memory 발전 | 검색/활용 | 활용 증거 | 검토/정정 | 개인/팀 범위 | 프라이버시/통제권 | 에이전트 활용 | 설정/운영 | 설정 시간 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| [Supermemory](../solutions/supermemory.md) | 내장 + 연동 | 내장 graph memory | 내장 | Memory API + hybrid search + graph memory | 부분 지원: MCP/API retrieval이 trace에 들어갈 수 있지만 app owner가 어떤 context가 사용됐는지 기록해야 합니다. | 내장 hosted app/console | 연동 | 호스팅형 제어 | MCP + API + SDK + plugin | 낮음-중간 | 공식: 몇 분 |
+| [Supermemory](../solutions/supermemory.md) | 내장 + 연동 | 원본 문서 + 파생 fact/profile graph | 내장, 제품 관리 | document RAG + memory/profile hybrid search | 부분 지원: MCP/API retrieval이 trace에 들어갈 수 있지만 app owner가 어떤 context가 사용됐는지 기록해야 합니다. | Hosted app/console + API 도구 | Namespace/container tag; 팀 기능은 plan별 차이 | hosted credit; local binary는 source/plan 조건 확인 필요 | Hosted MCP + API + SDK + plugin; local API 광고 | 낮음-중간 | 공식: 몇 분 |
 | [Hyperspell](../solutions/hyperspell.md) | 내장 + 연동 | 내장 context graph + metadata | 내장 + procedural memory | indexed/live search + grounded answer + API action | 부분 지원: MCP search/get과 metadata filter가 activated input을 보여줄 수 있지만 host usage log 검증이 필요합니다. | API review flow + app-owned UI | 내장 user model | 호스팅형 제어 | MCP + API/SDK + agent plugin | 낮음-중간 | 공식: 5분 이내 주장, beta 여부에 따라 달라짐 |
 | [Honcho](../solutions/honcho.md) | API + 연동 | 내장 peer representation + conclusion | 내장 background reasoning | Search + context + representation | 부분 지원: session/peer context API가 available context를 설명할 수 있지만 acted-on evidence는 app level입니다. | 부분 개발자/API 도구 | 내장 peer/workspace model | Hosted 또는 self-hosted | MCP + API/SDK + CLI/client plugin | 중간 | 공식 quickstart 있음, self-hosting은 달라짐 |
 | [Hindsight](../solutions/hindsight.md) | API + 연동 | 내장 memory bank + observation | 내장 consolidation | semantic/keyword/graph/temporal recall + reflect | 부분 지원: memory-bank retrieval과 observation이 trace를 도울 수 있지만 retrieval과 action을 workflow에서 연결해야 합니다. | 부분 개발자/API 도구 | 부분 memory-bank scoping | Cloud, Docker, package, embedded server, local MCP | MCP + REST API + SDK + CLI | 중간 | 공식 quickstart 있음, 실제 소요 시간은 달라짐 |
@@ -31,13 +31,13 @@
 | [taOSmd](../solutions/taosmd.md) | API + 연동 | 내장 archive + knowledge graph + librarian | 내장 supersede + retention | Hybrid keyword + vector + fusion, optional rerank, knowledge graph | 부분 지원: append-only archive, pending-review list, local dashboard가 input을 inspectable하게 만들지만 acted-on proof는 agent log에 달려 있습니다. | graph/vector 양쪽의 supersede, raw archive 보존, pending-review surface | 부분 per-agent shelf + cross-agent read, team permission 제품은 아님 | Local-first, offline, cloud 없음; local SQLite와 ONNX embedding | MCP + HTTP/REST + Python API + CLI + dashboard, optional remote client | 중간 | 직접 설정: source install 몇 분 + local model download |
 | [Vestige](../solutions/vestige.md) | MCP + 연동 | 내장 SQLite + FTS5 + USearch vector index + memory graph | 내장 prediction-error gating + FSRS-6 decay + consolidation/dream + dedup | RRF hybrid recall과 별도의 backward entity-linked causal-recall 경로 | 부분 지원: MCP tool call과 local 3D dashboard가 input을 inspectable하게 만들지만 acted-on proof는 agent log에 달려 있습니다. | 내장 get/edit/promote/demote, supersede, contradiction inspection, reversible suppress, content+embedding purge | 부분 지원: per-project code memory와 local scoping, team permission 제품은 아님 | Local-first, one-time model download 이후 cloud 없음; local SQLite, optional SQLCipher | MCP(stdio) + CLI + dashboard | 중간 | 공식: 설치 몇 분 + 약 130MB model one-time download |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | API + 연동 | 내장 memory 범위 | 부분 지원 | Layered memory search + auto context injection | 부분 지원: user/run-scoped memory search가 activation trace를 도울 수 있지만 acted-on proof는 app level입니다. | 내장 dashboard/server 경로 | 내장 | Hosted 또는 self-hosted | MCP + plugin/hook + CLI + API/SDK | 중간 | 공식: 몇 분 |
+| [Cognee](../solutions/cognee.md) | 내장 + API/SDK | Graph, entity, relationship, chunk, embedding | Processing/improvement workflow | Graph, chunk, summary, generated-answer search mode | 부분 지원: recall이 structured context를 반환하지만 workflow별 usage evidence 검증이 필요합니다. | 부분 개발자/관리자 화면; wiki 편집 UI가 주 기능은 아님 | Dataset 범위; service permission은 설정에 따라 다름 | Apache-2.0 local과 local model 경로; 선택적 self-host API/Cloud | Python SDK + MCP/API + plugin/CLI | 로컬은 낮음-중간; service는 더 높음 | 공식 local quickstart; model download 별도 |
 
 ## Memory Substrates
 
 | 솔루션 | 맥락 수집 | 지식 정리 | Memory 발전 | 검색/활용 | 활용 증거 | 검토/정정 | 개인/팀 범위 | 프라이버시/통제권 | 에이전트 활용 | 설정/운영 | 설정 시간 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | API | 내장 temporal graph | 내장 | Temporal knowledge graph + Graph RAG | 부분 지원: temporal graph fact와 episode가 evidence input을 제공하지만 application이 usage log를 남겨야 합니다. | 부분 개발자 UI/API | 내장 | Hosted 또는 OSS library 경로 | API + SDK + MCP(읽기 중심) | 중간 | 공식 quickstart 있음, 실제 소요 시간은 달라짐 |
-| [Cognee](../solutions/cognee.md) | 내장 + API/SDK | 내장 knowledge graph | 내장 | Knowledge graph memory | 부분 지원: recall tool이 structured context를 반환하지만 workflow별 usage evidence 검증이 필요합니다. | 부분 개발자/관리자 화면 | API 모드에서 내장 | SDK/local mode, 선택적 Docker, self-hosted API 또는 Cloud SDK | Python SDK/Cloud + MCP/API + plugin/CLI | 중간 | 공식: package install 기준 몇 분, Docker는 선택 사항 |
 
 ## Platform Baselines
 
@@ -56,4 +56,5 @@
 - `부분 지원`은 유용한 지원은 있지만 workflow가 불완전하거나 host에 의존하거나 특정 플랫폼에 묶여 있다는 뜻입니다.
 - `주 용도 아님`은 억지로 쓸 수는 있지만 그 용도로 설계된 제품은 아닐 때 사용합니다.
 - `미확인`은 아직 이 레포에서 검증하지 않은 주장이라는 뜻입니다.
+- 오픈소스 license, hosted free credit, local binary, self-hosted plan은 서로 다른 조건입니다. [Cognee와 Supermemory 비교](cognee-supermemory.md)를 참고하세요.
 - 설정 시간은 `공식`, `직접 설정`, `관리자/maintainer 추정`으로 구분합니다. 공식 quickstart는 있지만 신뢰할 수 있는 시간 추정이 없으면 실제 소요 시간이 달라진다고 표시합니다.

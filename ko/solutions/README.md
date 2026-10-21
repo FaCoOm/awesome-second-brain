@@ -31,7 +31,7 @@
 
 | 솔루션 | 세컨드 브레인에서 가장 잘 맞는 역할 | 상태 |
 |---|---|---|
-| [Supermemory](supermemory.md) | 호스팅형 memory API와 커넥터 계층 | 핵심 |
+| [Supermemory](supermemory.md) | document RAG와 파생 profile memory를 제공하는 agent memory/context layer | 핵심, hosted credit 및 local binary 조건 확인 |
 | [Hyperspell](hyperspell.md) | AI agent용 호스팅 company/user context 계층 | 핵심, private beta 주의 |
 | [Honcho](honcho.md) | Stateful agent memory와 user-modeling 계층 | 핵심, 출처 기반 |
 | [Hindsight](hindsight.md) | memory bank가 있는 agent memory API | 핵심, 출처 기반 |
@@ -39,7 +39,7 @@
 | [taOSmd](taosmd.md) | zero-loss archive가 있는 local-first offline agent memory layer | 핵심, 출처 기반 |
 | [Vestige](vestige.md) | FSRS-6 decay, active forgetting, backward causal recall을 갖춘 local-first agent memory layer | 핵심, 출처 기반 |
 | [Mem0/OpenMemory](mem0-openmemory.md) | hosted/self-hosted 경로가 있는 개발자용 memory 계층 | 핵심 |
-| [Cognee](cognee.md) | SDK, MCP, plugin, client, cloud/local path가 있는 graph-oriented agent memory layer | 핵심 |
+| [Cognee](cognee.md) | Apache-2.0 graph memory 처리/agent layer; graph substrate는 부차적 역할 | 핵심 |
 
 ## Memory Substrates
 
@@ -49,7 +49,7 @@
 |---|---|---|
 | [Zep/Graphiti](zep-graphiti.md) | 애플리케이션을 위한 temporal knowledge graph memory | 핵심 |
 
-Cognee는 graph memory substrate로도 유용하지만, 이 레포의 주 평가 surface는 agent-facing memory layer입니다.
+Cognee는 substrate 전용이 아닙니다. SDK/API/MCP로 직접 채택하는 memory 처리 layer인 동시에 graph/vector backend를 다른 앱의 기반으로 제공할 수 있습니다. Supermemory도 episodic memory에 한정되지 않고 document RAG와 파생 profile memory를 결합합니다. 같은 범주에 있다는 것이 동일한 data model을 뜻하지는 않습니다. [집중 비교](../comparisons/cognee-supermemory.md)를 참고하세요.
 
 ## Platform Baselines
 

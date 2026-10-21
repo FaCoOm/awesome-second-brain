@@ -28,7 +28,7 @@ Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md),
 - taOSmd keeps every conversation turn verbatim in an append-only archive, then layers vector search, a temporal knowledge graph, and a librarian on top, running offline on low-end hardware.
 - Vestige gates writes with a prediction-error step that merges redundant and supersedes contradictory records, and keeps a memory graph with associations over local SQLite, as one Rust binary for coding agents.
 - Honcho is strongest when stateful agents need peer representations, conclusions, session context, and user or agent modeling.
-- Zep/Graphiti and Cognee are better read as graph or knowledge memory substrates for applications.
+- Zep/Graphiti is a graph substrate for applications. Cognee spans roles: developers adopt its SDK/API/MCP/CLI as an agent memory and knowledge-processing layer, and can also use its graph components as a substrate. It produces queryable graph/chunk context, not a finished editorial wiki.
 
 Choose this path when relationships, entities, facts, pages, links, and time are the main missing pieces.
 
@@ -69,6 +69,10 @@ Choose this path when review, correction, deletion, provenance, ownership, permi
 Start with [ChatGPT Memory](../solutions/chatgpt-memory.md), [Claude Projects/Claude Code](../solutions/claude-projects-code.md), or [NotebookLM](../solutions/notebooklm.md).
 
 These are useful baselines, but they are platform-bound. They should not be treated as a complete self-evolving second brain unless paired with a broader capture, organization, and retrieval layer.
+
+## If You Want No Recurring Subscription
+
+For a local-first combination, keep original sources in Drive/Notion or a local Markdown mirror, use GBrain or an LLM Wiki workflow for reviewable knowledge pages, and add local Cognee for graph-backed agent retrieval. This requires setup and local compute, but no hosted memory plan. Supermemory Free can remain an optional convenience for light agent memory; its current $5 monthly credit balance meters hosted usage. See [Cognee and Supermemory](cognee-supermemory.md) for the source flow, model costs, and runtime-source caveats.
 
 ## Assembled Stack vs End-to-End App
 

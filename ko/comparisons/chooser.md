@@ -27,7 +27,7 @@
 - taOSmd는 모든 conversation turn을 append-only archive에 verbatim으로 저장한 뒤, vector search, temporal knowledge graph, librarian layer를 얹어 low-end hardware에서 offline으로 실행합니다.
 - Vestige는 prediction-error 단계에서 중복 record를 merge하고 모순 record를 supersede하며, local SQLite 위에 association을 가진 memory graph를 유지하는 coding agent용 단일 Rust binary입니다.
 - Honcho는 stateful agent가 peer representation, conclusion, session context, 사용자 또는 agent modeling을 필요로 할 때 강합니다.
-- Zep/Graphiti와 Cognee는 애플리케이션을 위한 graph 또는 knowledge memory substrate로 보는 편이 맞습니다.
+- Zep/Graphiti는 애플리케이션을 위한 graph substrate입니다. Cognee는 SDK/API/MCP/CLI로 agent memory와 knowledge-processing layer로 직접 채택할 수 있고 graph substrate로도 활용됩니다. 결과는 queryable graph/chunk context이지 editorial wiki가 아닙니다.
 
 관계, 엔티티, 사실, page, link, 시간이 가장 부족한 조각이라면 이 경로를 선택하세요.
 
@@ -60,6 +60,10 @@ MCP, API, SDK, plugin, dashboard chat, platform access처럼 memory를 실제 �
 - ChatGPT Memory와 Claude Projects/Claude Code는 유용한 platform baseline이지만 visibility, export, retrieval control은 platform 범위에 묶입니다.
 
 review, correction, deletion, provenance, ownership, permission, local/cloud control이 핵심 판단 기준이라면 이 경로를 선택하세요.
+
+## 반복 구독 없이 운영하고 싶다면
+
+Drive/Notion 원본 또는 local Markdown mirror를 source of truth로 유지하고 GBrain이나 LLM Wiki에서 검토 가능한 knowledge page를 관리하며, graph 기반 agent retrieval이 필요할 때 Cognee를 local에서 추가하세요. Setup과 local compute는 필요하지만 hosted memory 요금제는 필요하지 않습니다. Supermemory Free는 가벼운 agent memory 편의 기능으로 둘 수 있지만 현재 월 $5 credit으로 사용량이 제한됩니다. 자세한 내용은 [Cognee와 Supermemory 비교](cognee-supermemory.md)를 보세요.
 
 ## 이미 하나의 AI Platform 안에서 일한다면
 

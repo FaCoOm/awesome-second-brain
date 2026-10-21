@@ -6,6 +6,7 @@ These pages help readers choose a second-brain setup by lifecycle gap, support l
 |---|---|
 | [Chooser](chooser.md) | Start here when deciding which lifecycle gap to solve first. |
 | [Solution Layers](solution-layers.md) | Understand the app, workspace, API layer, substrate, or platform shape after choosing a lifecycle gap. |
+| [Cognee and Supermemory](cognee-supermemory.md) | Distinguish their source pipelines, outputs, ownership, and no-subscription options. |
 | [Capability Matrix](capability-matrix.md) | Support labels, setup time, activation surfaces, and maintenance burden across evaluated solutions. |
 | [Memory Systems Research](memory-systems-research.md) | Source-backed audit of adjacent memory, context database, indexing, and compression systems. |
 | [System Pipeline Proposals](system-pipeline-proposals.md) | Professional stack proposals for coding-agent memory, AI product memory, enterprise knowledge, local research, and freshness-heavy RAG. |
